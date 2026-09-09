@@ -1,0 +1,67 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.924833333333333,
+          35.26677777777778
+        ]
+      },
+      "properties": {
+        "zona": "Beni Ensar (Nador, Marruecos)",
+        "pais": "Marruecos",
+        "video": "data/videos/cc2e9a5b473276a9.mp4",
+        "video_original": "https://video.twimg.com/amplify_video/2095862489003298816/vid/avc1/320x576/CMN37LrrihMzpq58.mp4?tag=29",
+        "archivo_video": "https://archive.org/details/cmn-37-lrrih-mzpq-58",
+        "confianza": "5 - Muy alto (verificado)",
+        "confianza_valor": 5,
+        "publicacion_viral": "https://x.com/javiernegre10/status/2095862562352931322",
+        "archivo_publicacion": "https://archive.fo/4jVNU",
+        "claim": "\"Graban a invasores marroquíes saliendo como ratas de túneles en Ceuta, siguen llegando mientras la situación empeora cada día\".",
+        "rating": "Falso",
+        "rating_categoria": "falso",
+        "comentarios": "Vídeo muy viral utilizado para extender la idea de que los migrantes están llegando a Ceuta a través de túneles subterráneos.",
+        "newtral_url": "https://www.newtral.es/tuneles-ceuta-marroquies-video-falso/20260907/",
+        "newtral_titulo": "Este vídeo no muestra a “marroquíes” entrando “en Ceuta” a través de “túneles”: es el puerto de Beni Ensar (Marruecos)",
+        "newtral_descripcion": "Este vídeo no muestra a “marroquíes” entrando “en Ceuta” a través de “túneles”: es el puerto de Beni Ensar (Marruecos)",
+        "newtral_imagen": "https://www.newtral.es/wp-content/uploads/2026/09/Add-a-little-bit-of-body-text-50.jpg",
+        "fecha_origen": "3/09/2026",
+        "marca_temporal": "9/09/2026 12:24:23"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.9322203052176556,
+          35.26540627623779
+        ]
+      },
+      "properties": {
+        "zona": "Beni Ensar (Nador, Marruecos)",
+        "pais": "Marruecos",
+        "video": "data/videos/fc047744675be86d.mp4",
+        "video_original": "https://video.twimg.com/amplify_video/2083008988765917184/vid/avc1/720x780/CYAhY24JejMgPvap.mp4",
+        "archivo_video": "https://archive.org/details/cyah-y-24-jej-mg-pvap-1",
+        "confianza": "5 - Muy alto (verificado)",
+        "confianza_valor": 5,
+        "publicacion_viral": "https://x.com/RadioGenoa/status/2082961682565898571",
+        "archivo_publicacion": "https://archive.fo/VUOen / https://archive.fo/PztoT",
+        "claim": "Disturbios en Melilla. Migrantes prenden fuego a vehículos.",
+        "rating": "Falta contexto",
+        "rating_categoria": "enganoso",
+        "comentarios": "Vídeo utilizado para alimentar la narrativa que acusa a migrantes de provocar disturbios en Ceuta y Melilla. Las imágenes están grabadas en territorio marroquí, aunque en una zona muy próxima al paso fronterizo de Beni Ensar.",
+        "newtral_url": "https://www.newtral.es/disturbios-melilla-violencia-fuego-videos-nador-marruecos/20260731/",
+        "newtral_titulo": "Cuidado con los disturbios en Nador (Marruecos) que se atribuyen falsamente a Melilla",
+        "newtral_descripcion": "Cuidado con los disturbios en Nador (Marruecos) que se atribuyen falsamente a Melilla",
+        "newtral_imagen": "https://www.newtral.es/wp-content/uploads/2026/07/Untitled-design-87.jpg",
+        "fecha_origen": "30/07/2026",
+        "marca_temporal": "9/09/2026 12:50:08"
+      }
+    }
+  ]
+}

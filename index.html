@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <title>Vídeos de Ceuta — mapa</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <link rel="icon" type="image/png" href="logo-newtral-favicon.png" />
+
+  <!--
+    Servidor local (soporta peticiones Range, útil para que los vídeos permitan
+    avanzar/retroceder sin descargarse enteros primero):
+      python3 servir.py
+    http://localhost:8000
+  -->
+
+  <link href="https://unpkg.com/maplibre-gl@3.6.2/dist/maplibre-gl.css" rel="stylesheet" />
+  <script src="https://unpkg.com/maplibre-gl@3.6.2/dist/maplibre-gl.js"></script>
+
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <div id="map"></div>
+
+  <header id="header">
+    <div class="header-marca">
+      <span class="header-eyebrow">Repositorio de vídeos</span>
+      <span class="header-title">Vídeos relacionados con Ceuta</span>
+    </div>
+    <img src="logo_newtral.png" alt="Newtral" class="header-logo" />
+  </header>
+
+  <div id="controls-left" class="controls-left">
+    <button id="reset-btn" class="ctrl-btn" title="Centrar mapa">&#8635;</button>
+  </div>
+
+  <div id="video-panel" class="video-panel hidden">
+    <button type="button" id="video-cerrar" class="video-cerrar" aria-label="Cerrar">&times;</button>
+    <div id="video-contenido"></div>
+  </div>
+
+  <div id="leyenda-panel" class="leyenda-panel"></div>
+
+  <script src="app.js"></script>
+</body>
+</html>
