@@ -29,7 +29,7 @@
         "newtral_titulo": "Este vídeo no muestra a “marroquíes” entrando “en Ceuta” a través de “túneles”: es el puerto de Beni Ensar (Marruecos)",
         "newtral_descripcion": "Este vídeo no muestra a “marroquíes” entrando “en Ceuta” a través de “túneles”: es el puerto de Beni Ensar (Marruecos)",
         "newtral_imagen": "https://www.newtral.es/wp-content/uploads/2026/09/Add-a-little-bit-of-body-text-50.jpg",
-        "fecha_origen": "3/09/2026",
+        "fecha_origen": "",
         "marca_temporal": "9/09/2026 12:24:23"
       }
     },
@@ -38,8 +38,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -2.9322203052176556,
-          35.26540627623779
+          -2.9320373123028527,
+          35.26539771826926
         ]
       },
       "properties": {
@@ -61,8 +61,264 @@
         "newtral_titulo": "Cuidado con los disturbios en Nador (Marruecos) que se atribuyen falsamente a Melilla",
         "newtral_descripcion": "Cuidado con los disturbios en Nador (Marruecos) que se atribuyen falsamente a Melilla",
         "newtral_imagen": "https://www.newtral.es/wp-content/uploads/2026/07/Untitled-design-87.jpg",
-        "fecha_origen": "30/07/2026",
+        "fecha_origen": "",
         "marca_temporal": "9/09/2026 12:50:08"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.9321395011117515,
+          35.265175685390325
+        ]
+      },
+      "properties": {
+        "zona": "Beni Ensar (Nador, Marruecos)",
+        "pais": "Marruecos",
+        "video": "data/videos/dc18218fa0f7bf09.mp4",
+        "video_original": "https://video.twimg.com/amplify_video/2082961708159574016/vid/avc1/1192x1490/C3wOo3LUL1hR5ck2.mp4",
+        "archivo_video": "https://archive.org/details/ c-3w-oo-3-lul-1h-r-5ck-2-1",
+        "confianza": "5 - Muy alto (verificado)",
+        "confianza_valor": 5,
+        "confianza_texto": "Verificado",
+        "publicacion_viral": "https://x.com/ChadAbrazo/status/2082961819275059446",
+        "archivo_publicacion": "https://archive.fo/z5fkV",
+        "claim": "\"Los invasores han tomado el control de Melilla y en estos momentos están usurpando casas, robando y apedreando españoles\".",
+        "rating": "Falta contexto",
+        "rating_categoria": "enganoso",
+        "comentarios": "Este vídeo fue ampliamente difundido para trasladar la idea de que \"invasores marroquíes\" habían \"tomado el control de Melilla\" el pasado 30 de julio. Las imágenes de los disturbios corresponden a territorio marroquí, aunque fueron grabadas en las proximidades del paso fronterizo de Beni Ensar.",
+        "newtral_url": "https://www.newtral.es/disturbios-melilla-violencia-fuego-videos-nador-marruecos/20260731/",
+        "newtral_titulo": "Cuidado con los disturbios en Nador (Marruecos) que se atribuyen falsamente a Melilla",
+        "newtral_descripcion": "Cuidado con los disturbios en Nador (Marruecos) que se atribuyen falsamente a Melilla",
+        "newtral_imagen": "https://www.newtral.es/wp-content/uploads/2026/07/Untitled-design-87.jpg",
+        "fecha_origen": "",
+        "marca_temporal": "9/09/2026 15:35:09"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.93228486083353,
+          35.26551441231397
+        ]
+      },
+      "properties": {
+        "zona": "Beni Ensar (Nador, Marruecos)",
+        "pais": "Marruecos",
+        "video": "data/videos/c4e1f931cbcb6fee.mp4",
+        "video_original": "https://video.twimg.com/amplify_video/2083032052077580288/vid/avc1/480x518/kPYYaONU48QVHFje.mp4?tag=29",
+        "archivo_video": "https://archive.org/details/ kPYYaONU48QVHFje",
+        "confianza": "5 - Muy alto (verificado)",
+        "confianza_valor": 5,
+        "confianza_texto": "Verificado",
+        "publicacion_viral": "https://x.com/jpmasespanol/status/2083032073871278545",
+        "archivo_publicacion": "https://archive.fo/lSXQE",
+        "claim": "\"Disturbios en las inmediaciones de Melilla\".",
+        "rating": "Falta contexto",
+        "rating_categoria": "enganoso",
+        "comentarios": "El vídeo muestra los disturbios del 30 de julio en territorio marroquí, en una rotonda muy próxima al paso fronterizo de Beni Ensar.",
+        "newtral_url": "https://www.newtral.es/disturbios-melilla-violencia-fuego-videos-nador-marruecos/20260731/",
+        "newtral_titulo": "Cuidado con los disturbios en Nador (Marruecos) que se atribuyen falsamente a Melilla",
+        "newtral_descripcion": "Cuidado con los disturbios en Nador (Marruecos) que se atribuyen falsamente a Melilla",
+        "newtral_imagen": "https://www.newtral.es/wp-content/uploads/2026/07/Untitled-design-87.jpg",
+        "fecha_origen": "",
+        "marca_temporal": "9/09/2026 15:47:41"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.93228486083353,
+          35.26528102422456
+        ]
+      },
+      "properties": {
+        "zona": "Beni Ensar (Nador, Marruecos)",
+        "pais": "Marruecos",
+        "video": "data/videos/745105c26e332640.mp4",
+        "video_original": "https://video.twimg.com/amplify_video/2083061054834176001/vid/avc1/720x1280/pLMKS3OxRmncsaSY.mp4",
+        "archivo_video": "https://archive.org/details/ pLMKS3OxRmncsaSY",
+        "confianza": "5 - Muy alto (verificado)",
+        "confianza_valor": 5,
+        "confianza_texto": "Verificado",
+        "publicacion_viral": "https://x.com/GabyLob/status/2083061143510073766",
+        "archivo_publicacion": "https://archive.fo/KwT5q",
+        "claim": "\"Terror en España. Marroquíes queman autos, agreden y roban casas en medio de la invasión\".",
+        "rating": "Falta contexto",
+        "rating_categoria": "enganoso",
+        "comentarios": "Vídeo utilizado para extender la idea de supuestos disturbios protagonizados por marroquíes en la ciudad de Melilla. En realidad las imágenes están grabadas en territorio marroquí, aunque en un lugar próximo al paso fronterizo de Beni Ensar que une Marruecos con Melilla.",
+        "newtral_url": "https://www.newtral.es/disturbios-melilla-violencia-fuego-videos-nador-marruecos/20260731/",
+        "newtral_titulo": "Cuidado con los disturbios en Nador (Marruecos) que se atribuyen falsamente a Melilla",
+        "newtral_descripcion": "Cuidado con los disturbios en Nador (Marruecos) que se atribuyen falsamente a Melilla",
+        "newtral_imagen": "https://www.newtral.es/wp-content/uploads/2026/07/Untitled-design-87.jpg",
+        "fecha_origen": "",
+        "marca_temporal": "9/09/2026 15:55:15"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -5.555154210713671,
+          35.54778124081945
+        ]
+      },
+      "properties": {
+        "zona": "Ain Lhcen (Tetuán, Marruecos)",
+        "pais": "Marruecos",
+        "video": "data/videos/cd7a81a31c33bdd9.mp4",
+        "video_original": "https://video.twimg.com/amplify_video/2083137090225586176/vid/avc1/1080x1230/zFOl4a2glMpSSGu3.mp4",
+        "archivo_video": "https://archive.org/details/zFOl4a2glMpSSGu3",
+        "confianza": "5 - Muy alto (verificado)",
+        "confianza_valor": 5,
+        "confianza_texto": "Verificado",
+        "publicacion_viral": "https://x.com/capTercio/status/2083165364670664987",
+        "archivo_publicacion": "https://archive.fo/S0AwP",
+        "claim": "\"Camiones cargados de personas en Marruecos\".",
+        "rating": "Verdadero",
+        "rating_categoria": "verdadero",
+        "comentarios": "Vídeo de camión cargado de personas en carretera de Ain Lhcen (Marruecos) en dirección a Tetuán. El lugar donde está grabado el vídeo está a 58 kilómetros de Ceuta por carretera. En otro vídeo se ve a este mismo camión siendo detenido por gendarmes marroquíes en la entrada a Tetuán, a unos 51 kilómetros de Ceuta. Sus ocupantes se bajan en este punto, según las imágenes.",
+        "newtral_url": "https://www.newtral.es/camiones-personas-marruecos-ceuta-que-sabemos/20260802/",
+        "newtral_titulo": "Qué sabemos de los vídeos de camiones cargados de personas en Marruecos difundidos durante la crisis migratoria de Ceuta",
+        "newtral_descripcion": "⁉️ Qué sabemos de los vídeos de camiones cargados de personas en Marruecos difundidos durante la crisis migratoria de Ceuta",
+        "newtral_imagen": "https://www.newtral.es/wp-content/uploads/2026/08/Ain-Lahcen-9.jpg",
+        "fecha_origen": "",
+        "marca_temporal": "9/09/2026 16:14:25"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -5.458142049089019,
+          35.55863629485152
+        ]
+      },
+      "properties": {
+        "zona": "Tetuán (Marruecos)",
+        "pais": "Marruecos",
+        "video": "data/videos/29725234883146d8.mp4",
+        "video_original": "https://video.twimg.com/amplify_video/2082930806482210817/vid/avc1/360x640/9F_HpD38747BPl7O.mp4",
+        "archivo_video": "https://archive.org/details/9-f-hp-d-38747-bpl-7-o",
+        "confianza": "5 - Muy alto (verificado)",
+        "confianza_valor": 5,
+        "confianza_texto": "Verificado",
+        "publicacion_viral": "https://x.com/TalebSahara/status/2082930831903830429",
+        "archivo_publicacion": "https://archive.is/407Jo",
+        "claim": "\"Me llegan estas imágenes de cómo las autoridades marroquíes vacían camiones llenos de jóvenes cerca de la frontera con Ceuta\".",
+        "rating": "Falta contexto",
+        "rating_categoria": "enganoso",
+        "comentarios": "El vídeo muestra a gendarmes marroquíes que paran y desalojan un camión cargado de personas que circulaba por la N-2 desde Ain Lhcen en sentido Tetuán. Las imágenes están grabadas a la entrada de Tetuán, a alrededor de 50 kilómetros de Ceuta por carretera.",
+        "newtral_url": "https://www.newtral.es/camiones-personas-marruecos-ceuta-que-sabemos/20260802/",
+        "newtral_titulo": "Qué sabemos de los vídeos de camiones cargados de personas en Marruecos difundidos durante la crisis migratoria de Ceuta",
+        "newtral_descripcion": "⁉️ Qué sabemos de los vídeos de camiones cargados de personas en Marruecos difundidos durante la crisis migratoria de Ceuta",
+        "newtral_imagen": "https://www.newtral.es/wp-content/uploads/2026/08/Ain-Lahcen-9.jpg",
+        "fecha_origen": "",
+        "marca_temporal": "9/09/2026 16:26:24"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -58.31366829877935,
+          -34.76034867021203
+        ]
+      },
+      "properties": {
+        "zona": "Buenos Aires (Argentina)",
+        "pais": "Otro",
+        "video": "data/videos/2a07fcbdbac157a7.mp4",
+        "video_original": "https://www.tiktok.com/@angelaperezromero8/video/7678431976705051936?is_from_webapp=1&web_id=7618542682751616534",
+        "archivo_video": "https://archive.org/details/tiktok_angelaperezromero8_7678431976705051936",
+        "confianza": "5 - Muy alto (verificado)",
+        "confianza_valor": 5,
+        "confianza_texto": "Verificado",
+        "publicacion_viral": "https://www.tiktok.com/@angelaperezromero8/video/7678431976705051936?is_from_webapp=1&web_id=7618542682751616534",
+        "archivo_publicacion": "https://archive.ph/VLQ9T",
+        "claim": "\"Inmigrantes intentando invadir una vivienda en Ceuta el 24 de agosto de 2026\".",
+        "rating": "Falso",
+        "rating_categoria": "falso",
+        "comentarios": "Un vídeo grabado en Buenos Aires, Argentina, se hace pasar como un allanamiento de una vivienda en Ceuta protagonizado por supuestos migrantes magrebíes.",
+        "newtral_url": "https://www.newtral.es/inmigrantes-vivienda-ceuta/20260828/",
+        "newtral_titulo": "Este vídeo no muestra a inmigrantes “intentando invadir” una vivienda en Ceuta",
+        "newtral_descripcion": "Este vídeo no muestra a inmigrantes “intentando invadir” una vivienda en Ceuta",
+        "newtral_imagen": "https://www.newtral.es/wp-content/uploads/2026/08/FAKE-Casa-Ocupada-Ceuta.jpg",
+        "fecha_origen": "",
+        "marca_temporal": "9/09/2026 16:42:36"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -5.342350056169325,
+          35.88510998212155
+        ]
+      },
+      "properties": {
+        "zona": "Ceuta (España)",
+        "pais": "España",
+        "video": "data/videos/58489f4952ba6673.mp4",
+        "video_original": "https://video.twimg.com/amplify_video/2088897128877768704/vid/avc1/1024x576/H1scv3as6pb5YtFz.mp4",
+        "archivo_video": "https://archive.org/details/h-1scv-3as-6pb-5-yt-fz",
+        "confianza": "5 - Muy alto (verificado)",
+        "confianza_valor": 5,
+        "confianza_texto": "Verificado",
+        "publicacion_viral": "https://x.com/Anonymous_TA/status/2088897242694341030?s=20",
+        "archivo_publicacion": "https://archive.ph/b2IxS",
+        "claim": "\"Así está Ceuta 18 días después de la entrada masiva. Las calles llenas de magrebíes\".",
+        "rating": "Engañoso",
+        "rating_categoria": "enganoso",
+        "comentarios": "Este vídeo se ha utilizado para presentar la ciudad de Ceuta totalmente tomada por migrantes \"18 días después\" del cruce masivo. En realidad, el vídeo fue grabado el 31 de julio de 2026, un día después de que se desencadenara la crisis fronteriza.",
+        "newtral_url": "https://www.newtral.es/ceuta-colapsada-migrantes/20260828/",
+        "newtral_titulo": "Este vídeo de Ceuta “totalmente colapsada” es del día de la entrada de migrantes",
+        "newtral_descripcion": "Este vídeo de Ceuta “totalmente colapsada” es del día de la entrada de migrantes",
+        "newtral_imagen": "https://www.newtral.es/wp-content/uploads/2026/08/fake-Ceuta-colapsada-migrantes.jpg",
+        "fecha_origen": "",
+        "marca_temporal": "9/09/2026 17:12:06"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.4339139292955392,
+          38.911674190569954
+        ]
+      },
+      "properties": {
+        "zona": "Ibiza (Islas Baleares, España)",
+        "pais": "España",
+        "video": "data/videos/c924841fcde5ff03.mp4",
+        "video_original": "https://video.twimg.com/amplify_video/2093349621691043840/vid/avc1/720x1278/6gJGlIiCUJtAg1KT.mp4",
+        "archivo_video": "https://archive.org/details/6g-jgl-ii-cujt-ag-1-kt",
+        "confianza": "5 - Muy alto (verificado)",
+        "confianza_valor": 5,
+        "confianza_texto": "Verificado",
+        "publicacion_viral": "https://x.com/Rittenreloaded/status/2093349705581211849",
+        "archivo_publicacion": "https://archive.ph/ugklT",
+        "claim": "Dos policías locales registran a un joven inmigrante por intentar robar un coche en Ceuta, como se ve en este vídeo.",
+        "rating": "Engañoso",
+        "rating_categoria": "enganoso",
+        "comentarios": "Este vídeo se ha relacionado con la supuesta detención de un migrante en Ceuta por haber robado un coche. En realidad, las imágenes circulan desde principios de julio ─antes del cruce masivo a Ceuta─ y están grabadas en Ibiza.",
+        "newtral_url": "https://www.newtral.es/inmigrante-detenido-robo-coche-ceuta/20260901/",
+        "newtral_titulo": "Este vídeo de un “inmigrante” retenido por “intentar robar un coche” se grabó en Ibiza y no tiene relación con Ceuta",
+        "newtral_descripcion": "Este vídeo de un “inmigrante” retenido por “intentar robar un coche” se grabó en Ibiza y no tiene relación con Ceuta",
+        "newtral_imagen": "https://www.newtral.es/wp-content/uploads/2026/09/Diseno-sin-titulo-33.jpg",
+        "fecha_origen": "",
+        "marca_temporal": "9/09/2026 17:25:03"
       }
     }
   ]

@@ -159,10 +159,10 @@ function abrirPanelVideo(props) {
   videoContenidoEl.innerHTML = `
     ${player ? `<div class="vc-player">${player}</div>` : ''}
     <h2 class="vc-titulo">${escapeHtml(zona || 'Ubicación sin especificar')}</h2>
+    <span class="vc-badge" style="background:${color};color:${colorTexto}">${escapeHtml(rating || RATING_LABELS.otro)}</span>
     <p class="vc-zona">${escapeHtml(pais || '')}${fecha_origen ? ` | ${escapeHtml(fecha_origen)}` : ''}</p>
     ${claim ? `<p class="vc-claim">${escapeHtml(claim)}</p>` : ''}
     ${comentarios ? `<p class="vc-descripcion">${escapeHtml(comentarios)}</p>` : ''}
-    <span class="vc-badge" style="background:${color};color:${colorTexto}">${escapeHtml(rating || RATING_LABELS.otro)}</span>
     ${confianza ? `<p class="cf-titulo">Confianza en la geolocalización</p>${renderConfianzaPill(confianza_valor, confianza_texto)}` : ''}
     ${newtralCard}
     ${enlaces ? `<div class="vc-enlaces">${enlaces}</div>` : ''}

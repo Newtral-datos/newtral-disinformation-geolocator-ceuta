@@ -27,6 +27,7 @@ import csv
 import hashlib
 import html
 import json
+import math
 import re
 import subprocess
 import unicodedata
@@ -128,6 +129,60 @@ def descargar_video(url):
     return url
 
 
+UMBRAL_SOLAPE_M = 20  # a menos distancia, dos puntos se pintan casi uno encima del otro
+RADIO_SEPARACION_M = 15  # > mitad del umbral, así el grupo separado ya no vuelve a solaparse
+
+
+def distancia_m(lat1, lon1, lat2, lon2):
+    """Distancia entre dos puntos en metros (fórmula de haversine)."""
+    radio_tierra = 6371000
+    p1, p2 = math.radians(lat1), math.radians(lat2)
+    dphi = math.radians(lat2 - lat1)
+    dlambda = math.radians(lon2 - lon1)
+    a = math.sin(dphi / 2) ** 2 + math.cos(p1) * math.cos(p2) * math.sin(dlambda / 2) ** 2
+    return 2 * radio_tierra * math.asin(math.sqrt(a))
+
+
+def separar_puntos_solapados(features):
+    """Vídeos geolocalizados a menos de UMBRAL_SOLAPE_M entre sí se pintan
+    prácticamente encima uno del otro y no se pueden distinguir ni hacer clic
+    por separado en el mapa. Agrupa por proximidad (transitiva: A cerca de B
+    y B cerca de C los mete en el mismo grupo aunque A y C no lo estén entre
+    sí) y reparte cada grupo en corro alrededor de su centroide. Solo cambia
+    la coordenada pintada — no toca ninguna otra propiedad."""
+    coords = [(f["geometry"]["coordinates"][1], f["geometry"]["coordinates"][0]) for f in features]
+    n = len(features)
+    visitados = [False] * n
+
+    for i in range(n):
+        if visitados[i]:
+            continue
+        grupo = [i]
+        visitados[i] = True
+        pendientes = [i]
+        while pendientes:
+            a = pendientes.pop()
+            lat_a, lon_a = coords[a]
+            for b in range(n):
+                if not visitados[b] and distancia_m(lat_a, lon_a, *coords[b]) <= UMBRAL_SOLAPE_M:
+                    visitados[b] = True
+                    grupo.append(b)
+                    pendientes.append(b)
+
+        if len(grupo) < 2:
+            continue
+
+        lat_centro = sum(coords[j][0] for j in grupo) / len(grupo)
+        lon_centro = sum(coords[j][1] for j in grupo) / len(grupo)
+        m_por_grado_lat = 111320
+        m_por_grado_lon = 111320 * math.cos(math.radians(lat_centro))
+        for k, j in enumerate(grupo):
+            angulo = 2 * math.pi * k / len(grupo)
+            dlat = RADIO_SEPARACION_M * math.sin(angulo) / m_por_grado_lat
+            dlon = RADIO_SEPARACION_M * math.cos(angulo) / m_por_grado_lon
+            features[j]["geometry"]["coordinates"] = [lon_centro + dlon, lat_centro + dlat]
+
+
 def confianza_a_valor(texto):
     """'5 - Muy alto (verificado)' -> 5. None si no hay un número inicial."""
     m = CONFIANZA_RE.match(texto)
@@ -227,6 +282,7 @@ def generar():
             })
 
     guardar_cache_og(cache_og)
+    separar_puntos_solapados(features)
     geojson = {"type": "FeatureCollection", "features": features}
     GEOJSON_PATH.write_text(json.dumps(geojson, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     print(f"{len(features)} vídeo(s) escrito(s) en {GEOJSON_PATH.relative_to(Path.cwd())}")
