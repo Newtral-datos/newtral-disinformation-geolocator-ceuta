@@ -109,7 +109,10 @@ function escapeHtml(s) {
 }
 
 function enlace(url, texto) {
-  return url ? `<a href="${url}" target="_blank" rel="noopener">${texto}</a>` : '';
+  if (!url) return '';
+  return `<a class="vc-enlace-chip" href="${url}" target="_blank" rel="noopener">
+    <span class="vc-enlace-icono">↗</span>${texto}
+  </a>`;
 }
 
 /* Tarjeta de previsualización del artículo de Newtral, tipo "link unfurl"

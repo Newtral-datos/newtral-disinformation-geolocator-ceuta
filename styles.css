@@ -307,9 +307,26 @@ html::-webkit-scrollbar, body::-webkit-scrollbar { display: none; }
   overflow: hidden;
 }
 
-.vc-enlaces { display: flex; flex-direction: column; gap: 6px; padding-top: 12px; border-top: 1px solid var(--acento); }
-.vc-enlaces a { font-size: 13px; color: var(--ink); text-decoration: underline; text-underline-offset: 2px; }
-.vc-enlaces a:hover { color: var(--ink-soft); }
+/* Chips en vez de enlaces de texto subrayado apilados (2026-09-09, a
+   petición expresa: "se puede mejorar la estética") — mismo lenguaje de
+   pastilla que el badge de rating y la etiqueta de la tarjeta de Newtral. */
+.vc-enlaces { display: flex; flex-wrap: wrap; gap: 8px; padding-top: 14px; border-top: 1px solid var(--acento); }
+.vc-enlace-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--ink);
+  background: var(--paper);
+  border: 1px solid var(--rule);
+  border-radius: 999px;
+  padding: 6px 12px 6px 10px;
+  text-decoration: none;
+  transition: border-color 0.15s ease, background 0.15s ease;
+}
+.vc-enlace-chip:hover { border-color: var(--acento); background: var(--paper-3); }
+.vc-enlace-icono { font-size: 11px; color: var(--ink-soft); }
 .vc-player {
   width: 100%;
   aspect-ratio: 16 / 9;
