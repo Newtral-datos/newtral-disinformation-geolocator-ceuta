@@ -33,19 +33,21 @@ const RATING_LABELS = {
 };
 
 /* ── Confianza en la geolocalización ──
-   Escala 0-5 del formulario (ver "confianza_valor" en generar_geojson.py).
-   Degradado de los 3 colores corporativos (2026-09-09, a petición expresa):
-   RATING_COLORES.falso (0, sin verificar) → .enganoso → .verdadero (5,
-   verificado) — mismo extremo rojo/menta que el badge de rating, para que
-   "rojo" y "menta" signifiquen siempre lo mismo en toda la interfaz. */
-const CONFIANZA_COLORES = ['#CF023D', '#DA5F3E', '#E5BC3F', '#BBEC57', '#5EEF85', '#01F3B3'];
+   Escala de 5 niveles del formulario, 1 (Muy bajo/hipótesis) a 5 (Muy
+   alto/verificado) — ver "confianza_valor" en generar_geojson.py. Degradado
+   de los 3 colores corporativos (2026-09-09, a petición expresa):
+   RATING_COLORES.falso (1) → .enganoso (3) → .verdadero (5) — mismo extremo
+   rojo/menta que el badge de rating, para que "rojo" y "menta" signifiquen
+   siempre lo mismo en toda la interfaz. */
+const CONFIANZA_COLORES = ['#CF023D', '#DC763E', '#EAEA40', '#76EE7A', '#01F3B3'];
 
-function renderConfianzaPill(valor, textoOriginal) {
+function renderConfianzaPill(valor, texto) {
   if (valor === null || valor === undefined) return '';
+  const indice = valor - 1; // valor es 1-5, el array de colores es 0-4
   const segmentos = CONFIANZA_COLORES
-    .map((c, i) => `<span class="cf-seg${i === valor ? ' cf-seg--activo' : ''}" style="background:${c}"></span>`)
+    .map((c, i) => `<span class="cf-seg${i === indice ? ' cf-seg--activo' : ''}" style="background:${c}"></span>`)
     .join('');
-  const posicion = ((valor + 0.5) / CONFIANZA_COLORES.length) * 100;
+  const posicion = ((indice + 0.5) / CONFIANZA_COLORES.length) * 100;
   // El puntero va FUERA de .cf-segmentos (que recorta en border-radius) — si
   // viviera dentro, ese mismo overflow:hidden que redondea las esquinas de la
   // barra se lo comía entero y nunca llegaba a pintarse.
@@ -56,7 +58,7 @@ function renderConfianzaPill(valor, textoOriginal) {
         <span class="cf-marca" style="left:${posicion.toFixed(1)}%"></span>
       </div>
       <div class="cf-etiquetas"><span>Baja</span><span>Alta</span></div>
-      <p class="cf-texto">${escapeHtml(textoOriginal || '')}</p>
+      <p class="cf-texto">${escapeHtml(texto || '')}</p>
     </div>`;
 }
 
@@ -128,7 +130,7 @@ function renderNewtralCard(url, titulo, descripcion, imagen) {
 
 function abrirPanelVideo(props) {
   const {
-    zona, pais, video, archivo_video, confianza, confianza_valor,
+    zona, pais, video, archivo_video, confianza, confianza_valor, confianza_texto,
     archivo_publicacion, claim, rating, rating_categoria,
     comentarios, newtral_url, newtral_titulo, newtral_descripcion, newtral_imagen,
     fecha_origen,
@@ -153,12 +155,12 @@ function abrirPanelVideo(props) {
 
   videoContenidoEl.innerHTML = `
     ${player ? `<div class="vc-player">${player}</div>` : ''}
-    <span class="vc-badge" style="background:${color};color:${colorTexto}">${escapeHtml(rating || RATING_LABELS.otro)}</span>
     <h2 class="vc-titulo">${escapeHtml(zona || 'Ubicación sin especificar')}</h2>
     <p class="vc-zona">${escapeHtml(pais || '')}${fecha_origen ? ` | ${escapeHtml(fecha_origen)}` : ''}</p>
     ${claim ? `<p class="vc-claim">${escapeHtml(claim)}</p>` : ''}
     ${comentarios ? `<p class="vc-descripcion">${escapeHtml(comentarios)}</p>` : ''}
-    ${confianza ? `<p class="cf-titulo">Confianza en la geolocalización</p>${renderConfianzaPill(confianza_valor, confianza)}` : ''}
+    <span class="vc-badge" style="background:${color};color:${colorTexto}">${escapeHtml(rating || RATING_LABELS.otro)}</span>
+    ${confianza ? `<p class="cf-titulo">Confianza en la geolocalización</p>${renderConfianzaPill(confianza_valor, confianza_texto)}` : ''}
     ${newtralCard}
     ${enlaces ? `<div class="vc-enlaces">${enlaces}</div>` : ''}
   `;
@@ -181,7 +183,7 @@ function renderLeyenda() {
   const claves = ['verdadero', 'enganoso', 'falso', 'otro'];
   const items = claves.map(k => `
     <div class="lp-item">
-      <span class="lp-dot" style="background:${RATING_COLORES[k]}"></span>
+      <span class="lp-dot" style="border-color:${RATING_COLORES[k]}"></span>
       ${RATING_LABELS[k]}
     </div>
   `).join('');
@@ -232,15 +234,15 @@ map.on('load', async () => {
     source: 'videos',
     paint: {
       'circle-radius': ['interpolate', ['linear'], ['zoom'], 8, 5, 16, 10],
-      'circle-color': [
+      'circle-color': RATING_COLORES.verdadero,
+      'circle-stroke-width': 4,
+      'circle-stroke-color': [
         'match', ['get', 'rating_categoria'],
         'falso', RATING_COLORES.falso,
         'enganoso', RATING_COLORES.enganoso,
         'verdadero', RATING_COLORES.verdadero,
         RATING_COLORES.otro,
       ],
-      'circle-stroke-width': 2,
-      'circle-stroke-color': '#494949',
       'circle-stroke-opacity': 0.8,
     },
   });

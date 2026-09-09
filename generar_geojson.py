@@ -49,6 +49,7 @@ OG_RE = {
 DMS_RE = re.compile(r"(\d+)°(\d+)[’'](\d+(?:\.\d+)?)[″\"]([NSEW])")
 DECIMAL_RE = re.compile(r"^\s*(-?\d+(?:\.\d+)?)\s*,\s*(-?\d+(?:\.\d+)?)\s*$")
 CONFIANZA_RE = re.compile(r"^\s*(\d)")
+CONFIANZA_PARENTESIS_RE = re.compile(r"\(([^)]+)\)")
 
 # Categoría normalizada del rating -> color en app.js (RATING_COLORES). Por
 # palabra clave en vez de valor exacto porque Newtral no siempre usa la misma
@@ -133,6 +134,13 @@ def confianza_a_valor(texto):
     return int(m.group(1)) if m else None
 
 
+def confianza_a_texto(texto):
+    """'5 - Muy alto (verificado)' -> 'Verificado' — solo lo de dentro del
+    paréntesis (a petición expresa), no la frase completa del formulario."""
+    m = CONFIANZA_PARENTESIS_RE.search(texto)
+    return m.group(1).capitalize() if m else texto
+
+
 def cargar_cache_og():
     if OG_CACHE_PATH.exists():
         return json.loads(OG_CACHE_PATH.read_text(encoding="utf-8"))
@@ -202,6 +210,7 @@ def generar():
                     "archivo_video": fila.get("Versión archivada", "").strip(),
                     "confianza": confianza,
                     "confianza_valor": confianza_a_valor(confianza),
+                    "confianza_texto": confianza_a_texto(confianza),
                     "publicacion_viral": fila.get("Ejemplo de publicación viral asociada al vídeo", "").strip(),
                     "archivo_publicacion": fila.get("Versión archivada de publicación viral", "").strip(),
                     "claim": fila.get("Claim de publicación viral", "").strip(),
