@@ -400,14 +400,42 @@ html::-webkit-scrollbar, body::-webkit-scrollbar { display: none; }
   padding: 12px 16px 14px;
   font-size: 13px;
 }
+.lp-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  margin-bottom: 2px;
+}
 .lp-titulo {
   font-size: 10px;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.08em;
   color: var(--ink-soft);
-  margin-bottom: 2px;
 }
+/* Botón para quitar la selección de categoría de la leyenda (2026-09-17, a
+   petición expresa): antes solo se podía deseleccionar haciendo click otra
+   vez sobre la misma categoría, poco descubrible. Solo visible mientras hay
+   una categoría fija por click (no durante el hover, que ya se deshace solo
+   al retirar el ratón). */
+.lp-clear {
+  display: none;
+  font-family: inherit;
+  font-size: 9px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--ink-soft);
+  background: none;
+  border: none;
+  padding: 2px 0;
+  cursor: pointer;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+.lp-clear:hover { color: var(--ink); }
+.lp-clear--visible { display: inline-block; }
 .lp-total {
   font-family: var(--font-mono);
   font-size: 11px;

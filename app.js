@@ -271,7 +271,10 @@ function renderLeyenda(conteos) {
     </div>
   `).join('');
   document.getElementById('leyenda-panel').innerHTML = `
-    <div class="lp-titulo">Nivel de verificación</div>
+    <div class="lp-header">
+      <span class="lp-titulo">Nivel de verificación</span>
+      <button id="lp-deseleccionar" class="lp-clear">Ver todos</button>
+    </div>
     ${conteos ? `<div class="lp-total">${conteos.total} vídeos e imágenes monitorizadas</div>` : ''}
     ${items}
   `;
@@ -285,6 +288,11 @@ function renderLeyenda(conteos) {
       aplicarResaltado();
     });
   });
+  document.getElementById('lp-deseleccionar').addEventListener('click', () => {
+    categoriaSeleccionada = null;
+    aplicarResaltado();
+  });
+  aplicarResaltado();
 }
 
 /* ── Resaltado por categoría al pasar el ratón/seleccionar en la leyenda ──
@@ -312,6 +320,8 @@ function aplicarResaltado() {
   document.querySelectorAll('#leyenda-panel .lp-item').forEach(el => {
     el.classList.toggle('lp-item--activo', el.dataset.cat === categoriaSeleccionada);
   });
+  const botonLimpiar = document.getElementById('lp-deseleccionar');
+  if (botonLimpiar) botonLimpiar.classList.toggle('lp-clear--visible', !!categoriaSeleccionada);
 }
 
 /* ── Carga del mapa ── */
