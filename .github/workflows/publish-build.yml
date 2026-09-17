@@ -1,0 +1,50 @@
+name: Publish build to public repo
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch: {}
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout source (private)
+        uses: actions/checkout@v4
+
+      - name: Checkout public repo (build target)
+        uses: actions/checkout@v4
+        with:
+          repository: Newtral-datos/newtral-disinformation-geolocator-ceuta
+          token: ${{ secrets.PUBLIC_REPO_TOKEN }}
+          path: public-build
+
+      - name: Assemble whitelisted build content
+        run: |
+          set -euo pipefail
+          rm -rf _build
+          mkdir -p _build/data/videos
+          cp index.html app.js styles.css _build/
+          cp logo_newtral.png logo-newtral-favicon.png _build/
+          cp public/README.md _build/README.md
+          cp data/videos.geojson _build/data/videos.geojson
+          cp data/videos/*.mp4 _build/data/videos/
+
+      - name: Sync into public repo checkout
+        run: |
+          set -euo pipefail
+          rsync -av --delete --exclude '.git' _build/ public-build/
+
+      - name: Commit and push if changed
+        run: |
+          set -euo pipefail
+          cd public-build
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add -A
+          if git diff --staged --quiet; then
+            echo "No changes to publish."
+          else
+            git commit -m "Sync build from source repo ${GITHUB_SHA:0:7}"
+            git push
+          fi
