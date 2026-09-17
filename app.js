@@ -268,7 +268,7 @@ function renderLeyenda(conteos) {
   `).join('');
   document.getElementById('leyenda-panel').innerHTML = `
     <div class="lp-titulo">Nivel de verificación</div>
-    ${conteos ? `<div class="lp-total">${conteos.total} vídeo${conteos.total === 1 ? '' : 's'} monitoreado${conteos.total === 1 ? '' : 's'}</div>` : ''}
+    ${conteos ? `<div class="lp-total">${conteos.total} vídeos e imágenes monitoreadas</div>` : ''}
     ${items}
   `;
 

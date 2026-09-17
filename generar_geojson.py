@@ -41,6 +41,19 @@ VIDEOS_DIR = Path(__file__).parent / "data" / "videos"
 OG_CACHE_PATH = Path(__file__).parent / "data" / "og_cache.json"
 DESCARGAS_FALLIDAS_PATH = Path(__file__).parent / "data" / "descargas_fallidas.json"
 
+# Recompresión tras la descarga (2026-09-17, a petición expresa) — GitHub avisa
+# a partir de 50 MB por fichero, y un vídeo de esta tanda llegó a 58 MB por
+# durar 7 minutos (el resto de clips virales dura segundos, así que 5 minutos
+# de tope no debería recortar contenido relevante en ningún caso real).
+# Resolución tope de 960px en el lado más largo porque algunas copias vienen
+# ya a 1080x1080 sin necesitarlo para un móvil. H.264/AAC en vez del códec de
+# origen porque las copias de archive.org llegan en AV1, que Safari no
+# reproduce.
+DURACION_MAXIMA_S = 300
+RESOLUCION_MAXIMA_PX = 960
+VIDEO_CRF = "30"
+AUDIO_BITRATE = "96k"
+
 OG_RE = {
     clave: re.compile(
         r'<meta[^>]+(?:property=["\']og:%s["\'][^>]+content=["\']([^"\']*)["\']'
@@ -125,6 +138,38 @@ def _curl_a_archivo(url, destino, referer=None):
     return resultado.stderr.strip() or f"curl salió con código {resultado.returncode}"
 
 
+def comprimir_video(destino):
+    """Recomprime `destino` in situ con ffmpeg (ver constantes arriba): recorta
+    a DURACION_MAXIMA_S, limita resolución a RESOLUCION_MAXIMA_PX en el lado
+    más largo y reencoda a H.264/AAC. Se aplica una sola vez, justo después de
+    descargar — no en cada ejecución, así que no va degradando el vídeo poco a
+    poco en sucesivas pasadas. Si ffmpeg no está instalado o falla, se deja el
+    fichero tal cual (mejor un vídeo sin comprimir que ninguno)."""
+    temporal = destino.with_suffix(".tmp.mp4")
+    filtro_escala = (
+        f"scale='if(gt(iw,ih),min({RESOLUCION_MAXIMA_PX},iw),-2)':"
+        f"'if(gt(iw,ih),-2,min({RESOLUCION_MAXIMA_PX},ih))'"
+    )
+    try:
+        resultado = subprocess.run(
+            ["ffmpeg", "-y", "-i", str(destino), "-t", str(DURACION_MAXIMA_S),
+             "-vf", filtro_escala,
+             "-c:v", "libx264", "-crf", VIDEO_CRF, "-preset", "veryfast",
+             "-c:a", "aac", "-b:a", AUDIO_BITRATE, "-movflags", "+faststart",
+             str(temporal)],
+            capture_output=True, text=True,
+        )
+    except FileNotFoundError:
+        print("[aviso] ffmpeg no está instalado, se deja el vídeo sin comprimir")
+        return
+    if resultado.returncode == 0 and temporal.exists():
+        temporal.replace(destino)
+        print(f"  comprimido: {destino.name} ({destino.stat().st_size // 1024} KB)")
+    else:
+        temporal.unlink(missing_ok=True)
+        print(f"[aviso] no se pudo comprimir {destino.name}: {resultado.stderr.strip()[-200:]}")
+
+
 ARCHIVE_ORG_ID_RE = re.compile(r"archive\.org/details/\s*([^/?#\s]+)")
 EXTENSIONES_VIDEO = (".mp4", ".mov", ".webm", ".mkv", ".m4v", ".avi")
 
@@ -191,6 +236,7 @@ def descargar_video(url, archivo_video=""):
     error = _curl_a_archivo(url, destino, referer="https://twitter.com/")
     if error is None:
         print(f"  descargado: {nombre}")
+        comprimir_video(destino)
         return ruta_relativa, None
     print(f"[aviso] no se pudo descargar el vídeo ({error}), probando copia archivada: {url}")
 
@@ -199,6 +245,7 @@ def descargar_video(url, archivo_video=""):
         error_archivo = _curl_a_archivo(url_archivada, destino)
         if error_archivo is None:
             print(f"  descargado desde archive.org: {nombre}")
+            comprimir_video(destino)
             return ruta_relativa, None
         print(f"[aviso] tampoco se pudo descargar la copia archivada ({error_archivo}): {url_archivada}")
         error = f"{error} | copia archivada: {error_archivo}"
