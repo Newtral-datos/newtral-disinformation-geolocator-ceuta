@@ -76,7 +76,12 @@ def categorizar_rating(rating):
     texto = unicodedata.normalize("NFKD", rating).encode("ascii", "ignore").decode().lower()
     if "falso" in texto:
         return "falso"
-    if "enganos" in texto or "imprecis" in texto or "contexto" in texto:
+    # "Falta contexto" antes que el genérico "enganoso" (2026-09-17, a
+    # petición expresa) — categoría propia en vez de agruparla con
+    # "Engañoso/impreciso", con su propio color en RATING_COLORES (app.js).
+    if "contexto" in texto:
+        return "falta_contexto"
+    if "enganos" in texto or "imprecis" in texto:
         return "enganoso"
     if "verdader" in texto:
         return "verdadero"

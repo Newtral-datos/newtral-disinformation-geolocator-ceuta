@@ -65,22 +65,25 @@ const CENTRO_INICIAL = { center: [-3.7, 40], zoom: 3.5 };
    único bloque de color de toda la interfaz aparte del propio vídeo, a
    propósito, para poder distinguir de un vistazo qué vídeos son falsos. */
 const RATING_COLORES = {
-  falso:     '#CF023D',
-  enganoso:  '#EAEA40',
-  verdadero: '#01F3B3',
-  otro:      '#D8D8D8',
+  falso:          '#CF023D',
+  falta_contexto: '#FF8A00',
+  enganoso:       '#EAEA40',
+  verdadero:      '#01F3B3',
+  otro:           '#D8D8D8',
 };
-// Color de texto del badge (ver abrirPanelVideo): amarillo, menta y gris
-// claro son fondos claros — texto blanco encima no se leería, hace falta
-// tinta oscura. Solo "falso" es lo bastante oscuro para texto blanco.
+// Color de texto del badge (ver abrirPanelVideo): amarillo, naranja, menta y
+// gris claro son fondos claros — texto blanco encima no se leería, hace
+// falta tinta oscura. Solo "falso" es lo bastante oscuro para texto blanco.
 const RATING_TEXTO = {
-  falso:     '#FFFFFF',
-  enganoso:  '#1C1C1C',
-  verdadero: '#1C1C1C',
-  otro:      '#1C1C1C',
+  falso:          '#FFFFFF',
+  falta_contexto: '#1C1C1C',
+  enganoso:       '#1C1C1C',
+  verdadero:      '#1C1C1C',
+  otro:           '#1C1C1C',
 };
 const RATING_LABELS = {
   falso: 'Falso',
+  falta_contexto: 'Falta contexto',
   enganoso: 'Engañoso / impreciso',
   verdadero: 'Verdadero',
   otro: 'Sin clasificar',
@@ -210,13 +213,14 @@ function abrirPanelVideo(props) {
   ].filter(Boolean).join('');
   const newtralCard = renderNewtralCard(newtral_url, newtral_titulo, newtral_descripcion, newtral_imagen);
 
+  const antetitulo = [pais, fecha_origen].filter(Boolean).map(escapeHtml).join(' - ');
+
   videoContenidoEl.innerHTML = `
-    ${pais ? `<span class="vc-antetitulo">${escapeHtml(pais)}</span>` : ''}
+    ${antetitulo ? `<span class="vc-antetitulo">${antetitulo}</span>` : ''}
     ${player ? `<div class="vc-player">${player}</div>` : ''}
     <h2 class="vc-titulo">${escapeHtml(zona || 'Ubicación sin especificar')}</h2>
     <span class="vc-badge" style="background:${color};color:${colorTexto}">${escapeHtml(rating || RATING_LABELS.otro)}</span>
-    ${fecha_origen ? `<p class="vc-zona">${escapeHtml(fecha_origen)}</p>` : ''}
-    ${claim ? `<p class="vc-claim">${escapeHtml(claim)}</p>` : ''}
+    ${claim ? `<p class="vc-contexto-titulo">Afirmación</p><p class="vc-claim">${escapeHtml(claim)}</p>` : ''}
     ${comentarios ? `<p class="vc-contexto-titulo">Contexto</p><p class="vc-descripcion">${escapeHtml(comentarios)}</p>` : ''}
     ${confianza ? `<p class="cf-titulo">Confianza en la geolocalización</p>${renderConfianzaPill(confianza_valor, confianza_texto)}` : ''}
     ${newtralCard}
@@ -244,7 +248,7 @@ async function cargarConteos() {
   try {
     const res = await fetch('data/videos.geojson');
     const geojson = await res.json();
-    const conteos = { total: 0, verdadero: 0, enganoso: 0, falso: 0, otro: 0 };
+    const conteos = { total: 0, verdadero: 0, enganoso: 0, falta_contexto: 0, falso: 0, otro: 0 };
     for (const feature of geojson.features) {
       conteos.total++;
       const cat = feature.properties.rating_categoria;
@@ -258,7 +262,7 @@ async function cargarConteos() {
 }
 
 function renderLeyenda(conteos) {
-  const claves = ['verdadero', 'enganoso', 'falso', 'otro'];
+  const claves = ['verdadero', 'falta_contexto', 'enganoso', 'falso', 'otro'];
   const items = claves.map(k => `
     <div class="lp-item" data-cat="${k}">
       <span class="lp-dot" style="border-color:${RATING_COLORES[k]}"></span>
@@ -268,7 +272,7 @@ function renderLeyenda(conteos) {
   `).join('');
   document.getElementById('leyenda-panel').innerHTML = `
     <div class="lp-titulo">Nivel de verificación</div>
-    ${conteos ? `<div class="lp-total">${conteos.total} vídeos e imágenes monitoreadas</div>` : ''}
+    ${conteos ? `<div class="lp-total">${conteos.total} vídeos e imágenes monitorizadas</div>` : ''}
     ${items}
   `;
 
@@ -372,6 +376,7 @@ map.on('load', async () => {
       'circle-stroke-color': [
         'match', ['get', 'rating_categoria'],
         'falso', RATING_COLORES.falso,
+        'falta_contexto', RATING_COLORES.falta_contexto,
         'enganoso', RATING_COLORES.enganoso,
         'verdadero', RATING_COLORES.verdadero,
         RATING_COLORES.otro,
