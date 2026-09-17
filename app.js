@@ -211,7 +211,7 @@ async function cargarConteos() {
 function renderLeyenda(conteos) {
   const claves = ['verdadero', 'enganoso', 'falso', 'otro'];
   const items = claves.map(k => `
-    <div class="lp-item">
+    <div class="lp-item" data-cat="${k}">
       <span class="lp-dot" style="border-color:${RATING_COLORES[k]}"></span>
       <span class="lp-label">${RATING_LABELS[k]}</span>
       ${conteos ? `<span class="lp-count">${conteos[k] || 0}</span>` : ''}
@@ -222,6 +222,43 @@ function renderLeyenda(conteos) {
     ${conteos ? `<div class="lp-total">${conteos.total} vídeo${conteos.total === 1 ? '' : 's'} monitoreado${conteos.total === 1 ? '' : 's'}</div>` : ''}
     ${items}
   `;
+
+  document.querySelectorAll('#leyenda-panel .lp-item').forEach(el => {
+    const cat = el.dataset.cat;
+    el.addEventListener('mouseenter', () => { categoriaHover = cat; aplicarResaltado(); });
+    el.addEventListener('mouseleave', () => { categoriaHover = null; aplicarResaltado(); });
+    el.addEventListener('click', () => {
+      categoriaSeleccionada = categoriaSeleccionada === cat ? null : cat;
+      aplicarResaltado();
+    });
+  });
+}
+
+/* ── Resaltado por categoría al pasar el ratón/seleccionar en la leyenda ──
+   (2026-09-17, a petición expresa) Atenúa los puntos que no son de la
+   categoría activa en vez de ocultarlos del todo — así se mantiene el
+   contexto geográfico del resto de vídeos mientras se resalta un rating.
+   Hover (categoriaHover) manda mientras dura, y al retirar el ratón se
+   vuelve a la selección fija por click (categoriaSeleccionada), que persiste
+   hasta volver a hacer click en la misma categoría. */
+const CIRCULO_OPACIDAD_ATENUADA = 0.12;
+let categoriaHover = null;
+let categoriaSeleccionada = null;
+
+function aplicarResaltado() {
+  const cat = categoriaHover || categoriaSeleccionada;
+  const conCase = (normal) => cat
+    ? ['case', ['==', ['get', 'rating_categoria'], cat], normal, CIRCULO_OPACIDAD_ATENUADA]
+    : normal;
+
+  map.setPaintProperty('videos-circle-halo', 'circle-opacity', conCase(0.8));
+  map.setPaintProperty('videos-circle', 'circle-opacity', conCase(1));
+  map.setPaintProperty('videos-circle', 'circle-stroke-opacity', conCase(0.8));
+  map.setPaintProperty('videos-circle-borde-interior', 'circle-stroke-opacity', conCase(0.8));
+
+  document.querySelectorAll('#leyenda-panel .lp-item').forEach(el => {
+    el.classList.toggle('lp-item--activo', el.dataset.cat === categoriaSeleccionada);
+  });
 }
 
 /* ── Carga del mapa ── */
@@ -259,6 +296,22 @@ map.on('load', async () => {
     data: 'data/videos.geojson',
   });
 
+  /* Halo debajo del círculo principal — borde doble (2026-09-17, a petición
+     expresa, "probemos") para que los puntos destaquen más sobre el basemap:
+     un anillo extra justo por fuera del borde de color de rating, en gris
+     oscuro y semitransparente en vez de otro color de rating, para no
+     interferir con el código de colores existente. */
+  map.addLayer({
+    id: 'videos-circle-halo',
+    type: 'circle',
+    source: 'videos',
+    paint: {
+      'circle-radius': ['interpolate', ['linear'], ['zoom'], 8, 11, 16, 16],
+      'circle-color': '#494949',
+      'circle-opacity': 0.8,
+    },
+  });
+
   map.addLayer({
     id: 'videos-circle',
     type: 'circle',
@@ -274,6 +327,24 @@ map.on('load', async () => {
         'verdadero', RATING_COLORES.verdadero,
         RATING_COLORES.otro,
       ],
+      'circle-stroke-opacity': 0.8,
+    },
+  });
+
+  /* Mismo borde doble también en el círculo central (2026-09-17, a petición
+     expresa) — un anillo fino en el mismo gris oscuro justo donde el relleno
+     verde se encuentra con el aro de color de rating, encima de éste (mismo
+     radio que el relleno, para que el propio circle-stroke lo dibuje hacia
+     fuera exactamente ahí). */
+  map.addLayer({
+    id: 'videos-circle-borde-interior',
+    type: 'circle',
+    source: 'videos',
+    paint: {
+      'circle-radius': ['interpolate', ['linear'], ['zoom'], 8, 5, 16, 10],
+      'circle-opacity': 0,
+      'circle-stroke-width': 1,
+      'circle-stroke-color': '#494949',
       'circle-stroke-opacity': 0.8,
     },
   });

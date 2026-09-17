@@ -412,7 +412,22 @@ html::-webkit-scrollbar, body::-webkit-scrollbar { display: none; }
   margin-bottom: 4px;
   border-bottom: 1px solid var(--rule);
 }
-.lp-item { display: flex; align-items: center; gap: 9px; }
+/* Interactivos (2026-09-17, a petición expresa): hover/click resalta en el
+   mapa solo los puntos de esa categoría (ver aplicarResaltado en app.js).
+   Márgenes negativos para que el fondo de hover/activo no se salga del
+   panel, ya que .leyenda-panel tiene su propio padding. */
+.lp-item {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  margin: 0 -8px;
+  padding: 3px 8px;
+  border-radius: var(--radius);
+  cursor: pointer;
+  transition: background 0.12s ease;
+}
+.lp-item:hover { background: var(--paper-3); }
+.lp-item--activo { background: var(--paper-3); box-shadow: inset 2px 0 0 var(--acento); }
 .lp-label { flex: 1 1 auto; }
 .lp-count {
   font-family: var(--font-mono);
