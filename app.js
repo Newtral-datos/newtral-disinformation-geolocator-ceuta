@@ -1,3 +1,52 @@
+/* ── Control de dominio ──
+   Barrera de tráfico (2026-09-17, a petición expresa), no seguridad real:
+   cualquiera con las herramientas de desarrollador puede saltársela — solo
+   pretende desviar el tráfico casual que llegue por la URL de GitHub Pages
+   directamente, o por un iframe embebido en un dominio que no sea Newtral,
+   de vuelta al artículo original en vez de dejarlo ver el mapa suelto.
+   Todo el script vive dentro de esta IIFE para poder cortar la ejecución con
+   un `return` en cuanto se detecta un dominio no autorizado, sin tener que
+   reindentar el resto del fichero dentro de un condicional. */
+(function () {
+
+  const DOMINIOS_PERMITIDOS = ['newtral.es', 'localhost', '127.0.0.1'];
+  const URL_DESTINO_BLOQUEO = 'https://www.newtral.es/repositorio-desinformacion-videos-ceuta/';
+
+  function hostnamePermitido(hostname) {
+    return DOMINIOS_PERMITIDOS.some(d => hostname === d || hostname.endsWith('.' + d));
+  }
+
+  function accesoAutorizado() {
+    // Visita directa (no embebido en iframe): manda el dominio del propio documento.
+    if (window.self === window.top) {
+      return hostnamePermitido(window.location.hostname);
+    }
+    // Embebido en iframe: no podemos leer window.top.location (cross-origin),
+    // así que el dominio que lo incrusta se identifica por el referrer. Sin
+    // referrer no hay forma de verificar quién lo embebe — se bloquea.
+    try {
+      return Boolean(document.referrer) && hostnamePermitido(new URL(document.referrer).hostname);
+    } catch (e) {
+      return false;
+    }
+  }
+
+  function mostrarBloqueoAcceso() {
+    document.body.innerHTML = `
+      <div class="acceso-bloqueado">
+        <span class="ab-eyebrow">Vídeos de Ceuta — mapa</span>
+        <h1 class="ab-titulo">Este contenido solo está disponible en Newtral</h1>
+        <p class="ab-texto">Ir a la publicación original</p>
+        <a class="ab-boton" href="${URL_DESTINO_BLOQUEO}">Ir a newtral.es</a>
+      </div>
+    `;
+  }
+
+  if (!accesoAutorizado()) {
+    mostrarBloqueoAcceso();
+    return;
+  }
+
 /* ── Centro inicial ──
    Vista por defecto: toda Europa (2026-09-17, a petición expresa) — centro
    aproximado del continente y zoom bajo para que quepa de punta a punta sin
@@ -358,3 +407,5 @@ map.on('load', async () => {
 
   renderLeyenda(await cargarConteos());
 });
+
+})();

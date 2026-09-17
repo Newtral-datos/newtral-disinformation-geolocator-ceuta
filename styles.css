@@ -30,9 +30,14 @@
      grises de la ficha de vídeo y el borde de la leyenda. */
   --acento: #01F3B3;
 
+  /* Una sola familia en toda la interfaz (2026-09-17, a petición expresa) —
+     probando ahora con Helvetica Neue en vez de IBM Plex Mono (que se había
+     probado justo antes, ver historial). Las tres variables se dejan
+     apuntando al mismo valor en vez de fundirlas en una sola, para no tener
+     que tocar cada regla que ya distingue "título"/"cuerpo"/"mono". */
   --font-display: 'Helvetica Neue', Helvetica, Arial, sans-serif;
   --font-body:    'Helvetica Neue', Helvetica, Arial, sans-serif;
-  --font-mono:    'IBM Plex Mono', 'SFMono-Regular', Consolas, monospace;
+  --font-mono:    'Helvetica Neue', Helvetica, Arial, sans-serif;
 
   --radius: 3px;
   --shadow-hard: 3px 3px 0 rgba(28,28,28,0.16);
@@ -477,3 +482,60 @@ html::-webkit-scrollbar, body::-webkit-scrollbar { display: none; }
   .video-panel { width: 100vw; }
   .leyenda-panel { left: 8px; bottom: 8px; padding: 10px 12px 12px; }
 }
+
+/* ── Bloqueo por dominio ──
+   Pantalla que sustituye todo el body (ver mostrarBloqueoAcceso en app.js)
+   cuando el mapa se abre fuera de newtral.es — mismo lenguaje visual que el
+   resto (tinta sobre papel + único acento verde corporativo), a pantalla
+   completa porque en este caso no hay mapa detrás que mostrar. */
+.acceso-bloqueado {
+  position: fixed;
+  inset: 0;
+  z-index: 100;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 10px;
+  padding: 32px;
+  background: var(--paper);
+  color: var(--ink);
+}
+.ab-eyebrow {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+}
+.ab-titulo {
+  max-width: 440px;
+  font-family: var(--font-display);
+  font-size: 22px;
+  font-weight: 600;
+  margin: 0;
+}
+.ab-texto {
+  max-width: 380px;
+  font-size: 14px;
+  line-height: 1.5;
+  color: var(--ink-soft);
+  margin: 0 0 8px;
+}
+.ab-boton {
+  display: inline-block;
+  font-family: var(--font-body);
+  font-size: 14px;
+  font-weight: 600;
+  color: #1C1C1C;
+  background: var(--acento);
+  border-radius: 999px;
+  padding: 12px 26px;
+  text-decoration: none;
+  box-shadow: var(--shadow-hard);
+  transition: transform 0.1s ease;
+}
+.ab-boton:hover { transform: translateY(-1px); }
+.ab-boton:active { transform: translateY(0); box-shadow: 1px 1px 0 rgba(28,28,28,0.16); }
