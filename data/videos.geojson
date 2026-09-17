@@ -320,6 +320,710 @@
         "fecha_origen": "",
         "marca_temporal": "9/09/2026 17:25:03"
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -5.328247411069944,
+          35.8956137772387
+        ]
+      },
+      "properties": {
+        "zona": "Ceuta (España)",
+        "pais": "España",
+        "video": "data/videos/6ebea9f711e71828.mp4",
+        "video_original": "https://video.twimg.com/amplify_video/2098386330816253960/vid/avc1/576x1024/D2fdxyyXNk9BxHGn.mp4",
+        "archivo_video": "https://archive.org/details/d-2fdxyy-xnk-9-bx-hgn",
+        "confianza": "5 - Muy alto (verificado)",
+        "confianza_valor": 5,
+        "confianza_texto": "Verificado",
+        "publicacion_viral": "https://x.com/burgosusana/status/2098386355633987784",
+        "archivo_publicacion": "https://archive.is/ADQqJ",
+        "claim": "\"Invasores marroquíes roban los techos del puerto de Ceuta para construir sus chabolas\".",
+        "rating": "Falso",
+        "rating_categoria": "falso",
+        "comentarios": "Son trabajadores que reparan el tejado de un taller en Ceuta. “No están robando nada. Les pedí que me ayudaran a sacar la chapa porque está podrida y estoy poniendo chapa nueva”, ha explicado el dueño a Newtral.",
+        "newtral_url": "https://www.newtral.es/roban-tejado-taller-ceuta-falso/20260913/",
+        "newtral_titulo": "El dueño del taller de este vídeo en Ceuta desmiente que le estén robando el tejado: reemplazan la cubierta",
+        "newtral_descripcion": "El dueño del taller de este vídeo en Ceuta desmiente que le estén robando el tejado: reemplazan la cubierta",
+        "newtral_imagen": "https://www.newtral.es/wp-content/uploads/2026/09/Video-viral-4.jpg",
+        "fecha_origen": "",
+        "marca_temporal": "14/09/2026 12:03:01"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.377672626981443,
+          -33.92436200367971
+        ]
+      },
+      "properties": {
+        "zona": "Ciudad del Cabo (Sudáfrica)",
+        "pais": "Otro",
+        "video": "data/videos/733ebf0a2a45594f.mp4",
+        "video_original": "https://video.twimg.com/amplify_video/2087610397939335168/vid/avc1/1320x1790/GcQAQkc10p80WNN3.mp4",
+        "archivo_video": "https://archive.org/details/gc-qaqkc-10p-80-wnn-3",
+        "confianza": "5 - Muy alto (verificado)",
+        "confianza_valor": 5,
+        "confianza_texto": "Verificado",
+        "publicacion_viral": "https://www.instagram.com/reels/Db88bn9oAVR/",
+        "archivo_publicacion": "https://archive.li/U2RWI",
+        "claim": "\"Graban a un inmigrante comiéndose una rata en Ceuta\".",
+        "rating": "Falso",
+        "rating_categoria": "falso",
+        "comentarios": "El vídeo está grabado en Ciudad del Cabo (Sudáfrica), junto a la playa de Saunders. Los primeros registros de estas imágenes datan de enero de 2024. La grabación, por tanto, no guarda ninguna relación con la crisis ocurrida en Ceuta en julio de 2026.",
+        "newtral_url": "https://www.newtral.es/inmigrante-rata-ceuta/20260814/",
+        "newtral_titulo": "No es un “inmigrante” comiéndose una rata en Ceuta, el vídeo fue grabado en Sudáfrica en 2024",
+        "newtral_descripcion": "No es un “inmigrante” comiéndose una rata en Ceuta, el vídeo fue grabado en Sudáfrica en 2024",
+        "newtral_imagen": "https://www.newtral.es/wp-content/uploads/2026/08/Diseno-sin-titulo-1.jpg",
+        "fecha_origen": "",
+        "marca_temporal": "14/09/2026 12:31:53"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -5.345061135759455,
+          35.86648684820747
+        ]
+      },
+      "properties": {
+        "zona": "Bab Sebta (Castillejos/Fnideq, Marruecos)",
+        "pais": "Marruecos",
+        "video": "data/videos/efdf908f8def3e73.mp4",
+        "video_original": "https://video.twimg.com/amplify_video/2087644243728678912/vid/avc1/576x1024/JIYNmn_0CvJU9xMB.mp4",
+        "archivo_video": "https://archive.org/details/jiynmn-0-cv-ju-9x-mb",
+        "confianza": "5 - Muy alto (verificado)",
+        "confianza_valor": 5,
+        "confianza_texto": "Verificado",
+        "publicacion_viral": "https://x.com/RadioGenoa/status/2087644282773508405",
+        "archivo_publicacion": "https://archive.ph/MxNvl",
+        "claim": "\"Inmigrantes queman coches en Ceuta\".",
+        "rating": "Engañoso",
+        "rating_categoria": "enganoso",
+        "comentarios": "Los vehículos calcinados que muestran las imágenes no están en Ceuta, sino en la estación de taxis de Bab Sebta, próxima a la frontera, pero en territorio marroquí. Agencias internacionales reportaron disturbios en esta zona el 30 de julio, con enfrentamientos entre la policía marroquí y quienes aspiraban a cruzar a Ceuta.",
+        "newtral_url": "https://www.newtral.es/vehiculos-quemados-ceuta/20260814/",
+        "newtral_titulo": "Estas imágenes de vehículos quemados no son de Ceuta, se grabaron en la parte marroquí de la frontera",
+        "newtral_descripcion": "Estas imágenes de vehículos quemados no son de Ceuta, se grabaron en la parte marroquí de la frontera",
+        "newtral_imagen": "https://www.newtral.es/wp-content/uploads/2026/08/cartelas-84.jpg",
+        "fecha_origen": "",
+        "marca_temporal": "14/09/2026 12:45:42"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -5.3153389795171115,
+          35.888277056168356
+        ]
+      },
+      "properties": {
+        "zona": "Ceuta (España)",
+        "pais": "España",
+        "video": "data/videos/9886d38ea120ab45.mp4",
+        "video_original": "https://video.twimg.com/amplify_video/2087170760422887424/vid/avc1/720x912/g3Fv0dEvNtppnOZv.mp4",
+        "archivo_video": "https://archive.org/details/g3Fv0dEvNtppnOZv",
+        "confianza": "5 - Muy alto (verificado)",
+        "confianza_valor": 5,
+        "confianza_texto": "Verificado",
+        "publicacion_viral": "https://x.com/javiernegre10/status/2087172712670154808",
+        "archivo_publicacion": "https://archive.li/QSWLn",
+        "claim": "\"Los migrantes que han cruzado a Ceuta atacan a un vehículo de la Policía Nacional\".",
+        "rating": "Engañoso",
+        "rating_categoria": "enganoso",
+        "comentarios": "Las imágenes fueron grabadas el 24 de mayo de 2024, coincidiendo con una visita del presidente de Vox, Santiago Abascal, a Ceuta. Por tanto, el vídeo no guarda relación con la crisis desencadenada el 30 de julio de 2026.",
+        "newtral_url": "https://www.newtral.es/jovenes-ceuta-policia/20260812/",
+        "newtral_titulo": "El vídeo de unos jóvenes golpeando un coche policial es de Ceuta, pero antiguo y sin relación con la crisis actual",
+        "newtral_descripcion": "El vídeo de unos jóvenes golpeando un coche policial es de Ceuta, pero antiguo y sin relación con la crisis actual",
+        "newtral_imagen": "https://www.newtral.es/wp-content/uploads/2026/08/plantilla-NPP-5.jpg",
+        "fecha_origen": "",
+        "marca_temporal": "14/09/2026 13:01:37"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -8.092303601270705,
+          31.72344003571244
+        ]
+      },
+      "properties": {
+        "zona": "Harbil (Marrakech, Marruecos)",
+        "pais": "Marruecos",
+        "video": "data/videos/561f2e95fba35931.mp4",
+        "video_original": "https://video.twimg.com/amplify_video/2083902506388574208/vid/avc1/576x1024/259qniPMmsIrCuxZ.mp4",
+        "archivo_video": "https://archive.org/details/259qni-pmms-ir-cux-z",
+        "confianza": "3 - Medio (probable)",
+        "confianza_valor": 3,
+        "confianza_texto": "Probable",
+        "publicacion_viral": "https://x.com/DiosaKhalinda/status/2083902623187353718",
+        "archivo_publicacion": "https://archive.li/9v8L4",
+        "claim": "\"Policías marroquíes establecieron puntos de avituallamiento para dar alimentos a los migrantes que se dirigían a Ceuta\".",
+        "rating": "Falta contexto",
+        "rating_categoria": "enganoso",
+        "comentarios": "Medios de Marruecos publicaron estas imágenes el 29 de julio de 2026 y las enmarcaron en una operación de la Gendarmería en Harbil (Marrakech) para incautar alimentos en mal estado que se estaban poniendo a la venta. \n\nHarbil está a más de 500 kilómetros de Ceuta. Newtral no ha establecido la geolocalización exacta, aunque se considera probable que las imágenes correspondan a esta localidad.",
+        "newtral_url": "https://www.newtral.es/policia-marroqui-alimentos-puntos-avituallamiento-inmigrantes-ceuta/20260805/",
+        "newtral_titulo": "Qué sabemos del vídeo de policías marroquíes supuestamente llevando alimentos a los migrantes que entraron en Ceuta",
+        "newtral_descripcion": "❓ Qué sabemos del vídeo de policías marroquíes supuestamente llevando alimentos a los migrantes que entraron en Ceuta. Medios marroquíes lo atribuyen a una incautación de alimentos en mal estado.",
+        "newtral_imagen": "https://www.newtral.es/wp-content/uploads/2026/08/image-19.jpg",
+        "fecha_origen": "",
+        "marca_temporal": "14/09/2026 13:27:00"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -5.345393685751748,
+          35.86648684820747
+        ]
+      },
+      "properties": {
+        "zona": "Bab Sebta (Castillejos/Fnideq, Marruecos)",
+        "pais": "Marruecos",
+        "video": "https://pbs.twimg.com/card_img/2097533215112155136/mf87_Chr?format=jpg&name=small",
+        "video_original": "https://pbs.twimg.com/card_img/2097533215112155136/mf87_Chr?format=jpg&name=small",
+        "archivo_video": "https://archive.li/HkoOE",
+        "confianza": "5 - Muy alto (verificado)",
+        "confianza_valor": 5,
+        "confianza_texto": "Verificado",
+        "publicacion_viral": "https://x.com/iblascor/status/2097606159293095974",
+        "archivo_publicacion": "https://archive.li/uRH8z",
+        "claim": "\"Imagen por satélite demuestra que Marruecos fletó coches de alquiler para trasladar a migrantes hacia Ceuta\".",
+        "rating": "Falta contexto",
+        "rating_categoria": "enganoso",
+        "comentarios": "La imagen satelital muestra la parada de taxis de Bab Sebta, en Castillejos. Imágenes por satélite extraídas con Google Earth en diferentes años muestran que en este lugar suele haber coches blancos estacionados de manera similar a la que muestra la imagen viral. Los coches blancos coinciden con taxis.",
+        "newtral_url": "https://www.newtral.es/imagen-coches-marruecos-ceuta/20260910/",
+        "newtral_titulo": "Qué sabemos de la imagen satelital de supuestos “coches fletados por Marruecos” para “invadir” Ceuta",
+        "newtral_descripcion": "❓Qué sabemos de la imagen satelital de supuestos “coches fletados por Marruecos” para “invadir” Ceuta.",
+        "newtral_imagen": "https://www.newtral.es/wp-content/uploads/2026/09/cartelas-2026-09-10T133307.188.jpg",
+        "fecha_origen": "",
+        "marca_temporal": "14/09/2026 14:05:34"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -5.347458658075869,
+          35.85694360129094
+        ]
+      },
+      "properties": {
+        "zona": "Castillejos/Fnideq (Marruecos)",
+        "pais": "Marruecos",
+        "video": "data/videos/658d0c240d8e13b8.mp4",
+        "video_original": "https://video.twimg.com/amplify_video/2093396862766022656/vid/avc1/320x320/l9V6xrNGUvaySu28.mp4",
+        "archivo_video": "https://archive.org/details/l9V6xrNGUvaySu28",
+        "confianza": "5 - Muy alto (verificado)",
+        "confianza_valor": 5,
+        "confianza_texto": "Verificado",
+        "publicacion_viral": "https://x.com/RobertoLai74153/status/2093396873855770659",
+        "archivo_publicacion": "https://archive.li/paj2y",
+        "claim": "\"Inmigrantes lanzan piedras a la policía española en Ceuta\"",
+        "rating": "Falso",
+        "rating_categoria": "falso",
+        "comentarios": "Las imágenes fueron grabadas la noche del 30 de julio de 2026 en la Avenida de Hasan II de Castillejos/Fnideq (Marruecos), a la altura del Hotel Senator. En esa zona se reportaron disturbios y enfrentamientos entre quienes aspiraban a cruzar a Ceuta y la policía marroquí.",
+        "newtral_url": "https://www.newtral.es/inmigrantes-piedras-policia-ceuta/20260909/",
+        "newtral_titulo": "Este vídeo no muestra a inmigrantes lanzando piedras contra la policía española en Ceuta",
+        "newtral_descripcion": "Este vídeo no muestra a inmigrantes lanzando piedras contra la policía española en Ceuta",
+        "newtral_imagen": "https://www.newtral.es/wp-content/uploads/2026/09/fake-inmigrantes-piedras-policia-Ceuta.jpg",
+        "fecha_origen": "",
+        "marca_temporal": "14/09/2026 15:36:17"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -5.34597977161492,
+          35.86670135355073
+        ]
+      },
+      "properties": {
+        "zona": "Castillejos/Fnideq (Marruecos)",
+        "pais": "Marruecos",
+        "video": "data/videos/a1a2ed3f064cbfc8.mp4",
+        "video_original": "https://scontent-sea5-1.cdninstagram.com/o1/v/t2/f2/m86/AQN4LqPs_MwzRh3BUoJW6foFpRKfIUuFRki7cN3oqpaCHnApY-G8YozKIMmx2pdRlsP6K2xqhiNesdKK_sFaAxiKdDL8abzltNLbVKA.mp4?_nc_cat=107&_nc_sid=5e9851&_nc_ht=scontent-sea5-1.cdninstagram.com&_nc_ohc=FG025Dj8jgsQ7kNvwEQSmAV&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5JTlNUQUdSQU0uQ0xJUFMuQzMuNzIwLmRhc2hfYmFzZWxpbmVfMV92MSIsInhwdl9hc3NldF9pZCI6MTgxMTc2ODU1OTU1MDUxMTYsImFzc2V0X2FnZV9kYXlzIjo0NSwidmlfdXNlY2FzZV9pZCI6MTAwOTksImR1cmF0aW9uX3MiOjI5LCJ1cmxnZW5fc291cmNlIjoid3d3In0%3D&ccb=17-1&vs=c3ead48092e70254&_nc_vs=HBksFQIYUmlnX3hwdl9yZWVsc19wZXJtYW5lbnRfc3JfcHJvZC80OTQ4REUyNTAxQkVGMjM5MkZFOEIxMUZERUE0ODE5NV92aWRlb19kYXNoaW5pdC5tcDQVAALIARIAFQIYUWlnX3hwdl9wbGFjZW1lbnRfcGVybWFuZW50X3YyL0Q0NEE0M0RFNDdCRUVGRDA2MTBDNTA2QTNBNjM2REEzX2F1ZGlvX2Rhc2hpbml0Lm1wNBUCAsgBEgAoABgAGwKIB3VzZV9vaWwBMRJwcm9ncmVzc2l2ZV9yZWNpcGUBMRUAACa4h5ThjPyuQBUCKAJDMywXQD3EGJN0vGoYEmRhc2hfYmFzZWxpbmVfMV92MREAdf4HZeadAQA&_nc_gid=soqEQOKWXT8CeIsncBZHIA&_nc_ss=706cf&_nc_zt=28&oh=00_AQLXQyFNwj2svze6ew-HDLEWVIPxNG_gVoDfvxc5kMuiPg&oe=6AA9F094",
+        "archivo_video": "https://archive.org/details/aqn-4-lq-ps-mwz-rh-3-buo-jw-6fo-fp-rkf-iuu-frki-7c-n-3oqpa-chn-ap-y-g-8-yoz-kimm",
+        "confianza": "5 - Muy alto (verificado)",
+        "confianza_valor": 5,
+        "confianza_texto": "Verificado",
+        "publicacion_viral": "https://www.instagram.com/reels/DbdC0ZhCVMj/",
+        "archivo_publicacion": "https://archive.li/glH34",
+        "claim": "\"Intervención de las fuerzas de seguridad para frustrar los intentos de entrar en la Ceuta ocupada\".",
+        "rating": "Verdadero",
+        "rating_categoria": "verdadero",
+        "comentarios": "El vídeo corresponde al 30 de julio de 2026 y está grabado junto a la estación de taxis de Bab Sebta, muy próxima a la frontera. En concreto, las imágenes muestran la carretera que conecta la N-13 con la N-16 en dirección a Tánger. En esta zona se reportaron disturbios y enfrentamientos entre quienes aspiraban a cruzar a Ceuta y las fuerzas marroquíes.",
+        "newtral_url": "https://www.newtral.es/video-agentes-marroquies-frontera-ceuta/20260906/",
+        "newtral_titulo": "Qué sabemos (y qué no) sobre este vídeo de agentes marroquíes cerca de la frontera con Ceuta",
+        "newtral_descripcion": "🔎 Qué sabemos (y qué no) sobre este vídeo de agentes marroquíes cerca de la frontera con Ceuta",
+        "newtral_imagen": "https://www.newtral.es/wp-content/uploads/2026/09/Diseno-sin-titulo-1.jpg",
+        "fecha_origen": "",
+        "marca_temporal": "14/09/2026 16:58:58"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -5.345948,
+          35.863457
+        ]
+      },
+      "properties": {
+        "zona": "Castillejos/Fnideq (Marruecos)",
+        "pais": "Marruecos",
+        "video": "data/videos/aa90dc0ef4837f0d.mp4",
+        "video_original": "https://video.twimg.com/amplify_video/2088712463659196416/vid/avc1/720x1280/ytHYLQ95fS4KsGTH.mp4",
+        "archivo_video": "https://archive.org/details/ytHYLQ95fS4KsGTH",
+        "confianza": "5 - Muy alto (verificado)",
+        "confianza_valor": 5,
+        "confianza_texto": "Verificado",
+        "publicacion_viral": "https://x.com/UACD_Youtube/status/2088893755357110616",
+        "archivo_publicacion": "https://archive.li/UfPPv",
+        "claim": "\"Nuevo intento de invasión a Ceuta el 15 de agosto de 2026\"",
+        "rating": "Engañoso",
+        "rating_categoria": "enganoso",
+        "comentarios": "Imágenes grabadas en Castillejos/Fnideq en la madrugada del 31 de julio de 2026. El vídeo muestra las proximidades de la frontera con Ceuta.",
+        "newtral_url": "https://www.newtral.es/video-nuevo-cruce-masivo-migrantes-ceuta/20260816/",
+        "newtral_titulo": "Este vídeo no muestra un nuevo cruce masivo de migrantes a Ceuta: circula desde la entrada de julio",
+        "newtral_descripcion": "Este vídeo no muestra un nuevo cruce masivo de migrantes a Ceuta: circula desde la entrada de julio",
+        "newtral_imagen": "https://www.newtral.es/wp-content/uploads/2026/08/Diseno-sin-titulo-1-1.jpg",
+        "fecha_origen": "",
+        "marca_temporal": "14/09/2026 17:35:06"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -5.345686303082339,
+          35.86412884360806
+        ]
+      },
+      "properties": {
+        "zona": "Castillejos/Fnideq (Marruecos)",
+        "pais": "Marruecos",
+        "video": "data/videos/2701ea7ed3871598.mp4",
+        "video_original": "https://video.twimg.com/amplify_video/2089049349926047744/vid/avc1/576x768/awuvKG0oPMtfamDM.mp4",
+        "archivo_video": "https://archive.org/details/awuvKG0oPMtfamDM",
+        "confianza": "5 - Muy alto (verificado)",
+        "confianza_valor": 5,
+        "confianza_texto": "Verificado",
+        "publicacion_viral": "https://x.com/nidhisj2001/status/2089049677681565919",
+        "archivo_publicacion": "https://archive.ph/rePsA",
+        "claim": "\"15 de agosto: nuevo intento de asalto a la valla de Ceuta\".",
+        "rating": "Engañoso",
+        "rating_categoria": "enganoso",
+        "comentarios": "Vídeo grabado el 31 de julio de 2026. Fuerzas de seguridad marroquíes utilizan cañones de agua mientras multitudes se congregan cerca de la frontera con Ceuta.",
+        "newtral_url": "https://www.newtral.es/monte-migrantes-ceuta-15-agosto/20260817/",
+        "newtral_titulo": "Esta grabación desde un monte no muestra a migrantes entrando por Ceuta el 15 de agosto, son imágenes de julio",
+        "newtral_descripcion": "Esta grabación desde un monte no muestra a migrantes entrando por Ceuta el 15 de agosto, son imágenes de julio",
+        "newtral_imagen": "https://www.newtral.es/wp-content/uploads/2026/08/cartelas-87.jpg",
+        "fecha_origen": "",
+        "marca_temporal": "14/09/2026 18:53:12"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.4456950331431626,
+          43.60654303592826
+        ]
+      },
+      "properties": {
+        "zona": "Toulouse (Francia)",
+        "pais": "Otro",
+        "video": "data/videos/f94de67fed3a8cc8.mp4",
+        "video_original": "https://video-sea5-1.xx.fbcdn.net/o1/v/t2/f2/m266/AQOwHYFzo8U_gNDa0eOLsE7XnISIcAYaEbgaC6sXK2Zbd_tinVCzOyECGKlRbJJLkXqMH6v1w1Sbyu7eyVTyU7zeuyl9ydpfQ3U.mp4?strext=1&_nc_cat=107&_nc_sid=8bf8fe&_nc_ht=video-sea5-1.xx.fbcdn.net&_nc_ohc=j7WPGo_ry7oQ7kNvwFWFDyv&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5GQUNFQk9PSy4uQzMuNzIwLmF2MV9jb21wcmVzc2VkX3NvdXJjZSIsInhwdl9hc3NldF9pZCI6MjgzMzcwNzk4OTU5MjQ2MTgsImFzc2V0X2FnZV9kYXlzIjoxNywidmlfdXNlY2FzZV9pZCI6MTAxMjMsImR1cmF0aW9uX3MiOjEwLCJ1cmxnZW5fc291cmNlIjoid3d3In0%3D&ccb=17-1&_nc_gid=fB-Yw60qpHEj2p9m2jjkvQ&_nc_ss=702cf&_nc_zt=28&oh=00_AQIX47ZXY0pGIcVMYpDVUQXehNRe_MVQ9l0NjAJ46Slbtg&oe=6AAA18E7&bitrate=661274&tag=av1_compressed_source",
+        "archivo_video": "https://archive.org/details/aqow-hyfzo-8-u-g-nda-0e-ols-e-7-xn-isic-aya-ebga-c-6s-xk-2-zbd-tin-vcz-oy-ecgkl-",
+        "confianza": "5 - Muy alto (verificado)",
+        "confianza_valor": 5,
+        "confianza_texto": "Verificado",
+        "publicacion_viral": "https://x.com/jm_clavero/status/2083658689068556467",
+        "archivo_publicacion": "https://archive.ph/Xbuab",
+        "claim": "\"Inmigrantes provocan altercados y caos en las calles de Ceuta\".",
+        "rating": "Falso",
+        "rating_categoria": "falso",
+        "comentarios": "Los altercados corresponden a la ciudad francesa de Toulouse tras la victoria del PSG en la Champions y no guardan ninguna relación con Ceuta.",
+        "newtral_url": "https://www.newtral.es/altercados-ceuta-toulouse/20260803/",
+        "newtral_titulo": "Estos altercados en la calle no tienen relación con la actual crisis migratoria en Ceuta",
+        "newtral_descripcion": "Estos altercados en la calle no tienen relación con la actual crisis migratoria en Ceuta",
+        "newtral_imagen": "https://www.newtral.es/wp-content/uploads/2026/08/plantilla-NPP-37.jpg",
+        "fecha_origen": "",
+        "marca_temporal": "14/09/2026 19:26:26"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -5.345881695215454,
+          35.871298501483324
+        ]
+      },
+      "properties": {
+        "zona": "Frontera del Tarajal (Fnideq, Marruecos)",
+        "pais": "Marruecos",
+        "video": "data/videos/7595d067d42877d6.mp4",
+        "video_original": "https://video.twimg.com/ext_tw_video/2083286586540630016/pu/vid/avc1/720x1280/A-2l-0ZVqds-aU4q.mp4",
+        "archivo_video": "https://archive.org/details/a-2l-0-zvqds-a-u-4q",
+        "confianza": "4 - Alto (muy probable)",
+        "confianza_valor": 4,
+        "confianza_texto": "Muy probable",
+        "publicacion_viral": "https://x.com/DerechaDiarioES/status/2083286615498031589",
+        "archivo_publicacion": "https://archive.ph/LLJYK",
+        "claim": "\"Policía marroquí abre una puerta de la frontera con Ceuta y deja pasar a los inmigrantes hacia España\" (31/07/2026).",
+        "rating": "Engañoso",
+        "rating_categoria": "enganoso",
+        "comentarios": "Las imágenes muestran a agentes marroquíes abriendo una puerta en la frontera del Tarajal para dejar pasar a los migrantes, pero corresponden a la crisis fronteriza de mayo de 2021. El vídeo fue publicado por el Sindicato Unificado de Policía (SUP) el 18 de mayo de 2021.",
+        "newtral_url": "https://www.newtral.es/guardia-marroqui-valla/20260803/",
+        "newtral_titulo": "Este vídeo de un policía marroquí abriendo la valla fronteriza de Ceuta es de 2021",
+        "newtral_descripcion": "Este vídeo de un policía marroquí abriendo la valla fronteriza de Ceuta es de 2021",
+        "newtral_imagen": "https://www.newtral.es/wp-content/uploads/2026/08/FAKE-Inmigrantes-valla-Ceuta-.jpg",
+        "fecha_origen": "",
+        "marca_temporal": "15/09/2026 10:59:36"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.5065712846841453,
+          53.680868245793484
+        ]
+      },
+      "properties": {
+        "zona": "Wakefield (Inglaterra, Reino Unido)",
+        "pais": "Otro",
+        "video": "https://scontent-iad6-1.cdninstagram.com/o1/v/t2/f2/m86/AQPD4cl9nUgUkoJqbzvErZvg2rMVYtlEi8LrDjlb7aXmm2Wd5mXE9yK6HXEKIs5YKYeqfR93GB3_IjiRmEt5DaDiXeGATiQF_JVLmfo.mp4?_nc_cat=100&_nc_sid=5e9851&_nc_ht=scontent-iad6-1.cdninstagram.com&_nc_ohc=iA9FobgTlWoQ7kNvwEq-lgg&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5JTlNUQUdSQU0uQ0xJUFMuQzMuNDgwLmRhc2hfYmFzZWxpbmVfMV92MSIsInhwdl9hc3NldF9pZCI6MTM4NTcwNjYwMDE5ODQwNSwiYXNzZXRfYWdlX2RheXMiOjQ1LCJ2aV91c2VjYXNlX2lkIjoxMDA5OSwiZHVyYXRpb25fcyI6MTksInVybGdlbl9zb3VyY2UiOiJ3d3cifQ%3D%3D&ccb=17-1&vs=340393e2309c0679&_nc_vs=HBksFQIYUmlnX3hwdl9yZWVsc19wZXJtYW5lbnRfc3JfcHJvZC9FQTQ0NjhCRTQ5N0Q4NkQzN0FBODM4MTgzQ0Y0NjBCNV92aWRlb19kYXNoaW5pdC5tcDQVAALIARIAFQIYUWlnX3hwdl9wbGFjZW1lbnRfcGVybWFuZW50X3YyLzA4NDA2MzkxREZFMjc4ODBEMkE4M0M5RUNBNDJBQjg1X2F1ZGlvX2Rhc2hpbml0Lm1wNBUCAsgBEgAoABgAGwKIB3VzZV9vaWwBMRJwcm9ncmVzc2l2ZV9yZWNpcGUBMRUAACaKxNfa3pL2BBUCKAJDMywXQDOzMzMzMzMYEmRhc2hfYmFzZWxpbmVfMV92MREAdf4HZeadAQA&_nc_gid=ezizWqfeLwryEHqQxVzFZA&_nc_ss=703ba&_nc_zt=28&oh=00_AQLXKSrBmpXJQimeO05jTEXFkZwe9XVXGk6k7lbOB4reKA&oe=6AAAFD0D",
+        "video_original": "https://scontent-iad6-1.cdninstagram.com/o1/v/t2/f2/m86/AQPD4cl9nUgUkoJqbzvErZvg2rMVYtlEi8LrDjlb7aXmm2Wd5mXE9yK6HXEKIs5YKYeqfR93GB3_IjiRmEt5DaDiXeGATiQF_JVLmfo.mp4?_nc_cat=100&_nc_sid=5e9851&_nc_ht=scontent-iad6-1.cdninstagram.com&_nc_ohc=iA9FobgTlWoQ7kNvwEq-lgg&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5JTlNUQUdSQU0uQ0xJUFMuQzMuNDgwLmRhc2hfYmFzZWxpbmVfMV92MSIsInhwdl9hc3NldF9pZCI6MTM4NTcwNjYwMDE5ODQwNSwiYXNzZXRfYWdlX2RheXMiOjQ1LCJ2aV91c2VjYXNlX2lkIjoxMDA5OSwiZHVyYXRpb25fcyI6MTksInVybGdlbl9zb3VyY2UiOiJ3d3cifQ%3D%3D&ccb=17-1&vs=340393e2309c0679&_nc_vs=HBksFQIYUmlnX3hwdl9yZWVsc19wZXJtYW5lbnRfc3JfcHJvZC9FQTQ0NjhCRTQ5N0Q4NkQzN0FBODM4MTgzQ0Y0NjBCNV92aWRlb19kYXNoaW5pdC5tcDQVAALIARIAFQIYUWlnX3hwdl9wbGFjZW1lbnRfcGVybWFuZW50X3YyLzA4NDA2MzkxREZFMjc4ODBEMkE4M0M5RUNBNDJBQjg1X2F1ZGlvX2Rhc2hpbml0Lm1wNBUCAsgBEgAoABgAGwKIB3VzZV9vaWwBMRJwcm9ncmVzc2l2ZV9yZWNpcGUBMRUAACaKxNfa3pL2BBUCKAJDMywXQDOzMzMzMzMYEmRhc2hfYmFzZWxpbmVfMV92MREAdf4HZeadAQA&_nc_gid=ezizWqfeLwryEHqQxVzFZA&_nc_ss=703ba&_nc_zt=28&oh=00_AQLXKSrBmpXJQimeO05jTEXFkZwe9XVXGk6k7lbOB4reKA&oe=6AAAFD0D",
+        "archivo_video": "https://archive.org/details/aqpd-4cl-9n-ug-uko-jqbzv-er-zvg-2r-mvytl-ei-8-lr-djlb-7a-xmm-2-wd-5m-xe-9y-k-6-h",
+        "confianza": "5 - Muy alto (verificado)",
+        "confianza_valor": 5,
+        "confianza_texto": "Verificado",
+        "publicacion_viral": "https://www.instagram.com/p/Dbd9JsJM-hU/",
+        "archivo_publicacion": "https://archive.org/details/captura-de-pantalla-2026-09-03-102524",
+        "claim": "\"Marroquí se pone a apuñalar coches en Ceuta con un cuchillo jamonero\".",
+        "rating": "Falso",
+        "rating_categoria": "falso",
+        "comentarios": "Las imágenes muestran un altercado ocurrido en 2024 frente a un pub ubicado en Wakefield (Inglaterra, Reino Unido). No guardan ninguna relación con la crisis fronteriza desatada el 30 de julio en Ceuta.",
+        "newtral_url": "https://www.newtral.es/hombre-apunala-coche-ceuta/20260903/",
+        "newtral_titulo": "Este vídeo de un hombre “apuñalando coches con un cuchillo jamonero” no se grabó en Ceuta y tampoco es actual",
+        "newtral_descripcion": "Este vídeo de un hombre “apuñalando coches con un cuchillo jamonero” no se grabó en Ceuta y tampoco es actual",
+        "newtral_imagen": "https://www.newtral.es/wp-content/uploads/2026/09/fake-hombre-apunala-coche-Ceuta.jpg",
+        "fecha_origen": "",
+        "marca_temporal": "15/09/2026 13:01:14"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.131961203839844,
+          40.07393942787018
+        ]
+      },
+      "properties": {
+        "zona": "Cuenca (España)",
+        "pais": "España",
+        "video": "data/videos/0c79c2a1b7c8ccf5.mp4",
+        "video_original": "https://video.twimg.com/amplify_video/2090435956935426048/vid/avc1/464x848/j2ezQjIZXtFjqOmA.mp4",
+        "archivo_video": "https://archive.org/details/j2ezQjIZXtFjqOmA",
+        "confianza": "5 - Muy alto (verificado)",
+        "confianza_valor": 5,
+        "confianza_texto": "Verificado",
+        "publicacion_viral": "https://x.com/blackie_just/status/2090567531123605749",
+        "archivo_publicacion": "https://archive.li/f5Mqo",
+        "claim": "\"Inmigrantes ilegales queman una iglesia en Ceuta\".",
+        "rating": "Falso",
+        "rating_categoria": "falso",
+        "comentarios": "El vídeo muestra un incendio en la iglesia y convento de las Concepcionistas de Cuenca (no Ceuta) ocurrido el 3 de mayo de 2024. La policía detuvo a un español como autor del incendio.",
+        "newtral_url": "https://www.newtral.es/inmigrantes-queman-iglesia-ceuta/20260824/",
+        "newtral_titulo": "Ni es una iglesia quemada por “inmigrantes ilegales” en Ceuta ni el vídeo es actual",
+        "newtral_descripcion": "Ni es una iglesia quemada por “inmigrantes ilegales” en Ceuta ni el vídeo es actual",
+        "newtral_imagen": "https://www.newtral.es/wp-content/uploads/2026/08/fake-inmigrantes-queman-iglesia-Ceuta.jpg",
+        "fecha_origen": "",
+        "marca_temporal": "15/09/2026 13:35:20"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.842022918760797,
+          9.40317137018076
+        ]
+      },
+      "properties": {
+        "zona": "Tamale (Ghana)",
+        "pais": "Otro",
+        "video": "data/videos/dc4658fca17304e1.mp4",
+        "video_original": "https://video.twimg.com/amplify_video/2089068770614472705/vid/avc1/480x852/bPRNHQ-h8MtnYcps.mp4",
+        "archivo_video": "https://archive.org/details/bPRNHQ-h8MtnYcps",
+        "confianza": "5 - Muy alto (verificado)",
+        "confianza_valor": 5,
+        "confianza_texto": "Verificado",
+        "publicacion_viral": "https://x.com/javiernegre10/status/2089069072679887148",
+        "archivo_publicacion": "https://archive.li/H4ZWn",
+        "claim": "\"Ingenieros listos para entrar de puertas abiertas por Ceuta\".",
+        "rating": "Falta contexto",
+        "rating_categoria": "enganoso",
+        "comentarios": "El vídeo está grabado en Tamale (Ghana) y hay registros de estas imágenes que datan de junio de 2026, por lo que no guardan ninguna relación con Ceuta.",
+        "newtral_url": "https://www.newtral.es/video-machete-ceuta/20260819/",
+        "newtral_titulo": "Cuidado con este vídeo de un grupo de jóvenes con machetes: corresponde a Ghana y no tiene relación con Ceuta",
+        "newtral_descripcion": "⚠️ Cuidado con este vídeo de un grupo de jóvenes con machetes: corresponde a Ghana, circula desde junio y no tiene relación con Ceuta.",
+        "newtral_imagen": "https://www.newtral.es/wp-content/uploads/2026/08/Copia-de-Copia-de-Copia-de-Copia-de-Copia-de-Copia-de-Copia-de-Copia-de-Copia-de-Copia-de-votos-correo-Aragon-2.jpg",
+        "fecha_origen": "",
+        "marca_temporal": "15/09/2026 16:34:33"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.9361613266621966,
+          35.269156636622846
+        ]
+      },
+      "properties": {
+        "zona": "Paso de Beni Ensar (Melilla, España)",
+        "pais": "España",
+        "video": "data/videos/430193d7ab4b31b3.mp4",
+        "video_original": "https://video.twimg.com/amplify_video/2088669391940378624/vid/avc1/720x818/YrfboOf1GzVfckrM.mp4",
+        "archivo_video": "https://archive.org/details/yrfbo-of-1-gz-vfckr-m",
+        "confianza": "5 - Muy alto (verificado)",
+        "confianza_valor": 5,
+        "confianza_texto": "Verificado",
+        "publicacion_viral": "https://x.com/Capitana_espana/status/2088669471590285423",
+        "archivo_publicacion": "https://archive.li/D6x2t",
+        "claim": "\"En un nuevo asalto, la policía marroquí abre fuego contra los asaltantes de Ceuta mientras la Guardia Civil se dedica a mirar\".",
+        "rating": "Falso",
+        "rating_categoria": "falso",
+        "comentarios": "La policía marroquí dispara material antidisturbios mientras un grupo de migrantes intenta cruzar la frontera con Melilla. Las imágenes se tomaron el 31 de julio de 2026 junto al paso de Beni Ensar.",
+        "newtral_url": "https://www.newtral.es/nuevo-asalto-valla-ceuta/20260818/",
+        "newtral_titulo": "Ni es Ceuta ni es un “nuevo asalto”: este vídeo de la policía marroquí “abriendo fuego” se grabó en Melilla en julio",
+        "newtral_descripcion": "Ni es Ceuta ni es un “nuevo asalto”: este vídeo de la policía marroquí “abriendo fuego” se grabó en Melilla en julio",
+        "newtral_imagen": "https://www.newtral.es/wp-content/uploads/2026/08/Diseno-sin-titulo-21.jpg",
+        "fecha_origen": "",
+        "marca_temporal": "15/09/2026 17:12:26"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.065834572731114,
+          36.746922378901004
+        ]
+      },
+      "properties": {
+        "zona": "Adra (Almería, España)",
+        "pais": "España",
+        "video": "data/videos/09039951f0adf1fb.mp4",
+        "video_original": "https://video.twimg.com/amplify_video/2084996665153339392/vid/avc1/720x1280/VqOj32bjSrL1oXZK.mp4",
+        "archivo_video": "https://archive.org/details/vq-oj-32bj-sr-l-1o-xzk",
+        "confianza": "5 - Muy alto (verificado)",
+        "confianza_valor": 5,
+        "confianza_texto": "Verificado",
+        "publicacion_viral": "https://x.com/jesusvazquezb/status/2084996722393059343",
+        "archivo_publicacion": "https://archive.ph/wIAC3",
+        "claim": "\"Dos nuevas lanchas llegan a las costas de Andalucía. ¿De verdad alguien sigue creyendo que la situación está controlada? España necesita recuperar el control de sus fronteras (5/8/2026)\".",
+        "rating": "Engañoso",
+        "rating_categoria": "enganoso",
+        "comentarios": "El vídeo muestra dos lanchas cargadas de migrantes que llegaron a la costa de Adra (Almería) en septiembre de 2023. Las imágenes no guardan relación con la situación desencadenada en Ceuta a raíz del cruce masivo del 30 de julio de 2026.",
+        "newtral_url": "https://www.newtral.es/lanchas-andalucia-migrantes/20260807/",
+        "newtral_titulo": "Este vídeo de “lanchas con migrantes llegando a Andalucía” no tiene relación con la crisis de Ceuta, se grabó en 2023",
+        "newtral_descripcion": "Este vídeo de “lanchas con migrantes llegando a Andalucía” no tiene relación con la crisis de Ceuta, se grabó en 2023",
+        "newtral_imagen": "https://www.newtral.es/wp-content/uploads/2026/08/cartelas-65.jpg",
+        "fecha_origen": "",
+        "marca_temporal": "15/09/2026 17:46:14"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -8.499422096442316,
+          33.257449113077456
+        ]
+      },
+      "properties": {
+        "zona": "Porta da Ribeira (El Jadida, Marruecos)",
+        "pais": "Marruecos",
+        "video": "data/videos/88f9203d702efc88.mp4",
+        "video_original": "https://video-lhr6-2.xx.fbcdn.net/o1/v/t2/f2/m266/AQO50qo5cSdpRn6BYEBSnnJxCCPOZDLg9_04TwzvkFheqzO_n5VFHRVkM8r_uNFPCO6MJ_Zl7hMLKk_8CxlUi9JkgQ8DmePtauY.mp4?strext=1&_nc_cat=109&_nc_sid=8bf8fe&_nc_ht=video-lhr6-2.xx.fbcdn.net&_nc_ohc=LrWcs__7lwYQ7kNvwFVH6nS&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5GQUNFQk9PSy4uQzMuMTA4MC5jb21wcmVzc2VkX3NvdXJjZSIsInhwdl9hc3NldF9pZCI6MTcxNzE4NzE3Mjg2NTk2MiwiYXNzZXRfYWdlX2RheXMiOjQ1LCJ2aV91c2VjYXNlX2lkIjoxMDA5OSwiZHVyYXRpb25fcyI6MTgsInVybGdlbl9zb3VyY2UiOiJ3d3cifQ%3D%3D&ccb=17-1&_nc_gid=e8JKvPoG6yoarh8IDhOP5g&_nc_ss=79289&_nc_zt=28&oh=00_AQJ4yYYByGeQohgjNqaYsjMQTOH0tREZicheyp_UPCeg1w&oe=6AAB501D&bitrate=2276680&tag=compressed_source",
+        "archivo_video": "https://archive.org/details/aqo-50qo-5c-sdp-rn-6-byebsnn-jx-ccpozdlg-9-04-twzvk-fheqz-o-n-5-vfhrvk-m-8r-u-nf",
+        "confianza": "5 - Muy alto (verificado)",
+        "confianza_valor": 5,
+        "confianza_texto": "Verificado",
+        "publicacion_viral": "https://www.facebook.com/laderechadiario/posts/1692437501985511/",
+        "archivo_publicacion": "https://archive.li/RDEi0",
+        "claim": "Un inmigrante marroquí documentó la facilidad con la que pueden invadir España nadando desde Marruecos hacia Ceuta.",
+        "rating": "Falso",
+        "rating_categoria": "falso",
+        "comentarios": "El vídeo está grabado en El Jadida (Marruecos) y fue compartido por el autor en su perfil de Instagram, donde se pueden ver más vídeos donde aparece nadando en el mismo lugar. El Jadida está a más de 400 kilómetros de Ceuta, por lo que las imágenes no guardan ninguna relación con el cruce masivo del pasado 30 de julio.",
+        "newtral_url": "https://www.newtral.es/marroqui-nadando-ceuta/20260807/",
+        "newtral_titulo": "El bulo del marroquí grabándose con un palo ‘selfi’ mientras nada hacia Ceuta",
+        "newtral_descripcion": "El bulo del marroquí grabándose con un palo ‘selfi’ mientras nada hacia Ceuta",
+        "newtral_imagen": "https://www.newtral.es/wp-content/uploads/2026/08/FAKE-marroqui-nadnado-.jpg",
+        "fecha_origen": "",
+        "marca_temporal": "16/09/2026 12:17:35"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.9684800742634483,
+          19.958765290166667
+        ]
+      },
+      "properties": {
+        "zona": "Tinzaouten (Argelia)",
+        "pais": "Otro",
+        "video": "data/videos/e2e8f90554672a02.mp4",
+        "video_original": "https://video.twimg.com/amplify_video/2083940165571989504/vid/avc1/360x486/IcqlF7XLmz-_vr4W.mp4",
+        "archivo_video": "https://archive.org/details/icql-f-7-xlmz-vr-4-w",
+        "confianza": "4 - Alto (muy probable)",
+        "confianza_valor": 4,
+        "confianza_texto": "Muy probable",
+        "publicacion_viral": "https://www.reddit.com/r/MilitarySpain/comments/1vk1ee7/se_dice_que_argelia_est%C3%A1_enviando_a_m%C3%A1s_de_100000/",
+        "archivo_publicacion": "https://archive.li/HUpF9",
+        "claim": "\"Argelia está enviando a más de 100.000 civiles a la frontera con Marruecos, bajo la dirección del ejército argelino\".",
+        "rating": "Falta contexto",
+        "rating_categoria": "enganoso",
+        "comentarios": "Hay indicios de que las imágenes fueron grabadas en Tinzaouten, en la frontera entre Argelia y Mali. Esta localidad está a más de 1.400 kilómetros de la frontera argelina con Marruecos. El movimiento de personas que muestra el vídeo podría estar relacionado con la escalada de las tensiones entre el ejército de Mali, grupos separatistas y combatientes vinculados a AlQaeda.",
+        "newtral_url": "https://www.newtral.es/frontera-argelia-marruecos-mali/20260807/",
+        "newtral_titulo": "No hay pruebas de que este vídeo muestre a “100.000 inmigrantes argelinos entrando a Marruecos”",
+        "newtral_descripcion": "⚠️ No hay pruebas de que este vídeo muestre a “100.000 inmigrantes de Argelia entrando a Marruecos” para luego ir a Ceuta. Varios indicios apuntan a que se trata de la frontera con Mali.",
+        "newtral_imagen": "https://www.newtral.es/wp-content/uploads/2026/08/cartelas-63.jpg",
+        "fecha_origen": "",
+        "marca_temporal": "16/09/2026 13:55:49"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -5.345318,
+          35.86747
+        ]
+      },
+      "properties": {
+        "zona": "Catillejos/Fnideq (Marruecos)",
+        "pais": "Marruecos",
+        "video": "data/videos/46e6fbd4810a9c4b.mp4",
+        "video_original": "https://scontent-lhr11-1.cdninstagram.com/o1/v/t2/f2/m86/AQNJunru9QCQB63jWAz32LULTuTgGahFqykWWfbhFOo8GEwR3X9eWDJ1P-sofUj-uxriuqucXXCll_Y5iU8M324eWYurXmi9_va9LJU.mp4?_nc_cat=100&_nc_sid=5e9851&_nc_ht=scontent-lhr11-1.cdninstagram.com&_nc_ohc=QLK7A2ilmuwQ7kNvwGYTlQ2&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5JTlNUQUdSQU0uQ0xJUFMuQzMuNzIwLmRhc2hfYmFzZWxpbmVfMV92MSIsInhwdl9hc3NldF9pZCI6MTAzMTMwNDE4NjU2ODQzOCwiYXNzZXRfYWdlX2RheXMiOjQ3LCJ2aV91c2VjYXNlX2lkIjoxMDA5OSwiZHVyYXRpb25fcyI6MTQsInVybGdlbl9zb3VyY2UiOiJ3d3cifQ%3D%3D&ccb=17-1&vs=9640552c2e770d2c&_nc_vs=HBksFQIYUmlnX3hwdl9yZWVsc19wZXJtYW5lbnRfc3JfcHJvZC8yRDQ1QUZBN0QyMkYxQ0U0QzE2MDc2RUVEMEJFNjg5NF92aWRlb19kYXNoaW5pdC5tcDQVAALIARIAFQIYUWlnX3hwdl9wbGFjZW1lbnRfcGVybWFuZW50X3YyLzkzNDlGOTU1MUJBOTlEMUQyNjYzQUM0MDdCRjhERDkzX2F1ZGlvX2Rhc2hpbml0Lm1wNBUCAsgBEgAoABgAGwKIB3VzZV9vaWwBMRJwcm9ncmVzc2l2ZV9yZWNpcGUBMRUAACbs-5D75v3UAxUCKAJDMywXQC3MzMzMzM0YEmRhc2hfYmFzZWxpbmVfMV92MREAdf4HZeadAQA&_nc_gid=NKQKhcHR37DWJ__V5G7VUA&_nc_ss=79689&_nc_zt=28&oh=00_AQI0u-GuubhKlOCOBzbZb_LAbElSDsvp-_fAIIWd8WErjA&oe=6AAC6F7D",
+        "archivo_video": "https://archive.org/details/aqnjunru-9-qcqb-63j-waz-32-lultu-tg-gah-fqyk-wwfbh-foo-8-gew-r-3-x-9e-wdj-1-p-so",
+        "confianza": "5 - Muy alto (verificado)",
+        "confianza_valor": 5,
+        "confianza_texto": "Verificado",
+        "publicacion_viral": "https://www.instagram.com/p/DbcmQU4tvuV/",
+        "archivo_publicacion": "https://www.instagram.com/p/DbcmQU4tvuV/",
+        "claim": "\"Las fuerzas marroquíes repelen un ataque contra el paso fronterizo de Bab Sebta en un intento de asaltarlo\".",
+        "rating": "",
+        "rating_categoria": "otro",
+        "comentarios": "Un día después del cruce masivo, medios marroquíes publican imágenes de una actuación correspondiente al mismo 31 de julio en las que se ve a policías marroquíes empleando material antidisturbios contra jóvenes que, aparentemente, aspiraban a llegar a Ceuta.",
+        "newtral_url": "",
+        "newtral_titulo": "",
+        "newtral_descripcion": "",
+        "newtral_imagen": "",
+        "fecha_origen": "",
+        "marca_temporal": "16/09/2026 17:07:17"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -5.347253,
+          35.855551
+        ]
+      },
+      "properties": {
+        "zona": "Catillejos/Fnideq (Marruecos)",
+        "pais": "Marruecos",
+        "video": "data/videos/6bd3064d04b32bf3.mp4",
+        "video_original": "https://scontent-vie1-1.cdninstagram.com/o1/v/t2/f2/m86/AQNR0wjgzEdeVwPprecdbZNYztBr5wSj96xyUEl1UiFXuvBnDtqVOPT9D3e-YPoSCsCbRCmpZ-gA56cR-5UPLbxn18ubLmNT0kOUxpc.mp4?_nc_cat=104&_nc_sid=5e9851&_nc_ht=scontent-vie1-1.cdninstagram.com&_nc_ohc=0KZy3xGNBpkQ7kNvwE3hB3f&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5JTlNUQUdSQU0uQ0xJUFMuQzMuNzIwLmRhc2hfYmFzZWxpbmVfMV92MSIsInhwdl9hc3NldF9pZCI6MTc5NjI5OTY4ODQwNzY1NywiYXNzZXRfYWdlX2RheXMiOjQ3LCJ2aV91c2VjYXNlX2lkIjoxMDA5OSwiZHVyYXRpb25fcyI6MTMsInVybGdlbl9zb3VyY2UiOiJ3d3cifQ\\u00253D\\u00253D&ccb=17-1&vs=7f337c78fbb22abd&_nc_vs=HBksFQIYUmlnX3hwdl9yZWVsc19wZXJtYW5lbnRfc3JfcHJvZC8yODRFRjc4QURERDQ4MjdGMERDMjRGOUQ2QUU4M0VCN192aWRlb19kYXNoaW5pdC5tcDQVAALIARIAFQIYUWlnX3hwdl9wbGFjZW1lbnRfcGVybWFuZW50X3YyLzk4NDZEMkU2QTQ3QTNGREQwNERBNjREMUVFNjg4Rjg5X2F1ZGlvX2Rhc2hpbml0Lm1wNBUCAsgBEgAoABgAGwKIB3VzZV9vaWwBMRJwcm9ncmVzc2l2ZV9yZWNpcGUBMRUAACbSybPNs-6wBhUCKAJDMywXQCsAAAAAAAAYEmRhc2hfYmFzZWxpbmVfMV92MREAdf4HZeadAQA&_nc_gid=1RpXyrzQOT6-ZQTpQeutiQ&_nc_ss=73689&_nc_zt=28&oh=00_AQJQDkXL2uXrCiT5wKk4iPkPmy6dcvhEPDNssleMMkEWCg&oe=6AAC9D89",
+        "archivo_video": "https://archive.org/details/aqnr-0wjgz-ede-vw-pprecdb-znyzt-br-5w-sj-96xy-uel-1-ui-fxuv-bn-dtq-vopt-9-d-3e-y",
+        "confianza": "5 - Muy alto (verificado)",
+        "confianza_valor": 5,
+        "confianza_texto": "Verificado",
+        "publicacion_viral": "https://www.instagram.com/zoom.fnideq/reel/DbbgEByssW3/",
+        "archivo_publicacion": "https://www.instagram.com/zoom.fnideq/reel/DbbgEByssW3/",
+        "claim": "",
+        "rating": "Verdadero",
+        "rating_categoria": "verdadero",
+        "comentarios": "Vídeo compartido por una cuenta de Instagram de Castillejos/Fnideq a las 22:05 del 30 de julio de 2026. Muestra la situación de la Avenida de Hassan II, que conecta Fnideq con la carretera que dirige al paso fronterizo del Tarajal.",
+        "newtral_url": "",
+        "newtral_titulo": "",
+        "newtral_descripcion": "",
+        "newtral_imagen": "",
+        "fecha_origen": "",
+        "marca_temporal": "16/09/2026 17:28:59"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -5.343803585767439,
+          35.87027022420822
+        ]
+      },
+      "properties": {
+        "zona": "Castillejos/Fnideq (Marruecos)",
+        "pais": "Marruecos",
+        "video": "data/videos/57f3d35d73cb8b0d.mp4",
+        "video_original": "https://scontent-ams2-1.cdninstagram.com/o1/v/t2/f2/m86/AQPQI6uK2_pie7mWTi3KmkMauwTUd-acj-kXuxECWjtUBFD0t6Pd_dw0IdtvJoSWL01RfGqxqOvkeaUdJyjdu7COB8FL0_f4wjlepFE.mp4?_nc_cat=102&_nc_sid=5e9851&_nc_ht=scontent-ams2-1.cdninstagram.com&_nc_ohc=0ELK6ioBstkQ7kNvwEOLIBN&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5JTlNUQUdSQU0uQ0xJUFMuQzMuNzIwLmRhc2hfYmFzZWxpbmVfMV92MSIsInhwdl9hc3NldF9pZCI6MTc3OTczMzY0MzM5MTM0NSwiYXNzZXRfYWdlX2RheXMiOjQ4LCJ2aV91c2VjYXNlX2lkIjoxMDA5OSwiZHVyYXRpb25fcyI6NDUsInVybGdlbl9zb3VyY2UiOiJ3d3cifQ%3D%3D&ccb=17-1&vs=7b3c1ddbf9d6c502&_nc_vs=HBksFQIYUmlnX3hwdl9yZWVsc19wZXJtYW5lbnRfc3JfcHJvZC81NjQ4NkY2NUQ3QTgyRkUyNDRDOEE3M0NFQTdFRjU4N192aWRlb19kYXNoaW5pdC5tcDQVAALIARIAFQIYUWlnX3hwdl9wbGFjZW1lbnRfcGVybWFuZW50X3YyLzYyNDdCMjkxQUU5M0Q5MUNDMzg3NkM2MEZBQTg5NDg5X2F1ZGlvX2Rhc2hpbml0Lm1wNBUCAsgBEgAoABgAGwKIB3VzZV9vaWwBMRJwcm9ncmVzc2l2ZV9yZWNpcGUBMRUAACbixd_5kKqpBhUCKAJDMywXQEbMzMzMzM0YEmRhc2hfYmFzZWxpbmVfMV92MREAdf4HZeadAQA&_nc_gid=lSLNBbHStOzcf8yoEifWGQ&_nc_ss=7a22e&_nc_zt=28&oh=00_AQIhTEySePEUgs7VWQw8yYl2s9auhXgcOumkfB5Mgp3Qvw&oe=6AACB217",
+        "archivo_video": "https://archive.org/details/aqpqi-6u-k-2-pie-7m-wti-3-kmk-mauw-tud-acj-k-xux-ecwjt-ubfd-0t-6-pd-dw-0-idtv-jo",
+        "confianza": "4 - Alto (muy probable)",
+        "confianza_valor": 4,
+        "confianza_texto": "Muy probable",
+        "publicacion_viral": "https://www.instagram.com/zoom.fnideq/reel/DbZlEo_MmCq/",
+        "archivo_publicacion": "https://www.instagram.com/zoom.fnideq/reel/DbZlEo_MmCq/",
+        "claim": "\"Cientos de migrantes irrumpen en el mar simultáneamente frente a la costa de Fnideq\".",
+        "rating": "Verdadero",
+        "rating_categoria": "verdadero",
+        "comentarios": "Vídeo compartido en Instagram a las 4:08 am del 30 de julio de 2026 por una cuenta de Fnideq. Las imágenes demuestran una fuerte movilización de candidatos a cruzar a Ceuta desde primera hora de la madrugada.",
+        "newtral_url": "",
+        "newtral_titulo": "",
+        "newtral_descripcion": "",
+        "newtral_imagen": "",
+        "fecha_origen": "",
+        "marca_temporal": "16/09/2026 17:54:09"
+      }
     }
   ]
 }

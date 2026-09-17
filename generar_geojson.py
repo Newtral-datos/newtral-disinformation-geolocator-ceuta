@@ -31,12 +31,15 @@ import math
 import re
 import subprocess
 import unicodedata
+from datetime import datetime
 from pathlib import Path
+from urllib.parse import quote
 
 CSV_PATH = Path(__file__).parent / "data" / "formulario.csv"
 GEOJSON_PATH = Path(__file__).parent / "data" / "videos.geojson"
 VIDEOS_DIR = Path(__file__).parent / "data" / "videos"
 OG_CACHE_PATH = Path(__file__).parent / "data" / "og_cache.json"
+DESCARGAS_FALLIDAS_PATH = Path(__file__).parent / "data" / "descargas_fallidas.json"
 
 OG_RE = {
     clave: re.compile(
@@ -95,9 +98,80 @@ def coords_a_decimal(coord_texto):
     return dms_a_decimal(coord_texto) or decimal_directo(coord_texto)
 
 
-def descargar_video(url):
-    """Descarga `url` a data/videos/ (si no está ya) y devuelve la ruta relativa
-    a usar como src del <video>, o la propia URL remota si la descarga falla.
+def _curl_a_archivo(url, destino, referer=None):
+    """Ejecuta curl para descargar `url` a `destino`. Devuelve None si fue bien,
+    o el mensaje de error de curl en caso contrario (y borra el fichero
+    parcial, si llegó a crearse).
+
+    Comprueba el content-type devuelto además del código de salida: TikTok (y
+    en general cualquier URL que en realidad sea la página web del vídeo, no
+    el fichero) responde 200 con la página HTML de "Make Your Day" en vez de
+    un 403/404 — curl la da por buena, y sin esta comprobación se guardaba esa
+    página como si fuera el .mp4, un fallo silencioso que ni se detectaba ni
+    llegaba a activar el fallback a la copia archivada."""
+    cabeceras = ["-H", f"Referer: {referer}"] if referer else []
+    resultado = subprocess.run(
+        ["curl", "-fsSL", "--max-time", "60", *cabeceras,
+         "-w", "%{content_type}", "-o", str(destino), url],
+        capture_output=True, text=True,
+    )
+    if resultado.returncode == 0 and destino.exists():
+        content_type = resultado.stdout.strip()
+        if content_type.startswith("text/") or "html" in content_type:
+            destino.unlink(missing_ok=True)
+            return f"la URL devolvió una página web, no un vídeo (content-type: {content_type or 'desconocido'})"
+        return None
+    destino.unlink(missing_ok=True)
+    return resultado.stderr.strip() or f"curl salió con código {resultado.returncode}"
+
+
+ARCHIVE_ORG_ID_RE = re.compile(r"archive\.org/details/\s*([^/?#\s]+)")
+EXTENSIONES_VIDEO = (".mp4", ".mov", ".webm", ".mkv", ".m4v", ".avi")
+
+
+def resolver_archive_org(url_details):
+    """A partir de una URL tipo https://archive.org/details/<id>, consulta la
+    API de metadatos de archive.org y devuelve la URL directa de descarga del
+    fichero de vídeo original (no una miniatura), o None si la URL no es de
+    archive.org o el ítem no tiene ningún fichero de vídeo."""
+    m = ARCHIVE_ORG_ID_RE.search(url_details or "")
+    if not m:
+        return None
+    identificador = m.group(1)
+
+    resultado = subprocess.run(
+        ["curl", "-fsSL", "--max-time", "30", f"https://archive.org/metadata/{identificador}"],
+        capture_output=True, text=True,
+    )
+    if resultado.returncode != 0:
+        return None
+    try:
+        metadata = json.loads(resultado.stdout)
+    except json.JSONDecodeError:
+        return None
+
+    candidatos = [
+        f["name"] for f in metadata.get("files", [])
+        if f.get("source") == "original" and f.get("name", "").lower().endswith(EXTENSIONES_VIDEO)
+    ]
+    if not candidatos:
+        return None
+    return f"https://archive.org/download/{identificador}/{quote(candidatos[0])}"
+
+
+def descargar_video(url, archivo_video=""):
+    """Descarga `url` a data/videos/ (si no está ya) y devuelve (ruta, error):
+    `ruta` es la ruta relativa a usar como src del <video>, o la propia URL
+    remota si la descarga falla; `error` es None si fue bien o el motivo del
+    fallo (para poder informarlo, ver DESCARGAS_FALLIDAS_PATH en generar()).
+
+    Si la descarga del CDN original falla y `archivo_video` es un enlace de
+    archive.org (columna "Vídeo/imagen archivado" del formulario, pensada
+    para archivar la publicación, no como fuente alternativa de descarga, pero
+    sirve igual), se intenta de nuevo a partir de la copia archivada antes de
+    darse por vencido — a los CDNs de X/Instagram/Facebook les caducan las
+    URLs firmadas en horas, así que para cuando se ejecuta este script muchas
+    ya devuelven 403/404 aunque el vídeo original siga vivo.
 
     Usa curl (no urllib) porque el Python de macOS no trae certificados de CA
     propios y falla con CERTIFICATE_VERIFY_FAILED; curl reutiliza el almacén
@@ -108,25 +182,31 @@ def descargar_video(url):
     ruta_relativa = f"data/videos/{nombre}"
 
     if destino.exists():
-        return ruta_relativa
+        return ruta_relativa, None
 
     # Referer del propio origen del CDN — es lo que le hace falta a
     # video.twimg.com (y equivalentes) para no devolver 403 (ver docstring del
     # módulo). Al descargar server-side no importa qué Referer mandemos
     # nosotros, así que usamos el que sabemos que acepta.
-    resultado = subprocess.run(
-        ["curl", "-fsSL", "--max-time", "60",
-         "-H", "Referer: https://twitter.com/",
-         "-o", str(destino), url],
-        capture_output=True, text=True,
-    )
-    if resultado.returncode == 0 and destino.exists():
+    error = _curl_a_archivo(url, destino, referer="https://twitter.com/")
+    if error is None:
         print(f"  descargado: {nombre}")
-        return ruta_relativa
+        return ruta_relativa, None
+    print(f"[aviso] no se pudo descargar el vídeo ({error}), probando copia archivada: {url}")
 
-    destino.unlink(missing_ok=True)
-    print(f"[aviso] no se pudo descargar el vídeo ({resultado.stderr.strip()}), se enlaza la URL remota: {url}")
-    return url
+    url_archivada = resolver_archive_org(archivo_video)
+    if url_archivada:
+        error_archivo = _curl_a_archivo(url_archivada, destino)
+        if error_archivo is None:
+            print(f"  descargado desde archive.org: {nombre}")
+            return ruta_relativa, None
+        print(f"[aviso] tampoco se pudo descargar la copia archivada ({error_archivo}): {url_archivada}")
+        error = f"{error} | copia archivada: {error_archivo}"
+    elif archivo_video:
+        error = f"{error} | copia archivada sin fichero de vídeo descargable: {archivo_video}"
+
+    print(f"[aviso] se enlaza la URL remota sin copia local: {url}")
+    return url, error
 
 
 UMBRAL_SOLAPE_M = 20  # a menos distancia, dos puntos se pintan casi uno encima del otro
@@ -236,6 +316,7 @@ def og_metadata(url, cache):
 
 def generar():
     features = []
+    descargas_fallidas = []
     cache_og = cargar_cache_og()
     with open(CSV_PATH, newline="", encoding="utf-8") as f:
         for fila in csv.DictReader(f):
@@ -248,7 +329,18 @@ def generar():
             rating = fila.get("Rating aplicado a mensajes virales vinculados al vídeo", "").strip()
 
             video_url = fila.get("URL del vídeo", "").strip()
-            video_local = descargar_video(video_url) if video_url else ""
+            archivo_video = fila.get("Vídeo/imagen archivado", "").strip()
+            video_local, error_descarga = (
+                descargar_video(video_url, archivo_video) if video_url else ("", None)
+            )
+            if error_descarga:
+                descargas_fallidas.append({
+                    "zona": fila.get("Ciudad o región del vídeo", "").strip(),
+                    "pais": fila.get("País del vídeo", "").strip(),
+                    "url": video_url,
+                    "error": error_descarga,
+                    "marca_temporal": fila.get("Marca temporal", "").strip(),
+                })
             confianza = fila.get("Grado de confianza en la geolocalización", "").strip()
 
             newtral_url = fila.get("URL Newtral", "").strip()
@@ -262,7 +354,7 @@ def generar():
                     "pais": fila.get("País del vídeo", "").strip(),
                     "video": video_local,
                     "video_original": video_url,
-                    "archivo_video": fila.get("Versión archivada", "").strip(),
+                    "archivo_video": archivo_video,
                     "confianza": confianza,
                     "confianza_valor": confianza_a_valor(confianza),
                     "confianza_texto": confianza_a_texto(confianza),
@@ -271,7 +363,7 @@ def generar():
                     "claim": fila.get("Claim de publicación viral", "").strip(),
                     "rating": rating,
                     "rating_categoria": categorizar_rating(rating),
-                    "comentarios": fila.get("Comentarios", "").strip(),
+                    "comentarios": fila.get("Contexto", "").strip(),
                     "newtral_url": newtral_url,
                     "newtral_titulo": newtral_og["titulo"],
                     "newtral_descripcion": newtral_og["descripcion"],
@@ -286,6 +378,21 @@ def generar():
     geojson = {"type": "FeatureCollection", "features": features}
     GEOJSON_PATH.write_text(json.dumps(geojson, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     print(f"{len(features)} vídeo(s) escrito(s) en {GEOJSON_PATH.relative_to(Path.cwd())}")
+
+    # Informe de descargas fallidas: se escribe siempre (aunque esté vacío) para
+    # que el fichero refleje el estado de la última ejecución, no el de una
+    # anterior con más o menos fallos — y así sea fácil de identificar de un
+    # vistazo qué vídeos siguen enlazando a la URL remota en vez de a una copia
+    # local.
+    DESCARGAS_FALLIDAS_PATH.write_text(
+        json.dumps({"generado": datetime.now().isoformat(timespec="seconds"),
+                     "total_fallidas": len(descargas_fallidas),
+                     "fallidas": descargas_fallidas}, ensure_ascii=False, indent=2) + "\n",
+        encoding="utf-8",
+    )
+    if descargas_fallidas:
+        print(f"[aviso] {len(descargas_fallidas)} descarga(s) fallida(s) — detalle en "
+              f"{DESCARGAS_FALLIDAS_PATH.relative_to(Path.cwd())}")
 
 
 if __name__ == "__main__":

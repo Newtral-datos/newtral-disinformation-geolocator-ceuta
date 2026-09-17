@@ -1,8 +1,13 @@
 /* ── Centro inicial ──
-   Zoom bajo (2026-09-09, a petición expresa) para ver de entrada toda la zona
-   del Estrecho (Ceuta + norte de Marruecos), no solo la ciudad — los vídeos
-   pueden originarse a ambos lados, ver maxBounds más abajo. */
-const CENTRO_INICIAL = { center: [-4.1, 35.5], zoom: 8 };
+   Vista por defecto: toda Europa (2026-09-17, a petición expresa) — centro
+   aproximado del continente y zoom bajo para que quepa de punta a punta sin
+   necesidad de que el usuario aleje el mapa a mano. Ya no hay maxBounds (ver
+   más abajo) que fuerce un zoom mínimo distinto del que se pide aquí. Latitud
+   bajada de 54 a 47 (mismo día, a petición expresa) para orientar la vista
+   algo más al sur, hacia el Mediterráneo, sin perder el norte de Europa.
+   Centrada en España (mismo día, a petición expresa) en vez del centro
+   geográfico de Europa, ya que el proyecto gira en torno a Ceuta. */
+const CENTRO_INICIAL = { center: [-3.7, 40], zoom: 3.5 };
 
 /* ── Rating ──
    Cada vídeo trae un rating tipo fact-check (ver "rating_categoria" en
@@ -35,11 +40,11 @@ const RATING_LABELS = {
 /* ── Confianza en la geolocalización ──
    Escala de 5 niveles del formulario, 1 (Muy bajo/hipótesis) a 5 (Muy
    alto/verificado) — ver "confianza_valor" en generar_geojson.py. Degradado
-   de los 3 colores corporativos (2026-09-09, a petición expresa):
-   RATING_COLORES.falso (1) → .enganoso (3) → .verdadero (5) — mismo extremo
-   rojo/menta que el badge de rating, para que "rojo" y "menta" signifiquen
-   siempre lo mismo en toda la interfaz. */
-const CONFIANZA_COLORES = ['#CF023D', '#DC763E', '#EAEA40', '#76EE7A', '#01F3B3'];
+   monocromo del verde corporativo (2026-09-17, a petición expresa: paleta
+   verde en vez del rojo→amarillo→verde anterior) — mismo tono (#01F3B3) en
+   distintas luminosidades, de menta muy pálido (1) a verde corporativo a
+   toda intensidad (5). */
+const CONFIANZA_COLORES = ['#DBFFF5', '#A4FFE7', '#67FED6', '#2AFEC6', '#01F3B3'];
 
 function renderConfianzaPill(valor, texto) {
   if (valor === null || valor === undefined) return '';
@@ -67,13 +72,13 @@ const map = new maplibregl.Map({
   style: { version: 8, sources: {}, layers: [] },
   center: CENTRO_INICIAL.center,
   zoom: CENTRO_INICIAL.zoom,
-  minZoom: 7,
+  minZoom: 3,
   maxZoom: 19,
-  // Ceuta y el entorno del Estrecho (Tánger–Tetuán–Nador–Melilla–Algeciras): los
-  // vídeos virales que dicen mostrar Ceuta a menudo se grabaron en realidad al
-  // otro lado del Estrecho (ver el primer caso cargado, en Nador, Marruecos), así
-  // que el mapa tiene que poder llegar hasta ahí en vez de quedarse solo en Ceuta.
-  maxBounds: [[-7.0, 34.0], [-1.0, 37.0]],
+  // Sin maxBounds (2026-09-17, a petición expresa): el mapa se puede mover y
+  // alejar libremente en cualquier dirección — antes estaba limitado a
+  // Europa/norte de África porque los vídeos virales que dicen mostrar Ceuta
+  // a menudo se grabaron en realidad al otro lado del Estrecho, pero ese
+  // límite de movimiento ya no se quiere.
   antialias: true,
 });
 
@@ -157,12 +162,13 @@ function abrirPanelVideo(props) {
   const newtralCard = renderNewtralCard(newtral_url, newtral_titulo, newtral_descripcion, newtral_imagen);
 
   videoContenidoEl.innerHTML = `
+    ${pais ? `<span class="vc-antetitulo">${escapeHtml(pais)}</span>` : ''}
     ${player ? `<div class="vc-player">${player}</div>` : ''}
     <h2 class="vc-titulo">${escapeHtml(zona || 'Ubicación sin especificar')}</h2>
     <span class="vc-badge" style="background:${color};color:${colorTexto}">${escapeHtml(rating || RATING_LABELS.otro)}</span>
-    <p class="vc-zona">${escapeHtml(pais || '')}${fecha_origen ? ` | ${escapeHtml(fecha_origen)}` : ''}</p>
+    ${fecha_origen ? `<p class="vc-zona">${escapeHtml(fecha_origen)}</p>` : ''}
     ${claim ? `<p class="vc-claim">${escapeHtml(claim)}</p>` : ''}
-    ${comentarios ? `<p class="vc-descripcion">${escapeHtml(comentarios)}</p>` : ''}
+    ${comentarios ? `<p class="vc-contexto-titulo">Contexto</p><p class="vc-descripcion">${escapeHtml(comentarios)}</p>` : ''}
     ${confianza ? `<p class="cf-titulo">Confianza en la geolocalización</p>${renderConfianzaPill(confianza_valor, confianza_texto)}` : ''}
     ${newtralCard}
     ${enlaces ? `<div class="vc-enlaces">${enlaces}</div>` : ''}
@@ -181,17 +187,39 @@ document.getElementById('video-cerrar').addEventListener('click', cerrarPanelVid
    todavía no sabemos qué otras categorías de rating usará el formulario, así
    que la leyenda solo lista las que de verdad puede producir hoy
    categorizar_rating() en generar_geojson.py en vez de adelantar categorías
-   que quizá no lleguen a usarse nunca. */
-function renderLeyenda() {
+   que quizá no lleguen a usarse nunca.
+   Recuento (2026-09-17, a petición expresa): total de vídeos monitoreados y
+   desglose por categoría, calculado a partir del propio geojson que ya carga
+   el mapa — así el número nunca se desincroniza de los puntos dibujados. */
+async function cargarConteos() {
+  try {
+    const res = await fetch('data/videos.geojson');
+    const geojson = await res.json();
+    const conteos = { total: 0, verdadero: 0, enganoso: 0, falso: 0, otro: 0 };
+    for (const feature of geojson.features) {
+      conteos.total++;
+      const cat = feature.properties.rating_categoria;
+      conteos[cat] !== undefined ? conteos[cat]++ : conteos.otro++;
+    }
+    return conteos;
+  } catch (e) {
+    console.warn('No se pudieron calcular los recuentos de la leyenda', e);
+    return null;
+  }
+}
+
+function renderLeyenda(conteos) {
   const claves = ['verdadero', 'enganoso', 'falso', 'otro'];
   const items = claves.map(k => `
     <div class="lp-item">
       <span class="lp-dot" style="border-color:${RATING_COLORES[k]}"></span>
-      ${RATING_LABELS[k]}
+      <span class="lp-label">${RATING_LABELS[k]}</span>
+      ${conteos ? `<span class="lp-count">${conteos[k] || 0}</span>` : ''}
     </div>
   `).join('');
   document.getElementById('leyenda-panel').innerHTML = `
     <div class="lp-titulo">Nivel de verificación</div>
+    ${conteos ? `<div class="lp-total">${conteos.total} vídeo${conteos.total === 1 ? '' : 's'} monitoreado${conteos.total === 1 ? '' : 's'}</div>` : ''}
     ${items}
   `;
 }
@@ -257,5 +285,5 @@ map.on('load', async () => {
   map.on('mouseenter', 'videos-circle', () => { map.getCanvas().style.cursor = 'pointer'; });
   map.on('mouseleave', 'videos-circle', () => { map.getCanvas().style.cursor = ''; });
 
-  renderLeyenda();
+  renderLeyenda(await cargarConteos());
 });
