@@ -415,7 +415,7 @@ def generar():
                     "newtral_titulo": newtral_og["titulo"],
                     "newtral_descripcion": newtral_og["descripcion"],
                     "newtral_imagen": newtral_og["imagen"],
-                    "fecha_origen": fila.get("Fecha de observación (posible origen)", "").strip(),
+                    "fecha_origen": fila.get("Fecha real del vídeo (aparición en internet)", "").strip(),
                     "marca_temporal": fila.get("Marca temporal", "").strip(),
                 },
             })
