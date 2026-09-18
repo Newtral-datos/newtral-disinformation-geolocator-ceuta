@@ -117,16 +117,17 @@ def coords_a_decimal(coord_texto):
 
 
 def _curl_a_archivo(url, destino, referer=None):
-    """Ejecuta curl para descargar `url` a `destino`. Devuelve None si fue bien,
-    o el mensaje de error de curl en caso contrario (y borra el fichero
-    parcial, si llegó a crearse).
+    """Ejecuta curl para descargar `url` a `destino`. Devuelve (content_type,
+    None) si fue bien, o (None, mensaje de error) en caso contrario (y borra
+    el fichero parcial, si llegó a crearse).
 
     Comprueba el content-type devuelto además del código de salida: TikTok (y
     en general cualquier URL que en realidad sea la página web del vídeo, no
     el fichero) responde 200 con la página HTML de "Make Your Day" en vez de
     un 403/404 — curl la da por buena, y sin esta comprobación se guardaba esa
     página como si fuera el .mp4, un fallo silencioso que ni se detectaba ni
-    llegaba a activar el fallback a la copia archivada."""
+    llegaba a activar el fallback a la copia archivada. El content_type
+    también sirve para distinguir vídeo de imagen (ver ELEGIR_EXTENSION)."""
     cabeceras = ["-H", f"Referer: {referer}"] if referer else []
     resultado = subprocess.run(
         ["curl", "-fsSL", "--max-time", "60", *cabeceras,
@@ -137,10 +138,10 @@ def _curl_a_archivo(url, destino, referer=None):
         content_type = resultado.stdout.strip()
         if content_type.startswith("text/") or "html" in content_type:
             destino.unlink(missing_ok=True)
-            return f"la URL devolvió una página web, no un vídeo (content-type: {content_type or 'desconocido'})"
-        return None
+            return None, f"la URL devolvió una página web, no un vídeo (content-type: {content_type or 'desconocido'})"
+        return content_type, None
     destino.unlink(missing_ok=True)
-    return resultado.stderr.strip() or f"curl salió con código {resultado.returncode}"
+    return None, resultado.stderr.strip() or f"curl salió con código {resultado.returncode}"
 
 
 def comprimir_video(destino):
@@ -178,6 +179,27 @@ def comprimir_video(destino):
 ARCHIVE_ORG_ID_RE = re.compile(r"archive\.org/details/\s*([^/?#\s]+)")
 EXTENSIONES_VIDEO = (".mp4", ".mov", ".webm", ".mkv", ".m4v", ".avi")
 
+# Content-type -> extensión de imagen. Cualquier otro content-type (vídeo real
+# o uno que curl no sepa identificar, p.ej. application/octet-stream) se trata
+# como vídeo y cae en la extensión .mp4 de siempre (ELEGIR_EXTENSION).
+EXTENSIONES_IMAGEN = {
+    "image/jpeg": ".jpg",
+    "image/png": ".png",
+    "image/webp": ".webp",
+    "image/gif": ".gif",
+}
+
+
+def elegir_extension_y_tipo(content_type):
+    """A partir del content-type devuelto por curl, decide con qué extensión
+    guardar el fichero descargado y si es "imagen" o "video" (algunas filas
+    del formulario enlazan a una imagen viral, no a un vídeo — ver
+    "Vídeo/imagen archivado" en el propio formulario)."""
+    ct = (content_type or "").split(";")[0].strip().lower()
+    if ct in EXTENSIONES_IMAGEN:
+        return EXTENSIONES_IMAGEN[ct], "imagen"
+    return ".mp4", "video"
+
 
 def resolver_archive_org(url_details):
     """A partir de una URL tipo https://archive.org/details/<id>, consulta la
@@ -209,11 +231,14 @@ def resolver_archive_org(url_details):
     return f"https://archive.org/download/{identificador}/{quote(candidatos[0])}"
 
 
-def descargar_video(url, archivo_video=""):
-    """Descarga `url` a data/videos/ (si no está ya) y devuelve (ruta, error):
-    `ruta` es la ruta relativa a usar como src del <video>, o la propia URL
-    remota si la descarga falla; `error` es None si fue bien o el motivo del
-    fallo (para poder informarlo, ver DESCARGAS_FALLIDAS_PATH en generar()).
+def descargar_media(url, archivo_video=""):
+    """Descarga `url` a data/videos/ (si no está ya) y devuelve (ruta, tipo,
+    error): `ruta` es la ruta relativa a usar como src del <video>/<img>, o la
+    propia URL remota si la descarga falla; `tipo` es "video" o "imagen"
+    según el content-type real detectado (algunas filas del formulario son
+    una imagen viral, no un vídeo); `error` es None si fue bien o el motivo
+    del fallo (para poder informarlo, ver DESCARGAS_FALLIDAS_PATH en
+    generar()).
 
     Si la descarga del CDN original falla y `archivo_video` es un enlace de
     archive.org (columna "Vídeo/imagen archivado" del formulario, pensada
@@ -221,44 +246,58 @@ def descargar_video(url, archivo_video=""):
     sirve igual), se intenta de nuevo a partir de la copia archivada antes de
     darse por vencido — a los CDNs de X/Instagram/Facebook les caducan las
     URLs firmadas en horas, así que para cuando se ejecuta este script muchas
-    ya devuelven 403/404 aunque el vídeo original siga vivo.
+    ya devuelven 403/404 aunque el vídeo original siga vivo. Ese fallback solo
+    busca ficheros de vídeo en archive.org (EXTENSIONES_VIDEO), así que si la
+    fila es una imagen y la descarga directa falla, no hay copia alternativa
+    y se enlaza la URL remota rota.
 
     Usa curl (no urllib) porque el Python de macOS no trae certificados de CA
     propios y falla con CERTIFICATE_VERIFY_FAILED; curl reutiliza el almacén
     de confianza del sistema, que sí los tiene."""
     VIDEOS_DIR.mkdir(parents=True, exist_ok=True)
-    nombre = hashlib.sha1(url.encode()).hexdigest()[:16] + ".mp4"
-    destino = VIDEOS_DIR / nombre
-    ruta_relativa = f"data/videos/{nombre}"
+    nombre_base = hashlib.sha1(url.encode()).hexdigest()[:16]
 
-    if destino.exists():
-        return ruta_relativa, None
+    # No se conoce la extensión (ni si es vídeo o imagen) hasta descargar y
+    # mirar el content-type, así que la caché busca por prefijo de hash en vez
+    # de por nombre exacto.
+    existentes = list(VIDEOS_DIR.glob(nombre_base + ".*"))
+    if existentes:
+        destino = existentes[0]
+        tipo = "imagen" if destino.suffix.lower() in EXTENSIONES_IMAGEN.values() else "video"
+        return f"data/videos/{destino.name}", tipo, None
+
+    temporal = VIDEOS_DIR / (nombre_base + ".tmp")
 
     # Referer del propio origen del CDN — es lo que le hace falta a
     # video.twimg.com (y equivalentes) para no devolver 403 (ver docstring del
     # módulo). Al descargar server-side no importa qué Referer mandemos
     # nosotros, así que usamos el que sabemos que acepta.
-    error = _curl_a_archivo(url, destino, referer="https://twitter.com/")
+    content_type, error = _curl_a_archivo(url, temporal, referer="https://twitter.com/")
     if error is None:
-        print(f"  descargado: {nombre}")
-        comprimir_video(destino)
-        return ruta_relativa, None
-    print(f"[aviso] no se pudo descargar el vídeo ({error}), probando copia archivada: {url}")
+        extension, tipo = elegir_extension_y_tipo(content_type)
+        destino = VIDEOS_DIR / (nombre_base + extension)
+        temporal.replace(destino)
+        print(f"  descargado ({tipo}): {destino.name}")
+        if tipo == "video":
+            comprimir_video(destino)
+        return f"data/videos/{destino.name}", tipo, None
+    print(f"[aviso] no se pudo descargar ({error}), probando copia archivada: {url}")
 
     url_archivada = resolver_archive_org(archivo_video)
     if url_archivada:
-        error_archivo = _curl_a_archivo(url_archivada, destino)
+        destino = VIDEOS_DIR / (nombre_base + ".mp4")
+        _content_type, error_archivo = _curl_a_archivo(url_archivada, destino)
         if error_archivo is None:
-            print(f"  descargado desde archive.org: {nombre}")
+            print(f"  descargado desde archive.org: {destino.name}")
             comprimir_video(destino)
-            return ruta_relativa, None
+            return f"data/videos/{destino.name}", "video", None
         print(f"[aviso] tampoco se pudo descargar la copia archivada ({error_archivo}): {url_archivada}")
         error = f"{error} | copia archivada: {error_archivo}"
     elif archivo_video:
         error = f"{error} | copia archivada sin fichero de vídeo descargable: {archivo_video}"
 
     print(f"[aviso] se enlaza la URL remota sin copia local: {url}")
-    return url, error
+    return url, "video", error
 
 
 UMBRAL_SOLAPE_M = 20  # a menos distancia, dos puntos se pintan casi uno encima del otro
@@ -382,8 +421,8 @@ def generar():
 
             video_url = fila.get("URL del vídeo", "").strip()
             archivo_video = fila.get("Vídeo/imagen archivado", "").strip()
-            video_local, error_descarga = (
-                descargar_video(video_url, archivo_video) if video_url else ("", None)
+            video_local, tipo_media, error_descarga = (
+                descargar_media(video_url, archivo_video) if video_url else ("", "", None)
             )
             if error_descarga:
                 descargas_fallidas.append({
@@ -405,6 +444,7 @@ def generar():
                     "zona": fila.get("Ciudad o región del vídeo", "").strip(),
                     "pais": fila.get("País del vídeo", "").strip(),
                     "video": video_local,
+                    "tipo": tipo_media,
                     "video_original": video_url,
                     "archivo_video": archivo_video,
                     "confianza": confianza,

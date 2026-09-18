@@ -190,7 +190,7 @@ function renderNewtralCard(url, titulo, descripcion, imagen) {
 
 function abrirPanelVideo(props) {
   const {
-    zona, pais, video, archivo_video, confianza, confianza_valor, confianza_texto,
+    zona, pais, video, tipo, archivo_video, confianza, confianza_valor, confianza_texto,
     archivo_publicacion, claim, rating, rating_categoria,
     comentarios, newtral_url, newtral_titulo, newtral_descripcion, newtral_imagen,
     fecha_origen,
@@ -198,13 +198,17 @@ function abrirPanelVideo(props) {
 
   const color = RATING_COLORES[rating_categoria] || RATING_COLORES.otro;
   const colorTexto = RATING_TEXTO[rating_categoria] || RATING_TEXTO.otro;
-  // `video` es el fichero local descargado por generar_geojson.py (data/videos/*.mp4):
+  // `video` es el fichero local descargado por generar_geojson.py (data/videos/*):
   // los CDN de X/Twitter devuelven 403 en cuanto detectan un Referer que no es el
-  // suyo, así que enlazar el .mp4 remoto directamente no se reproduce incrustado.
+  // suyo, así que enlazar el fichero remoto directamente no se reproduce incrustado.
+  // Algunas filas del formulario son una imagen viral en vez de un vídeo (`tipo`
+  // === 'imagen', detectado por content-type en generar_geojson.py).
   const player = video
     ? (esEmbedExterno(video)
         ? `<iframe src="${urlEmbed(video)}" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>`
-        : `<video src="${video}" controls playsinline></video>`)
+        : tipo === 'imagen'
+          ? `<img src="${video}" alt="" />`
+          : `<video src="${video}" controls playsinline></video>`)
     : '';
 
   const enlaces = [
@@ -217,10 +221,10 @@ function abrirPanelVideo(props) {
 
   videoContenidoEl.innerHTML = `
     ${antetitulo ? `<span class="vc-antetitulo">${antetitulo}</span>` : ''}
-    ${player ? `<div class="vc-player">${player}</div>` : ''}
     <h2 class="vc-titulo">${escapeHtml(zona || 'Ubicación sin especificar')}</h2>
     <span class="vc-badge" style="background:${color};color:${colorTexto}">${escapeHtml(rating || RATING_LABELS.otro)}</span>
-    ${claim ? `<p class="vc-contexto-titulo">Afirmación</p><p class="vc-claim">${escapeHtml(claim)}</p>` : ''}
+    ${player ? `<div class="vc-player">${player}</div>` : ''}
+    ${claim ? `<div class="vc-afirmacion"><p class="vc-contexto-titulo">Afirmación</p><p class="vc-claim">${escapeHtml(claim)}</p></div>` : ''}
     ${comentarios ? `<p class="vc-contexto-titulo">Contexto</p><p class="vc-descripcion">${escapeHtml(comentarios)}</p>` : ''}
     ${confianza ? `<p class="cf-titulo">Confianza en la geolocalización</p>${renderConfianzaPill(confianza_valor, confianza_texto)}` : ''}
     ${newtralCard}

@@ -14,6 +14,7 @@
         "zona": "Beni Ensar (Nador, Marruecos)",
         "pais": "Marruecos",
         "video": "data/videos/cc2e9a5b473276a9.mp4",
+        "tipo": "video",
         "video_original": "https://video.twimg.com/amplify_video/2095862489003298816/vid/avc1/320x576/CMN37LrrihMzpq58.mp4?tag=29",
         "archivo_video": "https://archive.org/details/cmn-37-lrrih-mzpq-58",
         "confianza": "5 - Muy alto (verificado)",
@@ -46,6 +47,7 @@
         "zona": "Beni Ensar (Nador, Marruecos)",
         "pais": "Marruecos",
         "video": "data/videos/fc047744675be86d.mp4",
+        "tipo": "video",
         "video_original": "https://video.twimg.com/amplify_video/2083008988765917184/vid/avc1/720x780/CYAhY24JejMgPvap.mp4",
         "archivo_video": "https://archive.org/details/cyah-y-24-jej-mg-pvap-1",
         "confianza": "5 - Muy alto (verificado)",
@@ -78,6 +80,7 @@
         "zona": "Beni Ensar (Nador, Marruecos)",
         "pais": "Marruecos",
         "video": "data/videos/dc18218fa0f7bf09.mp4",
+        "tipo": "video",
         "video_original": "https://video.twimg.com/amplify_video/2082961708159574016/vid/avc1/1192x1490/C3wOo3LUL1hR5ck2.mp4",
         "archivo_video": "https://archive.org/details/ c-3w-oo-3-lul-1h-r-5ck-2-1",
         "confianza": "5 - Muy alto (verificado)",
@@ -110,6 +113,7 @@
         "zona": "Beni Ensar (Nador, Marruecos)",
         "pais": "Marruecos",
         "video": "data/videos/c4e1f931cbcb6fee.mp4",
+        "tipo": "video",
         "video_original": "https://video.twimg.com/amplify_video/2083032052077580288/vid/avc1/480x518/kPYYaONU48QVHFje.mp4?tag=29",
         "archivo_video": "https://archive.org/details/ kPYYaONU48QVHFje",
         "confianza": "5 - Muy alto (verificado)",
@@ -142,6 +146,7 @@
         "zona": "Beni Ensar (Nador, Marruecos)",
         "pais": "Marruecos",
         "video": "data/videos/745105c26e332640.mp4",
+        "tipo": "video",
         "video_original": "https://video.twimg.com/amplify_video/2083061054834176001/vid/avc1/720x1280/pLMKS3OxRmncsaSY.mp4",
         "archivo_video": "https://archive.org/details/ pLMKS3OxRmncsaSY",
         "confianza": "5 - Muy alto (verificado)",
@@ -174,6 +179,7 @@
         "zona": "Ain Lhcen (Tetuán, Marruecos)",
         "pais": "Marruecos",
         "video": "data/videos/cd7a81a31c33bdd9.mp4",
+        "tipo": "video",
         "video_original": "https://video.twimg.com/amplify_video/2083137090225586176/vid/avc1/1080x1230/zFOl4a2glMpSSGu3.mp4",
         "archivo_video": "https://archive.org/details/zFOl4a2glMpSSGu3",
         "confianza": "5 - Muy alto (verificado)",
@@ -206,6 +212,7 @@
         "zona": "Tetuán (Marruecos)",
         "pais": "Marruecos",
         "video": "data/videos/29725234883146d8.mp4",
+        "tipo": "video",
         "video_original": "https://video.twimg.com/amplify_video/2082930806482210817/vid/avc1/360x640/9F_HpD38747BPl7O.mp4",
         "archivo_video": "https://archive.org/details/9-f-hp-d-38747-bpl-7-o",
         "confianza": "5 - Muy alto (verificado)",
@@ -238,6 +245,7 @@
         "zona": "Buenos Aires (Argentina)",
         "pais": "Argentina",
         "video": "data/videos/2a07fcbdbac157a7.mp4",
+        "tipo": "video",
         "video_original": "https://www.tiktok.com/@angelaperezromero8/video/7678431976705051936?is_from_webapp=1&web_id=7618542682751616534",
         "archivo_video": "https://archive.org/details/tiktok_angelaperezromero8_7678431976705051936",
         "confianza": "5 - Muy alto (verificado)",
@@ -270,6 +278,7 @@
         "zona": "Ceuta (España)",
         "pais": "España",
         "video": "data/videos/58489f4952ba6673.mp4",
+        "tipo": "video",
         "video_original": "https://video.twimg.com/amplify_video/2088897128877768704/vid/avc1/1024x576/H1scv3as6pb5YtFz.mp4",
         "archivo_video": "https://archive.org/details/h-1scv-3as-6pb-5-yt-fz",
         "confianza": "5 - Muy alto (verificado)",
@@ -302,6 +311,7 @@
         "zona": "Ibiza (Islas Baleares, España)",
         "pais": "España",
         "video": "data/videos/c924841fcde5ff03.mp4",
+        "tipo": "video",
         "video_original": "https://video.twimg.com/amplify_video/2093349621691043840/vid/avc1/720x1278/6gJGlIiCUJtAg1KT.mp4",
         "archivo_video": "https://archive.org/details/6g-jgl-ii-cujt-ag-1-kt",
         "confianza": "5 - Muy alto (verificado)",
@@ -334,6 +344,7 @@
         "zona": "Ceuta (España)",
         "pais": "España",
         "video": "data/videos/6ebea9f711e71828.mp4",
+        "tipo": "video",
         "video_original": "https://video.twimg.com/amplify_video/2098386330816253960/vid/avc1/576x1024/D2fdxyyXNk9BxHGn.mp4",
         "archivo_video": "https://archive.org/details/d-2fdxyy-xnk-9-bx-hgn",
         "confianza": "5 - Muy alto (verificado)",
@@ -366,6 +377,7 @@
         "zona": "Ciudad del Cabo (Sudáfrica)",
         "pais": "Sudáfrica",
         "video": "data/videos/733ebf0a2a45594f.mp4",
+        "tipo": "video",
         "video_original": "https://video.twimg.com/amplify_video/2087610397939335168/vid/avc1/1320x1790/GcQAQkc10p80WNN3.mp4",
         "archivo_video": "https://archive.org/details/gc-qaqkc-10p-80-wnn-3",
         "confianza": "5 - Muy alto (verificado)",
@@ -390,14 +402,15 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -5.345061135759455,
-          35.86648684820747
+          -5.345124846180091,
+          35.86650274929005
         ]
       },
       "properties": {
         "zona": "Bab Sebta (Castillejos/Fnideq, Marruecos)",
         "pais": "Marruecos",
         "video": "data/videos/efdf908f8def3e73.mp4",
+        "tipo": "video",
         "video_original": "https://video.twimg.com/amplify_video/2087644243728678912/vid/avc1/576x1024/JIYNmn_0CvJU9xMB.mp4",
         "archivo_video": "https://archive.org/details/jiynmn-0-cv-ju-9x-mb",
         "confianza": "5 - Muy alto (verificado)",
@@ -430,6 +443,7 @@
         "zona": "Ceuta (España)",
         "pais": "España",
         "video": "data/videos/9886d38ea120ab45.mp4",
+        "tipo": "video",
         "video_original": "https://video.twimg.com/amplify_video/2087170760422887424/vid/avc1/720x912/g3Fv0dEvNtppnOZv.mp4",
         "archivo_video": "https://archive.org/details/g3Fv0dEvNtppnOZv",
         "confianza": "5 - Muy alto (verificado)",
@@ -462,6 +476,7 @@
         "zona": "Harbil (Marrakech, Marruecos)",
         "pais": "Marruecos",
         "video": "data/videos/561f2e95fba35931.mp4",
+        "tipo": "video",
         "video_original": "https://video.twimg.com/amplify_video/2083902506388574208/vid/avc1/576x1024/259qniPMmsIrCuxZ.mp4",
         "archivo_video": "https://archive.org/details/259qni-pmms-ir-cux-z",
         "confianza": "3 - Medio (probable)",
@@ -486,14 +501,15 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -5.345393685751748,
-          35.86648684820747
+          -5.345374258724356,
+          35.866619443334756
         ]
       },
       "properties": {
         "zona": "Bab Sebta (Castillejos/Fnideq, Marruecos)",
         "pais": "Marruecos",
         "video": "https://pbs.twimg.com/card_img/2097533215112155136/mf87_Chr?format=jpg&name=small",
+        "tipo": "video",
         "video_original": "https://pbs.twimg.com/card_img/2097533215112155136/mf87_Chr?format=jpg&name=small",
         "archivo_video": "https://archive.li/HkoOE",
         "confianza": "5 - Muy alto (verificado)",
@@ -526,6 +542,7 @@
         "zona": "Castillejos/Fnideq (Marruecos)",
         "pais": "Marruecos",
         "video": "data/videos/658d0c240d8e13b8.mp4",
+        "tipo": "video",
         "video_original": "https://video.twimg.com/amplify_video/2093396862766022656/vid/avc1/320x320/l9V6xrNGUvaySu28.mp4",
         "archivo_video": "https://archive.org/details/l9V6xrNGUvaySu28",
         "confianza": "5 - Muy alto (verificado)",
@@ -558,6 +575,7 @@
         "zona": "Castillejos/Fnideq (Marruecos)",
         "pais": "Marruecos",
         "video": "data/videos/a1a2ed3f064cbfc8.mp4",
+        "tipo": "video",
         "video_original": "https://scontent-sea5-1.cdninstagram.com/o1/v/t2/f2/m86/AQN4LqPs_MwzRh3BUoJW6foFpRKfIUuFRki7cN3oqpaCHnApY-G8YozKIMmx2pdRlsP6K2xqhiNesdKK_sFaAxiKdDL8abzltNLbVKA.mp4?_nc_cat=107&_nc_sid=5e9851&_nc_ht=scontent-sea5-1.cdninstagram.com&_nc_ohc=FG025Dj8jgsQ7kNvwEQSmAV&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5JTlNUQUdSQU0uQ0xJUFMuQzMuNzIwLmRhc2hfYmFzZWxpbmVfMV92MSIsInhwdl9hc3NldF9pZCI6MTgxMTc2ODU1OTU1MDUxMTYsImFzc2V0X2FnZV9kYXlzIjo0NSwidmlfdXNlY2FzZV9pZCI6MTAwOTksImR1cmF0aW9uX3MiOjI5LCJ1cmxnZW5fc291cmNlIjoid3d3In0%3D&ccb=17-1&vs=c3ead48092e70254&_nc_vs=HBksFQIYUmlnX3hwdl9yZWVsc19wZXJtYW5lbnRfc3JfcHJvZC80OTQ4REUyNTAxQkVGMjM5MkZFOEIxMUZERUE0ODE5NV92aWRlb19kYXNoaW5pdC5tcDQVAALIARIAFQIYUWlnX3hwdl9wbGFjZW1lbnRfcGVybWFuZW50X3YyL0Q0NEE0M0RFNDdCRUVGRDA2MTBDNTA2QTNBNjM2REEzX2F1ZGlvX2Rhc2hpbml0Lm1wNBUCAsgBEgAoABgAGwKIB3VzZV9vaWwBMRJwcm9ncmVzc2l2ZV9yZWNpcGUBMRUAACa4h5ThjPyuQBUCKAJDMywXQD3EGJN0vGoYEmRhc2hfYmFzZWxpbmVfMV92MREAdf4HZeadAQA&_nc_gid=soqEQOKWXT8CeIsncBZHIA&_nc_ss=706cf&_nc_zt=28&oh=00_AQLXQyFNwj2svze6ew-HDLEWVIPxNG_gVoDfvxc5kMuiPg&oe=6AA9F094",
         "archivo_video": "https://archive.org/details/aqn-4-lq-ps-mwz-rh-3-buo-jw-6fo-fp-rkf-iuu-frki-7c-n-3oqpa-chn-ap-y-g-8-yoz-kimm",
         "confianza": "5 - Muy alto (verificado)",
@@ -590,6 +608,7 @@
         "zona": "Castillejos/Fnideq (Marruecos)",
         "pais": "Marruecos",
         "video": "data/videos/aa90dc0ef4837f0d.mp4",
+        "tipo": "video",
         "video_original": "https://video.twimg.com/amplify_video/2088712463659196416/vid/avc1/720x1280/ytHYLQ95fS4KsGTH.mp4",
         "archivo_video": "https://archive.org/details/ytHYLQ95fS4KsGTH",
         "confianza": "5 - Muy alto (verificado)",
@@ -622,6 +641,7 @@
         "zona": "Castillejos/Fnideq (Marruecos)",
         "pais": "Marruecos",
         "video": "data/videos/2701ea7ed3871598.mp4",
+        "tipo": "video",
         "video_original": "https://video.twimg.com/amplify_video/2089049349926047744/vid/avc1/576x768/awuvKG0oPMtfamDM.mp4",
         "archivo_video": "https://archive.org/details/awuvKG0oPMtfamDM",
         "confianza": "5 - Muy alto (verificado)",
@@ -654,6 +674,7 @@
         "zona": "Toulouse (Francia)",
         "pais": "Francia",
         "video": "data/videos/f94de67fed3a8cc8.mp4",
+        "tipo": "video",
         "video_original": "https://video-sea5-1.xx.fbcdn.net/o1/v/t2/f2/m266/AQOwHYFzo8U_gNDa0eOLsE7XnISIcAYaEbgaC6sXK2Zbd_tinVCzOyECGKlRbJJLkXqMH6v1w1Sbyu7eyVTyU7zeuyl9ydpfQ3U.mp4?strext=1&_nc_cat=107&_nc_sid=8bf8fe&_nc_ht=video-sea5-1.xx.fbcdn.net&_nc_ohc=j7WPGo_ry7oQ7kNvwFWFDyv&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5GQUNFQk9PSy4uQzMuNzIwLmF2MV9jb21wcmVzc2VkX3NvdXJjZSIsInhwdl9hc3NldF9pZCI6MjgzMzcwNzk4OTU5MjQ2MTgsImFzc2V0X2FnZV9kYXlzIjoxNywidmlfdXNlY2FzZV9pZCI6MTAxMjMsImR1cmF0aW9uX3MiOjEwLCJ1cmxnZW5fc291cmNlIjoid3d3In0%3D&ccb=17-1&_nc_gid=fB-Yw60qpHEj2p9m2jjkvQ&_nc_ss=702cf&_nc_zt=28&oh=00_AQIX47ZXY0pGIcVMYpDVUQXehNRe_MVQ9l0NjAJ46Slbtg&oe=6AAA18E7&bitrate=661274&tag=av1_compressed_source",
         "archivo_video": "https://archive.org/details/aqow-hyfzo-8-u-g-nda-0e-ols-e-7-xn-isic-aya-ebga-c-6s-xk-2-zbd-tin-vcz-oy-ecgkl-",
         "confianza": "5 - Muy alto (verificado)",
@@ -686,6 +707,7 @@
         "zona": "Frontera del Tarajal (Fnideq, Marruecos)",
         "pais": "Marruecos",
         "video": "data/videos/7595d067d42877d6.mp4",
+        "tipo": "video",
         "video_original": "https://video.twimg.com/ext_tw_video/2083286586540630016/pu/vid/avc1/720x1280/A-2l-0ZVqds-aU4q.mp4",
         "archivo_video": "https://archive.org/details/a-2l-0-zvqds-a-u-4q",
         "confianza": "4 - Alto (muy probable)",
@@ -718,6 +740,7 @@
         "zona": "Wakefield (Inglaterra, Reino Unido)",
         "pais": "Inglaterra",
         "video": "data/videos/21b052606defa333.mp4",
+        "tipo": "video",
         "video_original": "https://scontent.cdninstagram.com/o1/v/t2/f2/m86/AQPD4cl9nUgUkoJqbzvErZvg2rMVYtlEi8LrDjlb7aXmm2Wd5mXE9yK6HXEKIs5YKYeqfR93GB3_IjiRmEt5DaDiXeGATiQF_JVLmfo.mp4?_nc_cat=100&_nc_sid=5e9851&_nc_ht=scontent-hel3-1.cdninstagram.com&_nc_ohc=kUl6gCvTaacQ7kNvwEl48rU&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5JTlNUQUdSQU0uQ0xJUFMuQzMuNDgwLmRhc2hfYmFzZWxpbmVfMV92MSIsInhwdl9hc3NldF9pZCI6MTM4NTcwNjYwMDE5ODQwNSwiYXNzZXRfYWdlX2RheXMiOjQ3LCJ2aV91c2VjYXNlX2lkIjoxMDA5OSwiZHVyYXRpb25fcyI6MTksInVybGdlbl9zb3VyY2UiOiJ3d3cifQ%3D%3D&ccb=17-1&vs=340393e2309c0679&_nc_vs=HBksFQIYUmlnX3hwdl9yZWVsc19wZXJtYW5lbnRfc3JfcHJvZC9FQTQ0NjhCRTQ5N0Q4NkQzN0FBODM4MTgzQ0Y0NjBCNV92aWRlb19kYXNoaW5pdC5tcDQVAALIARIAFQIYUWlnX3hwdl9wbGFjZW1lbnRfcGVybWFuZW50X3YyLzA4NDA2MzkxREZFMjc4ODBEMkE4M0M5RUNBNDJBQjg1X2F1ZGlvX2Rhc2hpbml0Lm1wNBUCAsgBEgAoABgAGwKIB3VzZV9vaWwBMRJwcm9ncmVzc2l2ZV9yZWNpcGUBMRUAACaKxNfa3pL2BBUCKAJDMywXQDOzMzMzMzMYEmRhc2hfYmFzZWxpbmVfMV92MREAdf4HZeadAQA&_nc_gid=MCICvEz5JO418Uk3TPpsmg&_nc_zt=28&_nc_ss=7a22e&oh=00_AQJyS9xARBHcotnBFZvMYewRBPC3yg8zpFVN8-PXJ4OZFw&oe=6AADA00D",
         "archivo_video": "https://archive.org/details/wakefield_202609",
         "confianza": "5 - Muy alto (verificado)",
@@ -750,6 +773,7 @@
         "zona": "Cuenca (España)",
         "pais": "España",
         "video": "data/videos/0c79c2a1b7c8ccf5.mp4",
+        "tipo": "video",
         "video_original": "https://video.twimg.com/amplify_video/2090435956935426048/vid/avc1/464x848/j2ezQjIZXtFjqOmA.mp4",
         "archivo_video": "https://archive.org/details/j2ezQjIZXtFjqOmA",
         "confianza": "5 - Muy alto (verificado)",
@@ -782,6 +806,7 @@
         "zona": "Tamale (Ghana)",
         "pais": "Ghana",
         "video": "data/videos/dc4658fca17304e1.mp4",
+        "tipo": "video",
         "video_original": "https://video.twimg.com/amplify_video/2089068770614472705/vid/avc1/480x852/bPRNHQ-h8MtnYcps.mp4",
         "archivo_video": "https://archive.org/details/bPRNHQ-h8MtnYcps",
         "confianza": "5 - Muy alto (verificado)",
@@ -814,6 +839,7 @@
         "zona": "Paso de Beni Ensar (Melilla, España)",
         "pais": "España",
         "video": "data/videos/430193d7ab4b31b3.mp4",
+        "tipo": "video",
         "video_original": "https://video.twimg.com/amplify_video/2088669391940378624/vid/avc1/720x818/YrfboOf1GzVfckrM.mp4",
         "archivo_video": "https://archive.org/details/yrfbo-of-1-gz-vfckr-m",
         "confianza": "5 - Muy alto (verificado)",
@@ -846,6 +872,7 @@
         "zona": "Adra (Almería, España)",
         "pais": "España",
         "video": "data/videos/09039951f0adf1fb.mp4",
+        "tipo": "video",
         "video_original": "https://video.twimg.com/amplify_video/2084996665153339392/vid/avc1/720x1280/VqOj32bjSrL1oXZK.mp4",
         "archivo_video": "https://archive.org/details/vq-oj-32bj-sr-l-1o-xzk",
         "confianza": "5 - Muy alto (verificado)",
@@ -878,6 +905,7 @@
         "zona": "Porta da Ribeira (El Jadida, Marruecos)",
         "pais": "Marruecos",
         "video": "data/videos/88f9203d702efc88.mp4",
+        "tipo": "video",
         "video_original": "https://video-lhr6-2.xx.fbcdn.net/o1/v/t2/f2/m266/AQO50qo5cSdpRn6BYEBSnnJxCCPOZDLg9_04TwzvkFheqzO_n5VFHRVkM8r_uNFPCO6MJ_Zl7hMLKk_8CxlUi9JkgQ8DmePtauY.mp4?strext=1&_nc_cat=109&_nc_sid=8bf8fe&_nc_ht=video-lhr6-2.xx.fbcdn.net&_nc_ohc=LrWcs__7lwYQ7kNvwFVH6nS&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5GQUNFQk9PSy4uQzMuMTA4MC5jb21wcmVzc2VkX3NvdXJjZSIsInhwdl9hc3NldF9pZCI6MTcxNzE4NzE3Mjg2NTk2MiwiYXNzZXRfYWdlX2RheXMiOjQ1LCJ2aV91c2VjYXNlX2lkIjoxMDA5OSwiZHVyYXRpb25fcyI6MTgsInVybGdlbl9zb3VyY2UiOiJ3d3cifQ%3D%3D&ccb=17-1&_nc_gid=e8JKvPoG6yoarh8IDhOP5g&_nc_ss=79289&_nc_zt=28&oh=00_AQJ4yYYByGeQohgjNqaYsjMQTOH0tREZicheyp_UPCeg1w&oe=6AAB501D&bitrate=2276680&tag=compressed_source",
         "archivo_video": "https://archive.org/details/aqo-50qo-5c-sdp-rn-6-byebsnn-jx-ccpozdlg-9-04-twzvk-fheqz-o-n-5-vfhrvk-m-8r-u-nf",
         "confianza": "5 - Muy alto (verificado)",
@@ -910,6 +938,7 @@
         "zona": "Tinzaouten (Argelia)",
         "pais": "Argelia",
         "video": "data/videos/e2e8f90554672a02.mp4",
+        "tipo": "video",
         "video_original": "https://video.twimg.com/amplify_video/2083940165571989504/vid/avc1/360x486/IcqlF7XLmz-_vr4W.mp4",
         "archivo_video": "https://archive.org/details/icql-f-7-xlmz-vr-4-w",
         "confianza": "4 - Alto (muy probable)",
@@ -942,6 +971,7 @@
         "zona": "Catillejos/Fnideq (Marruecos)",
         "pais": "Marruecos",
         "video": "data/videos/46e6fbd4810a9c4b.mp4",
+        "tipo": "video",
         "video_original": "https://scontent-lhr11-1.cdninstagram.com/o1/v/t2/f2/m86/AQNJunru9QCQB63jWAz32LULTuTgGahFqykWWfbhFOo8GEwR3X9eWDJ1P-sofUj-uxriuqucXXCll_Y5iU8M324eWYurXmi9_va9LJU.mp4?_nc_cat=100&_nc_sid=5e9851&_nc_ht=scontent-lhr11-1.cdninstagram.com&_nc_ohc=QLK7A2ilmuwQ7kNvwGYTlQ2&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5JTlNUQUdSQU0uQ0xJUFMuQzMuNzIwLmRhc2hfYmFzZWxpbmVfMV92MSIsInhwdl9hc3NldF9pZCI6MTAzMTMwNDE4NjU2ODQzOCwiYXNzZXRfYWdlX2RheXMiOjQ3LCJ2aV91c2VjYXNlX2lkIjoxMDA5OSwiZHVyYXRpb25fcyI6MTQsInVybGdlbl9zb3VyY2UiOiJ3d3cifQ%3D%3D&ccb=17-1&vs=9640552c2e770d2c&_nc_vs=HBksFQIYUmlnX3hwdl9yZWVsc19wZXJtYW5lbnRfc3JfcHJvZC8yRDQ1QUZBN0QyMkYxQ0U0QzE2MDc2RUVEMEJFNjg5NF92aWRlb19kYXNoaW5pdC5tcDQVAALIARIAFQIYUWlnX3hwdl9wbGFjZW1lbnRfcGVybWFuZW50X3YyLzkzNDlGOTU1MUJBOTlEMUQyNjYzQUM0MDdCRjhERDkzX2F1ZGlvX2Rhc2hpbml0Lm1wNBUCAsgBEgAoABgAGwKIB3VzZV9vaWwBMRJwcm9ncmVzc2l2ZV9yZWNpcGUBMRUAACbs-5D75v3UAxUCKAJDMywXQC3MzMzMzM0YEmRhc2hfYmFzZWxpbmVfMV92MREAdf4HZeadAQA&_nc_gid=NKQKhcHR37DWJ__V5G7VUA&_nc_ss=79689&_nc_zt=28&oh=00_AQI0u-GuubhKlOCOBzbZb_LAbElSDsvp-_fAIIWd8WErjA&oe=6AAC6F7D",
         "archivo_video": "https://archive.org/details/aqnjunru-9-qcqb-63j-waz-32-lultu-tg-gah-fqyk-wwfbh-foo-8-gew-r-3-x-9e-wdj-1-p-so",
         "confianza": "5 - Muy alto (verificado)",
@@ -974,6 +1004,7 @@
         "zona": "Catillejos/Fnideq (Marruecos)",
         "pais": "Marruecos",
         "video": "data/videos/6bd3064d04b32bf3.mp4",
+        "tipo": "video",
         "video_original": "https://scontent-vie1-1.cdninstagram.com/o1/v/t2/f2/m86/AQNR0wjgzEdeVwPprecdbZNYztBr5wSj96xyUEl1UiFXuvBnDtqVOPT9D3e-YPoSCsCbRCmpZ-gA56cR-5UPLbxn18ubLmNT0kOUxpc.mp4?_nc_cat=104&_nc_sid=5e9851&_nc_ht=scontent-vie1-1.cdninstagram.com&_nc_ohc=0KZy3xGNBpkQ7kNvwE3hB3f&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5JTlNUQUdSQU0uQ0xJUFMuQzMuNzIwLmRhc2hfYmFzZWxpbmVfMV92MSIsInhwdl9hc3NldF9pZCI6MTc5NjI5OTY4ODQwNzY1NywiYXNzZXRfYWdlX2RheXMiOjQ3LCJ2aV91c2VjYXNlX2lkIjoxMDA5OSwiZHVyYXRpb25fcyI6MTMsInVybGdlbl9zb3VyY2UiOiJ3d3cifQ\\u00253D\\u00253D&ccb=17-1&vs=7f337c78fbb22abd&_nc_vs=HBksFQIYUmlnX3hwdl9yZWVsc19wZXJtYW5lbnRfc3JfcHJvZC8yODRFRjc4QURERDQ4MjdGMERDMjRGOUQ2QUU4M0VCN192aWRlb19kYXNoaW5pdC5tcDQVAALIARIAFQIYUWlnX3hwdl9wbGFjZW1lbnRfcGVybWFuZW50X3YyLzk4NDZEMkU2QTQ3QTNGREQwNERBNjREMUVFNjg4Rjg5X2F1ZGlvX2Rhc2hpbml0Lm1wNBUCAsgBEgAoABgAGwKIB3VzZV9vaWwBMRJwcm9ncmVzc2l2ZV9yZWNpcGUBMRUAACbSybPNs-6wBhUCKAJDMywXQCsAAAAAAAAYEmRhc2hfYmFzZWxpbmVfMV92MREAdf4HZeadAQA&_nc_gid=1RpXyrzQOT6-ZQTpQeutiQ&_nc_ss=73689&_nc_zt=28&oh=00_AQJQDkXL2uXrCiT5wKk4iPkPmy6dcvhEPDNssleMMkEWCg&oe=6AAC9D89",
         "archivo_video": "https://archive.org/details/aqnr-0wjgz-ede-vw-pprecdb-znyzt-br-5w-sj-96xy-uel-1-ui-fxuv-bn-dtq-vopt-9-d-3e-y",
         "confianza": "5 - Muy alto (verificado)",
@@ -1006,6 +1037,7 @@
         "zona": "Castillejos/Fnideq (Marruecos)",
         "pais": "Marruecos",
         "video": "data/videos/57f3d35d73cb8b0d.mp4",
+        "tipo": "video",
         "video_original": "https://scontent-ams2-1.cdninstagram.com/o1/v/t2/f2/m86/AQPQI6uK2_pie7mWTi3KmkMauwTUd-acj-kXuxECWjtUBFD0t6Pd_dw0IdtvJoSWL01RfGqxqOvkeaUdJyjdu7COB8FL0_f4wjlepFE.mp4?_nc_cat=102&_nc_sid=5e9851&_nc_ht=scontent-ams2-1.cdninstagram.com&_nc_ohc=0ELK6ioBstkQ7kNvwEOLIBN&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5JTlNUQUdSQU0uQ0xJUFMuQzMuNzIwLmRhc2hfYmFzZWxpbmVfMV92MSIsInhwdl9hc3NldF9pZCI6MTc3OTczMzY0MzM5MTM0NSwiYXNzZXRfYWdlX2RheXMiOjQ4LCJ2aV91c2VjYXNlX2lkIjoxMDA5OSwiZHVyYXRpb25fcyI6NDUsInVybGdlbl9zb3VyY2UiOiJ3d3cifQ%3D%3D&ccb=17-1&vs=7b3c1ddbf9d6c502&_nc_vs=HBksFQIYUmlnX3hwdl9yZWVsc19wZXJtYW5lbnRfc3JfcHJvZC81NjQ4NkY2NUQ3QTgyRkUyNDRDOEE3M0NFQTdFRjU4N192aWRlb19kYXNoaW5pdC5tcDQVAALIARIAFQIYUWlnX3hwdl9wbGFjZW1lbnRfcGVybWFuZW50X3YyLzYyNDdCMjkxQUU5M0Q5MUNDMzg3NkM2MEZBQTg5NDg5X2F1ZGlvX2Rhc2hpbml0Lm1wNBUCAsgBEgAoABgAGwKIB3VzZV9vaWwBMRJwcm9ncmVzc2l2ZV9yZWNpcGUBMRUAACbixd_5kKqpBhUCKAJDMywXQEbMzMzMzM0YEmRhc2hfYmFzZWxpbmVfMV92MREAdf4HZeadAQA&_nc_gid=lSLNBbHStOzcf8yoEifWGQ&_nc_ss=7a22e&_nc_zt=28&oh=00_AQIhTEySePEUgs7VWQw8yYl2s9auhXgcOumkfB5Mgp3Qvw&oe=6AACB217",
         "archivo_video": "https://archive.org/details/aqpqi-6u-k-2-pie-7m-wti-3-kmk-mauw-tud-acj-k-xux-ecwjt-ubfd-0t-6-pd-dw-0-idtv-jo",
         "confianza": "4 - Alto (muy probable)",
@@ -1038,6 +1070,7 @@
         "zona": "Castillejos/Fnideq (Marruecos)",
         "pais": "Marruecos",
         "video": "data/videos/10ea432ba945dbbb.mp4",
+        "tipo": "video",
         "video_original": "https://video-sea1-1.xx.fbcdn.net/o1/v/t2/f2/m266/AQNsYHXnUgUNmd335xj06Z7CyRX-wzDqKxnvgUVs6QuYQ1olAN4ZJ7dWJkLHK14jRQ6aLmlxlHvEzYTIsKZp1I0TjViMroaZ1pU.mp4?strext=1&_nc_cat=104&_nc_sid=8bf8fe&_nc_ht=video-sea1-1.xx.fbcdn.net&_nc_ohc=ize-FinXTtIQ7kNvwHi_HIE&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5GQUNFQk9PSy4uQzMuMTA4MC5hdjFfY29tcHJlc3NlZF9zb3VyY2UiLCJ4cHZfYXNzZXRfaWQiOjkwMDE5MzQ5MjcxMzc1OSwiYXNzZXRfYWdlX2RheXMiOjQ4LCJ2aV91c2VjYXNlX2lkIjoxMDEyMiwiZHVyYXRpb25fcyI6NDIyLCJ1cmxnZW5fc291cmNlIjoid3d3In0%3D&ccb=17-1&_nc_gid=Nx18FV0nE8PP18Qd-11ffw&_nc_ss=702cf&_nc_zt=28&oh=00_AQIrTqsC4zSRc2SpdBMng0GBgmRt8bb5YUnpG1o3V6CnRA&oe=6AAD883E&bitrate=1380195&tag=av1_compressed_source",
         "archivo_video": "https://archive.org/details/30-de-julio-1441010791159271",
         "confianza": "5 - Muy alto (verificado)",
@@ -1070,6 +1103,7 @@
         "zona": "Castillejos/Fnideq (Marruecos)",
         "pais": "Marruecos",
         "video": "data/videos/e4b5951639fd04d8.mp4",
+        "tipo": "video",
         "video_original": "https://video-sea5-1.xx.fbcdn.net/o1/v/t2/f2/m266/AQO6q6fggiCNPlPCgdlGc6unspUlAaXQFVbrfPnQYtRP2pV2TULCA0B0m8ZopiPc3YER3mSL7MzcLsZgGLBAYgtdfQLl1aTtYQo.mp4?strext=1&_nc_cat=108&_nc_sid=8bf8fe&_nc_ht=video-sea5-1.xx.fbcdn.net&_nc_ohc=i1mG0E50lisQ7kNvwEtF8CR&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5GQUNFQk9PSy4uQzMuMTA4MC5hdjFfY29tcHJlc3NlZF9zb3VyY2UiLCJ4cHZfYXNzZXRfaWQiOjE5NDc5MjI5ODMyOTU5OTYsImFzc2V0X2FnZV9kYXlzIjo0OCwidmlfdXNlY2FzZV9pZCI6MTAxMjIsImR1cmF0aW9uX3MiOjU0LCJ1cmxnZW5fc291cmNlIjoid3d3In0%3D&ccb=17-1&_nc_gid=32JOsBdF7lJNPnRn3rno1A&_nc_ss=702cf&_nc_zt=28&oh=00_AQIzm-sui-BJWVIejWJ1wHkOWj9Odh_9LOFU03OnqdrI0A&oe=6AAD7E42&bitrate=3286001&tag=av1_compressed_source",
         "archivo_video": "https://archive.org/details/30-de-julio-1060353303201250",
         "confianza": "5 - Muy alto (verificado)",
@@ -1102,6 +1136,7 @@
         "zona": "Paso del Tarajal (Fnideq-Ceuta)",
         "pais": "Marruecos",
         "video": "data/videos/3469305c511aad48.mp4",
+        "tipo": "video",
         "video_original": "https://video-sea5-1.xx.fbcdn.net/o1/v/t2/f2/m366/AQP2tVuKCMtd_gqub0sj3mJKrYNiOGfBCzQcSWfz0SeNaFzilMnIJPgzPT1q0gYj7myjIDnkB2BGAai6jE-p17i5NPoC8LRAp-Yf94dL0QKLTg.mp4?_nc_cat=105&_nc_sid=5e9851&_nc_ht=video-sea5-1.xx.fbcdn.net&_nc_ohc=cjsfOJeXjkgQ7kNvwGEgtuW&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5GQUNFQk9PSy4uQzMuNzA4LmRhc2hfaDI2NC1iYXNpYy1nZW4yXzcyMHAiLCJ4cHZfYXNzZXRfaWQiOjM3Nzk0NTE4MjUwMTYxOTIzLCJhc3NldF9hZ2VfZGF5cyI6NDgsInZpX3VzZWNhc2VfaWQiOjEwMTIyLCJkdXJhdGlvbl9zIjozNSwidXJsZ2VuX3NvdXJjZSI6Ind3dyJ9&ccb=17-1&vs=7d339b05c46d7f44&_nc_vs=HBksFQIYRWZiX2VwaGVtZXJhbC9ENTRBREQ4NUZDMjY5OTdEOTExNDlCMDQ5QzdBNTJBQl9tdF8xX3ZpZGVvX2Rhc2hpbml0Lm1wNBUAAsgBEgAVAhhAZmJfcGVybWFuZW50L0FBNDZGQjM5NkM3NTY3NjFEOUMzMUY3QzAyNTc5QUJEX2F1ZGlvX2Rhc2hpbml0Lm1wNBUCAsgBEgAoABgAGwKIB3VzZV9vaWwBMRJwcm9ncmVzc2l2ZV9yZWNpcGUBMRUAACaGnJCswPqihgEVAigCQzMsF0BBl--dsi0OGBlkYXNoX2gyNjQtYmFzaWMtZ2VuMl83MjBwEQB1AmWUngEA&_nc_gid=hqs5_Z3KxM0zp90Vza8mZg&_nc_ss=702cf&_nc_zt=28&oh=00_AQK8gfg_bGnCfXSVV6JbaObKERaqE_nHOvaNp4o5OX6OEg&oe=6AB1A0A3&bitrate=1266976&tag=dash_h264-basic-gen2_720p",
         "archivo_video": "https://archive.org/details/30-de-julio-1599783221927059",
         "confianza": "5 - Muy alto (verificado)",
@@ -1134,6 +1169,7 @@
         "zona": "Bouzaghlal (Marruecos)",
         "pais": "Marruecos",
         "video": "data/videos/2af5c9d640999b13.mp4",
+        "tipo": "video",
         "video_original": "https://video-sea5-1.xx.fbcdn.net/o1/v/t2/f2/m266/AQOpNtFEMkw9zrjiMZsh4y9ZMPYYbxWu_PdhtOpBAdhaJemQJLNJnbNOP8l1oyre91JfxhZiopXP1up8AaMFBME1w8V9Pu3rguI.mp4?strext=1&_nc_cat=103&_nc_sid=8bf8fe&_nc_ht=video-sea5-1.xx.fbcdn.net&_nc_ohc=6_Whg3NQR_8Q7kNvwHmZI4E&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5GQUNFQk9PSy4uQzMuMTA4MC5hdjFfY29tcHJlc3NlZF9zb3VyY2UiLCJ4cHZfYXNzZXRfaWQiOjIwMjk4MDU3NDA5ODI2MDgsImFzc2V0X2FnZV9kYXlzIjo0OCwidmlfdXNlY2FzZV9pZCI6MTAxMjIsImR1cmF0aW9uX3MiOjYzLCJ1cmxnZW5fc291cmNlIjoid3d3In0%3D&ccb=17-1&_nc_gid=PnT0HrGClmhbRML6pLdCTg&_nc_ss=702cf&_nc_zt=28&oh=00_AQKQn51Me_Ay7eNRuFhkv5Hzg7cguMhMUsD9oOsangQbiQ&oe=6AAD9ACB&bitrate=1220766&tag=av1_compressed_source",
         "archivo_video": "https://archive.org/details/30-de-julio-1329668179365499",
         "confianza": "3 - Medio (probable)",
@@ -1166,6 +1202,7 @@
         "zona": "Castillejos/Fnideq (Marruecos)",
         "pais": "Marruecos",
         "video": "data/videos/ec8a6ed832f544c4.mp4",
+        "tipo": "video",
         "video_original": "https://scontent-prg1-1.cdninstagram.com/o1/v/t2/f2/m86/AQMte7Qc4_XPAaUXw2UbLLbyRHKkQJLU3AoNnvMcvAiJ3XqxGiy4EH3z0gUSi7zcCPMGr14sdtf5h_TnkoCy2heYQN5UDsOQ_tQy7xk.mp4?_nc_cat=106&_nc_sid=5e9851&_nc_ht=scontent-prg1-1.cdninstagram.com&_nc_ohc=Cp7l35tm3G8Q7kNvwH0aw_z&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5JTlNUQUdSQU0uQ0xJUFMuQzMuMzYwLmRhc2hfYmFzZWxpbmVfM192MSIsInhwdl9hc3NldF9pZCI6MTg0MTE2MTQ0MjUxNDg5OTIsImFzc2V0X2FnZV9kYXlzIjo0OCwidmlfdXNlY2FzZV9pZCI6MTAwOTksImR1cmF0aW9uX3MiOjkwMCwidXJsZ2VuX3NvdXJjZSI6Ind3dyJ9&ccb=17-1&vs=abfc1499b6107353&_nc_vs=HBksFQIYUmlnX3hwdl9yZWVsc19wZXJtYW5lbnRfc3JfcHJvZC9FRjQ5RjkwNThCMTM4MUFGQzFEMDQyOEZCRjlDNkFBOV92aWRlb19kYXNoaW5pdC5tcDQVAALIARIAFQIYUWlnX3hwdl9wbGFjZW1lbnRfcGVybWFuZW50X3YyLzVDNEIwNjI5RjIzMzdERUY1RkI0ODQ3QTcxNEI3QTlBX2F1ZGlvX2Rhc2hpbml0Lm1wNBUCAsgBEgAoABgAGwKIB3VzZV9vaWwBMRJwcm9ncmVzc2l2ZV9yZWNpcGUBMRUAACaAueuYgdG0QRUCKAJDMywXQIwgYEGJN0wYEmRhc2hfYmFzZWxpbmVfM192MREAdf4HZeadAQA&_nc_gid=_dE9Ze3b3ZHAZH89ztNArQ&_nc_ss=73689&_nc_zt=28&oh=00_AQJ1m51xErr4woCoZfm6-Z3XzHw3sOmkrOjQ9qv7XYUAeA&oe=6AADA5B7",
         "archivo_video": "https://archive.org/details/30-de-julio-1684595935984318",
         "confianza": "5 - Muy alto (verificado)",
@@ -1183,6 +1220,303 @@
         "newtral_imagen": "",
         "fecha_origen": "30/07/2026",
         "marca_temporal": "17/09/2026 13:41:07"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -5.345334,
+          35.867125
+        ]
+      },
+      "properties": {
+        "zona": "Castillejos/Fnideq (Marruecos)",
+        "pais": "Marruecos",
+        "video": "data/videos/a2efcae21ae47b97.mp4",
+        "tipo": "video",
+        "video_original": "https://video-sea5-1.xx.fbcdn.net/o1/v/t2/f2/m266/AQMt75X-0Okls1h6xmaj_pi0NjCjZF29Iul23dwsWwYayEoe7LU8lAG_wRSgSbguE5wi9FTFWHNsQICVp3B-8S0k3VR9y2QMLis.mp4?strext=1&_nc_cat=109&_nc_sid=8bf8fe&_nc_ht=video-sea5-1.xx.fbcdn.net&_nc_ohc=Pn1vGpLIlJoQ7kNvwFl9fGF&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5GQUNFQk9PSy4uQzMuMTA4MC5hdjFfY29tcHJlc3NlZF9zb3VyY2UiLCJ4cHZfYXNzZXRfaWQiOjIwNjM2NTc1MTA5MjYwOTgsImFzc2V0X2FnZV9kYXlzIjo0OCwidmlfdXNlY2FzZV9pZCI6MTAxMjIsImR1cmF0aW9uX3MiOjE4LCJ1cmxnZW5fc291cmNlIjoid3d3In0%3D&ccb=17-1&_nc_gid=PZyoszkPrkhBp7wMaBI9Fg&_nc_ss=702cf&_nc_zt=28&oh=00_AQKx13ldmx5RfpYOnFsMMgKQ0QRkAvoIctXDtKBEYPvwjQ&oe=6AADCAF1&bitrate=2195012&tag=av1_compressed_source",
+        "archivo_video": "https://archive.org/details/30-de-julio-1780335926468167",
+        "confianza": "5 - Muy alto (verificado)",
+        "confianza_valor": 5,
+        "confianza_texto": "Verificado",
+        "publicacion_viral": "https://www.facebook.com/watch/?v=1780335926468167",
+        "archivo_publicacion": "https://www.facebook.com/watch/?v=1780335926468167",
+        "claim": "\"Las fuerzas de intervención rápida se preparan para intervenir en el paso fronterizo de Bab Sebta, en la Ceuta ocupada\".",
+        "rating": "Verdadero",
+        "rating_categoria": "verdadero",
+        "comentarios": "El vídeo muestra a un mando de la DGSN marroquí y a varios agentes con material antidisturbios en las proximidades de la frontera con Ceuta, junto a la parada de taxis de Bab Sebta. Las imágenes fueron publicadas por un perfil marroquí de Facebook a las 19:31 del 30 de julio de 2026.",
+        "newtral_url": "",
+        "newtral_titulo": "",
+        "newtral_descripcion": "",
+        "newtral_imagen": "",
+        "fecha_origen": "30/07/2026",
+        "marca_temporal": "17/09/2026 16:21:02"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -5.345335,
+          35.864737
+        ]
+      },
+      "properties": {
+        "zona": "Castillejos/Fnideq (Marruecos)",
+        "pais": "Marruecos",
+        "video": "data/videos/4521714176485eb2.mp4",
+        "tipo": "video",
+        "video_original": "https://video-sea5-1.xx.fbcdn.net/o1/v/t2/f2/m366/AQPGlDMLJ7ZBfu0vXobLPBLOiJsLivkSDgEez3YRyrHHs9IYvlSdRJBzY1n54s3Cw9nqY8I8kyQco3aYAyvEI5tZJGLh0aksaKbIF6eZ8vD3ag.mp4?_nc_cat=110&_nc_sid=5e9851&_nc_ht=video-sea5-1.xx.fbcdn.net&_nc_ohc=VeMKIUvJzeYQ7kNvwGFDeMT&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5GQUNFQk9PSy4uQzMuNzIwLmRhc2hfaDI2NC1iYXNpYy1nZW4yXzcyMHAiLCJ4cHZfYXNzZXRfaWQiOjIyMjE2NDk4NzUwNzQ1NTcsImFzc2V0X2FnZV9kYXlzIjo0OCwidmlfdXNlY2FzZV9pZCI6MTAxMjIsImR1cmF0aW9uX3MiOjE2LCJ1cmxnZW5fc291cmNlIjoid3d3In0%3D&ccb=17-1&vs=4b5f5dacacd8c05c&_nc_vs=HBksFQIYRWZiX2VwaGVtZXJhbC8yMzQ5QTczQzIzM0UyQzU5QzYxRjRGRjEyNDdCQjBBN19tdF8xX3ZpZGVvX2Rhc2hpbml0Lm1wNBUAAsgBEgAVAhhAZmJfcGVybWFuZW50Lzg0NDM2NDE3MTZBMEIzRjJGQzY3MjYyQTA2MTJEOEI5X2F1ZGlvX2Rhc2hpbml0Lm1wNBUCAsgBEgAoABgAGwKIB3VzZV9vaWwBMRJwcm9ncmVzc2l2ZV9yZWNpcGUBMRUAACb69_O5haXyBxUCKAJDMywXQDCqfvnbItEYGWRhc2hfaDI2NC1iYXNpYy1nZW4yXzcyMHARAHUCZZSeAQA&_nc_gid=wQvt8_22hOAlhrLYvA9QUg&_nc_ss=702cf&_nc_zt=28&oh=00_AQK9iATq5unalR9PHGmKjFY6ElyJkRu6V0CD0BfVPG7p4Q&oe=6AB1D042&bitrate=3224632&tag=dash_h264-basic-gen2_720p",
+        "archivo_video": "https://archive.org/details/30-de-julio-1075548295126960",
+        "confianza": "5 - Muy alto (verificado)",
+        "confianza_valor": 5,
+        "confianza_texto": "Verificado",
+        "publicacion_viral": "https://www.facebook.com/watch/?v=1075548295126960",
+        "archivo_publicacion": "https://archive.li/V0GK8",
+        "claim": "\"Llegan refuerzos de seguridad a las inmediaciones del paso fronterizo de Bab Sebta, en la Ceuta ocupada\".",
+        "rating": "Verdadero",
+        "rating_categoria": "verdadero",
+        "comentarios": "Un camión antidisturbios equipado con cañón de agua, perteneciente a la DGSN marroquí, llega a las proximidades de la frontera con Ceuta, según muestra un vídeo grabado cerca de la estación de taxis de Bab Sebta y compartido en Facebook a las 20:01 del 30 de julio de 2026.",
+        "newtral_url": "",
+        "newtral_titulo": "",
+        "newtral_descripcion": "",
+        "newtral_imagen": "",
+        "fecha_origen": "30/07/2026",
+        "marca_temporal": "17/09/2026 16:55:57"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -5.345374258724356,
+          35.86638605524534
+        ]
+      },
+      "properties": {
+        "zona": "Castillejos/Fnideq (Marruecos)",
+        "pais": "Marruecos",
+        "video": "data/videos/4427911d8f0dcc61.mp4",
+        "tipo": "video",
+        "video_original": "https://video-sea5-1.xx.fbcdn.net/o1/v/t2/f2/m366/AQPw7YJIcO4fBZMA5MDlWYi51J3Koox4jukieiYTyadlHofOY6p9J7UMR33MLERv66toJxgCqBnw3blbz-MyzaS3o6kBd30uUjYXFwHNfuWorw.mp4?_nc_cat=103&_nc_sid=5e9851&_nc_ht=video-sea5-1.xx.fbcdn.net&_nc_ohc=hFJhQ-uMmIAQ7kNvwHnEZRK&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5GQUNFQk9PSy4uQzMuNzIwLmRhc2hfaDI2NC1iYXNpYy1nZW4yXzcyMHAiLCJ4cHZfYXNzZXRfaWQiOjE1MDE1NzA4NjQ5Njk5MjMsImFzc2V0X2FnZV9kYXlzIjo0OCwidmlfdXNlY2FzZV9pZCI6MTAxMjIsImR1cmF0aW9uX3MiOjE2LCJ1cmxnZW5fc291cmNlIjoid3d3In0%3D&ccb=17-1&vs=cfdf3d2b5f79d078&_nc_vs=HBksFQIYRWZiX2VwaGVtZXJhbC8yODRCRDZBMzQ3MzExRDlERUZEQTRENDQ2M0Y3QjU5Ml9tdF8xX3ZpZGVvX2Rhc2hpbml0Lm1wNBUAAsgBEgAVAhhAZmJfcGVybWFuZW50L0MyNDYwQUZBNTU5QjczQ0U3MzlCODRBQjE0OEMwMEI4X2F1ZGlvX2Rhc2hpbml0Lm1wNBUCAsgBEgAoABgAGwKIB3VzZV9vaWwBMRJwcm9ncmVzc2l2ZV9yZWNpcGUBMRUAACaG45fg9uqqBRUCKAJDMywXQDAAAAAAAAAYGWRhc2hfaDI2NC1iYXNpYy1nZW4yXzcyMHARAHUCZZSeAQA&_nc_gid=ime6KRcY6L4YdYjMiiJCrA&_nc_ss=702cf&_nc_zt=28&oh=00_AQLg5CLrCS4pS2F2TuvnWpxO51wwiCY0nMKoQ_Nz7kUdBA&oe=6AB1D89D&bitrate=2254957&tag=dash_h264-basic-gen2_720p",
+        "archivo_video": "https://archive.org/details/30-de-julio-866857672945088",
+        "confianza": "5 - Muy alto (verificado)",
+        "confianza_valor": 5,
+        "confianza_texto": "Verificado",
+        "publicacion_viral": "https://www.facebook.com/watch/?v=866857672945088",
+        "archivo_publicacion": "https://archive.li/hGNMM",
+        "claim": "\"Las fuerzas de seguridad marroquíes en el complejo turístico de Bab Sebta obligaron a dispersar a la multitud\".",
+        "rating": "Verdadero",
+        "rating_categoria": "verdadero",
+        "comentarios": "Las fuerzas marroquíes realizan cargas policiales al lado de la parada de taxis de Bab Sebta, en las proximidades de la frontera con Ceuta. Vídeo compartido en Facebook a las 18:52 hora española del 30 de julio de 2026.",
+        "newtral_url": "",
+        "newtral_titulo": "",
+        "newtral_descripcion": "",
+        "newtral_imagen": "",
+        "fecha_origen": "30/07/2026",
+        "marca_temporal": "17/09/2026 17:08:38"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -5.784817922406796,
+          35.77220327948798
+        ]
+      },
+      "properties": {
+        "zona": "Tánger (Marruecos)",
+        "pais": "Marruecos",
+        "video": "data/videos/d2f582218c9087f8.mp4",
+        "tipo": "video",
+        "video_original": "https://video-sea5-1.xx.fbcdn.net/o1/v/t2/f2/m266/AQNMKToTK0SUsQZt7BdfzbFq9mAcWLjXdqeCOFLxaKcBWjHnbwn1pVBllF86T8fO9ntaep-ubvQB1DEW_ms8usFciA2M4DDIxTw.mp4?strext=1&_nc_cat=107&_nc_sid=8bf8fe&_nc_ht=video-sea5-1.xx.fbcdn.net&_nc_ohc=7oFJb-WgznEQ7kNvwHXlWNe&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5GQUNFQk9PSy4uQzMuNzIwLmF2MV9jb21wcmVzc2VkX3NvdXJjZSIsInhwdl9hc3NldF9pZCI6MTYxMDE1MTAwMDQ1MTU1MCwiYXNzZXRfYWdlX2RheXMiOjQ4LCJ2aV91c2VjYXNlX2lkIjoxMDEyMywiZHVyYXRpb25fcyI6NDQsInVybGdlbl9zb3VyY2UiOiJ3d3cifQ%3D%3D&ccb=17-1&_nc_gid=SPkfJrSdATcmRHG_5r21LA&_nc_ss=702cf&_nc_zt=28&oh=00_AQLM4rxuhQRXVM2daqMSZmmgGPrCxsJGAntM4SPSAM4lAg&oe=6AADD7FF&bitrate=1157866&tag=av1_compressed_source",
+        "archivo_video": "https://archive.org/details/aqnmkto-tk-0-sus-qzt-7-bdfzb-fq-9m-ac-wlj-xdqe-coflxa-kc-bwj-hnbwn-1p-vbll-f-86-",
+        "confianza": "5 - Muy alto (verificado)",
+        "confianza_valor": 5,
+        "confianza_texto": "Verificado",
+        "publicacion_viral": "https://www.facebook.com/watch/?v=1696938145771236",
+        "archivo_publicacion": "https://archive.li/6qgev",
+        "claim": "\"Hoy llegó a Tánger un gran número de personas a través de la estación de tren. Estas llegadas, en su mayoría de jóvenes, provocaron aglomeraciones y atascos en el transporte público que se dirigía a Tetuán, desde donde pretendían unirse a la oleada migratoria hacia Ceuta\".",
+        "rating": "Verdadero",
+        "rating_categoria": "verdadero",
+        "comentarios": "Imágenes de una multitud de jóvenes tratando de coger el autobús I-3 en Tánger, que une la estación de tren con el puerto de la ciudad marroquí. No hay pruebas que confirmen que estos jóvenes se dirigían a Ceuta, aunque varias publicaciones lo dan por sentado. El vídeo fue compartido en Facebook el 30 de julio de 2026 a las 19:21 hora española.",
+        "newtral_url": "",
+        "newtral_titulo": "",
+        "newtral_descripcion": "",
+        "newtral_imagen": "",
+        "fecha_origen": "30/07/2026",
+        "marca_temporal": "17/09/2026 18:02:06"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -5.784656148181864,
+          35.77182828408398
+        ]
+      },
+      "properties": {
+        "zona": "Tánger (Marruecos)",
+        "pais": "Marruecos",
+        "video": "data/videos/b29c408b22912eec.mp4",
+        "tipo": "video",
+        "video_original": "https://scontent-lhr11-1.cdninstagram.com/o1/v/t2/f2/m86/AQPoo5SaPf4_FUEqrxbsiKxbX1bmv_8Dkh4FnpeK0jBfbmS9wUoO2egzTVgPDlaJCeMT1NP7yCaqzzdbpm3PCtJ3JsX63JOshSaal0k.mp4?_nc_cat=106&_nc_sid=5e9851&_nc_ht=scontent-lhr11-1.cdninstagram.com&_nc_ohc=GIIQvLzaIcAQ7kNvwGM0b-r&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5JTlNUQUdSQU0uQ0xJUFMuQzMuNzIwLmRhc2hfYmFzZWxpbmVfMV92MSIsInhwdl9hc3NldF9pZCI6MTA3NjEwMzczNDk0MTU5MywiYXNzZXRfYWdlX2RheXMiOjQ5LCJ2aV91c2VjYXNlX2lkIjoxMDA5OSwiZHVyYXRpb25fcyI6MTEsInVybGdlbl9zb3VyY2UiOiJ3d3cifQ%3D%3D&ccb=17-1&vs=534fd4183eff7564&_nc_vs=HBksFQIYUmlnX3hwdl9yZWVsc19wZXJtYW5lbnRfc3JfcHJvZC82NDRCNTAxMzJCQ0Y2M0RFMDRCMUJFMDI1M0M3N0E4MV92aWRlb19kYXNoaW5pdC5tcDQVAALIARIAFQIYUWlnX3hwdl9wbGFjZW1lbnRfcGVybWFuZW50X3YyL0U1NDZDMkM1RTE5MTAxRkE4MjI4QzVGNUJCN0REQjk4X2F1ZGlvX2Rhc2hpbml0Lm1wNBUCAsgBEgAoABgAGwKIB3VzZV9vaWwBMRJwcm9ncmVzc2l2ZV9yZWNpcGUBMRUAACay3ubNva3pAxUCKAJDMywXQCYhysCDEm8YEmRhc2hfYmFzZWxpbmVfMV92MREAdf4HZeadAQA&_nc_gid=05fIE0tjIWL7Ir6fT-sYRw&_nc_ss=79689&_nc_zt=28&oh=00_AQLjMyzkB7MYSQ7AN0KVZIaJJwFvbBsLb6mSBKaU9CQ8OA&oe=6AADF657",
+        "archivo_video": "https://archive.org/details/aqpoo-5-sa-pf-4-fueqrxbsi-kxb-x-1bmv-8-dkh-4-fnpe-k-0j-bfbm-s-9w-uo-o-2egz-tvg-p",
+        "confianza": "5 - Muy alto (verificado)",
+        "confianza_valor": 5,
+        "confianza_texto": "Verificado",
+        "publicacion_viral": "https://www.instagram.com/reels/Dba-F5vMu4m/",
+        "archivo_publicacion": "https://www.instagram.com/reels/Dba-F5vMu4m/",
+        "claim": "\"Todo el mundo se quiere ir\".",
+        "rating": "Verdadero",
+        "rating_categoria": "verdadero",
+        "comentarios": "Este vídeo fue compartido en Facebook el 30 de julio de 2026 a las 17:06 hora española. Muestra una multitud de jóvenes tratando de coger el autobús I-3 en una para situada junto a la estación de trenes de Tánger. La línea conecta con el puerto de la ciudad marroquí. No hay pruebas que confirmen que estos jóvenes se dirigían a Ceuta, aunque varias publicaciones lo dan por sentado.",
+        "newtral_url": "",
+        "newtral_titulo": "",
+        "newtral_descripcion": "",
+        "newtral_imagen": "",
+        "fecha_origen": "30/07/2026",
+        "marca_temporal": "17/09/2026 18:21:35"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -5.906201641696487,
+          35.009934691118964
+        ]
+      },
+      "properties": {
+        "zona": "Ksar El Kebir (Marruecos)",
+        "pais": "Marruecos",
+        "video": "data/videos/ccc875b0b098a4be.mp4",
+        "tipo": "video",
+        "video_original": "https://scontent-lhr11-1.cdninstagram.com/o1/v/t2/f2/m86/AQOm7Z2bTsejyiS1rFkOGELDeDiYysRBveG4Er90JZ4mLjoHFYgXWr9p3Zpltn4OqGxZdJk3XfII5H341S_dzgVSTZ3vIMnj1KFqEz8.mp4?_nc_cat=106&_nc_sid=5e9851&_nc_ht=scontent-lhr11-1.cdninstagram.com&_nc_ohc=GBuO5KOb2PwQ7kNvwH3LAgw&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5JTlNUQUdSQU0uQ0xJUFMuQzMuNzIwLmRhc2hfYmFzZWxpbmVfMV92MSIsInhwdl9hc3NldF9pZCI6MTc4OTg2OTE3Mzc1MjAwNDYsImFzc2V0X2FnZV9kYXlzIjo0OCwidmlfdXNlY2FzZV9pZCI6MTAwOTksImR1cmF0aW9uX3MiOjQ5LCJ1cmxnZW5fc291cmNlIjoid3d3In0%3D&ccb=17-1&vs=144330b6d7e1570f&_nc_vs=HBksFQIYUmlnX3hwdl9yZWVsc19wZXJtYW5lbnRfc3JfcHJvZC9FQjRENDJENDMwMjA2QjM1MTFFNzQ2OTE5RjZCMUI4QV92aWRlb19kYXNoaW5pdC5tcDQVAALIARIAFQIYUWlnX3hwdl9wbGFjZW1lbnRfcGVybWFuZW50X3YyLzA3NDAyRDdEMEYxQjBGNzY1NDMwOThCOUFENUYxRUFCX2F1ZGlvX2Rhc2hpbml0Lm1wNBUCAsgBEgAoABgAGwKIB3VzZV9vaWwBMRJwcm9ncmVzc2l2ZV9yZWNpcGUBMRUAACbcnqyv_bDLPxUCKAJDMywXQEjR64UeuFIYEmRhc2hfYmFzZWxpbmVfMV92MREAdf4HZeadAQA&_nc_gid=RnUcbsxCHM6fbXO1AOCE1g&_nc_ss=79689&_nc_zt=28&oh=00_AQKmnTPRQNlpEqmUSLkeVdGTOL_zT3WQuHk7IN7y0W_vpw&oe=6AADFABF",
+        "archivo_video": "https://archive.org/details/aqom-7-z-2b-tsejyi-s-1r-fk-ogelde-di-yys-rbve-g-4-er-90-jz-4m-ljo-hfyg-xwr-9p-3-",
+        "confianza": "5 - Muy alto (verificado)",
+        "confianza_valor": 5,
+        "confianza_texto": "Verificado",
+        "publicacion_viral": "https://www.instagram.com/p/DbcFEWdDfF5/",
+        "archivo_publicacion": "https://archive.is/XRULz",
+        "claim": "\"Los marroquíes se congregan en la estación de tren de Ksar El Kebir, en el norte de Marruecos, a la espera del tren con destino a Fnideq, una ciudad cercana al paso fronterizo de Ceuta, para prepararse para dirigirse a la franja fronteriza e intentar cruzar a España\".",
+        "rating": "",
+        "rating_categoria": "otro",
+        "comentarios": "Vídeo publicado por la delegación de Al Jazzeera en Marruecos el 31 de julio de 2026 a las 3:25 am, hora peninsular española. Por tanto, se deduce que las imágenes corresponden al 30 de julio. Muestra la estación de trenes de Ksar El Kebir (Marruecos) con una multitud de jóvenes que, según el medio árabe, se dirige a Fnideq para participar en el cruce masivo a Ceuta.",
+        "newtral_url": "",
+        "newtral_titulo": "",
+        "newtral_descripcion": "",
+        "newtral_imagen": "",
+        "fecha_origen": "31/07/2026",
+        "marca_temporal": "17/09/2026 19:17:09"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -5.345724,
+          35.865636
+        ]
+      },
+      "properties": {
+        "zona": "Castillejos/Fnideq (Marruecos)",
+        "pais": "Marruecos",
+        "video": "data/videos/1b2488ac8a49f7da.mp4",
+        "tipo": "video",
+        "video_original": "https://scontent-sea5-1.cdninstagram.com/o1/v/t2/f2/m366/AQOFK4Nwr64fP5a0SYo7Luc0irBQgd1SvO55l-uwY0pvIL3b7XXz-1yoI1Koe5G3bweGTUKHytitSbOftyr3JlpeMQq6cK2yyJjdBoT3afyqkg.mp4?_nc_cat=110&_nc_sid=5e9851&_nc_ht=scontent-sea5-1.cdninstagram.com&_nc_ohc=lwWIUJVmhKsQ7kNvwHKsjzD&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5JTlNUQUdSQU0uQ0xJUFMuQzMuNzIwLmRhc2hfaDI2NC1iYXNpYy1nZW4yXzcyMHAiLCJ4cHZfYXNzZXRfaWQiOjI4NDY3NjI3ODIzNDM2ODAsImFzc2V0X2FnZV9kYXlzIjo0OCwidmlfdXNlY2FzZV9pZCI6MTAxMjMsImR1cmF0aW9uX3MiOjEyLCJ1cmxnZW5fc291cmNlIjoid3d3In0%3D&ccb=17-1&vs=206c0a36233ca5d1&_nc_vs=HBksFQIYRWZiX2VwaGVtZXJhbC9FRjQ4Q0U0MTM1MEM0NTRFNkFBRDJERDQwMzY0MURCRl9tdF8xX3ZpZGVvX2Rhc2hpbml0Lm1wNBUAAsgBEgAVAhhAZmJfcGVybWFuZW50Lzg0NDhFQjc1N0FGNjE0OENGRkE4NEYzRTlBNkRCN0IxX2F1ZGlvX2Rhc2hpbml0Lm1wNBUCAsgBEgAoABgAGwKIB3VzZV9vaWwBMRJwcm9ncmVzc2l2ZV9yZWNpcGUBMRUAACaAiLbGs8eOChUCKAJDMywXQCkQ5WBBiTcYGWRhc2hfaDI2NC1iYXNpYy1nZW4yXzcyMHARAHX-B2WWngEA&_nc_gid=jWvh95YIj3MNk7TBB8-gFQ&_nc_ss=706cf&_nc_zt=28&oh=00_AQKmyw04DyA5yZdg9hcYXdcZ8e4E96KNeA3-D6qAtzH_kA&oe=6AB2EAE2",
+        "archivo_video": "https://archive.org/details/aqofk-4-nwr-64f-p-5a-0-syo-7-luc-0ir-bqgd-1-sv-o-55l-uw-y-0pv-il-3b-7-xxz-1yo-i-",
+        "confianza": "4 - Alto (muy probable)",
+        "confianza_valor": 4,
+        "confianza_texto": "Muy probable",
+        "publicacion_viral": "https://www.instagram.com/p/DbgDBrFFTg6/",
+        "archivo_publicacion": "https://archive.li/s4GBF",
+        "claim": "\"Guardia marroquí lanza una piedra a una persona\".",
+        "rating": "Verdadero",
+        "rating_categoria": "verdadero",
+        "comentarios": "Vídeo difundido en redes durante la tarde del 31 de julio de 2026. Muestra a un agente de las fuerzas auxiliares marroquíes lanzando lo que parece una roca a una de las personas que, aparentemente, trataba de cruzar a Ceuta. Las imágenes fueron grabadas en una colina próxima a la estación de taxis de Bab Sebta, en Castillejos/Fnideq, cerca del paso fronterizo del Tarajal.",
+        "newtral_url": "",
+        "newtral_titulo": "",
+        "newtral_descripcion": "",
+        "newtral_imagen": "",
+        "fecha_origen": "31/07/2026",
+        "marca_temporal": "18/09/2026 11:11:46"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -5.344970988394862,
+          35.86697379279979
+        ]
+      },
+      "properties": {
+        "zona": "Castillejos/Fnideq (Marruecos)",
+        "pais": "Marruecos",
+        "video": "data/videos/a369d73a36cc45fe.mp4",
+        "tipo": "video",
+        "video_original": "https://video-sea5-1.xx.fbcdn.net/o1/v/t2/f2/m366/AQNqqsbYo1KSbj23tP0J785hb4KR-6W7ObX3NzSsL-ToHaNCldy7KsMUKKCGTOeuKrkiFKjUrM3S8xaemsK4PgrsJ_fGm_-7hgnazzlITiQ8eQ.mp4?_nc_cat=105&_nc_sid=5e9851&_nc_ht=video-sea5-1.xx.fbcdn.net&_nc_ohc=4CMoXxBbfmUQ7kNvwH_3aoc&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5GQUNFQk9PSy4uQzMuNzIwLmRhc2hfaDI2NC1iYXNpYy1nZW4yXzcyMHAiLCJ4cHZfYXNzZXRfaWQiOjM4NDM2NDk1Mjc1OTQ4NzY1LCJhc3NldF9hZ2VfZGF5cyI6NDksInZpX3VzZWNhc2VfaWQiOjEwMTIyLCJkdXJhdGlvbl9zIjo4NiwidXJsZ2VuX3NvdXJjZSI6Ind3dyJ9&ccb=17-1&vs=c0e7a96cdf426774&_nc_vs=HBksFQIYRWZiX2VwaGVtZXJhbC84MjRFOTYyMDg2OUUzRTQ3MDVEQjNBOTlDOTY4RjI4QV9tdF8xX3ZpZGVvX2Rhc2hpbml0Lm1wNBUAAsgBEgAVAhhAZmJfcGVybWFuZW50LzYyNEZCMzVDMERCMEUyMzMzREY1NDkyMUI0RENFNzkxX2F1ZGlvX2Rhc2hpbml0Lm1wNBUCAsgBEgAoABgAGwKIB3VzZV9vaWwBMRJwcm9ncmVzc2l2ZV9yZWNpcGUBMRUAACa666v1vfLGiAEVAigCQzMsF0BVqp--dsi0GBlkYXNoX2gyNjQtYmFzaWMtZ2VuMl83MjBwEQB1AmWUngEA&_nc_gid=KM48U640NZQ7YMxB_QseBw&_nc_ss=702cf&_nc_zt=28&oh=00_AQKzAA50Gfqs4qAoiAMkuqrlfKWtyF27GHBGnVhqRoaQBA&oe=6AB2E0D3&bitrate=3205891&tag=dash_h264-basic-gen2_720p",
+        "archivo_video": "https://archive.org/details/31-de-julio-4431222327166298",
+        "confianza": "5 - Muy alto (verificado)",
+        "confianza_valor": 5,
+        "confianza_texto": "Verificado",
+        "publicacion_viral": "https://www.facebook.com/watch/?v=4431222327166298",
+        "archivo_publicacion": "https://www.facebook.com/watch/?v=4431222327166298",
+        "claim": "\"Actuación de las fuerzas marroquíes en Bab Sebta\".",
+        "rating": "Verdadero",
+        "rating_categoria": "verdadero",
+        "comentarios": "Vídeo compartido por medios marroquíes en la mañana del 31 de julio de 2026. Muestra una actuación de las fuerzas marroquíes junto al paso fronterizo del Tarajal, en la parada de taxis de Bab Sebta (Castillejos/Fnideq, Marruecos). Dos camiones antidisturbios de la DGSN lanzan agua mientras agentes cargan contra los candidatos a cruzar la frontera.",
+        "newtral_url": "",
+        "newtral_titulo": "",
+        "newtral_descripcion": "",
+        "newtral_imagen": "",
+        "fecha_origen": "31/07/2026",
+        "marca_temporal": "18/09/2026 11:30:24"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.928434482023966,
+          35.26702910084531
+        ]
+      },
+      "properties": {
+        "zona": "Beni Ensar (Nador, Marruecos)",
+        "pais": "Marruecos",
+        "video": "data/videos/10ecfb8940169de9.mp4",
+        "tipo": "video",
+        "video_original": "https://video-sea5-1.xx.fbcdn.net/o1/v/t2/f2/m366/AQOpHBm3inOLdgkaEkakogUuEMLs_Rtb346MJferb4kAkpsHWctJEQ5ZTndYFsiIaf9B5sQnAxFQowpVA5EDGCIRiC5EvmFs0Wk7KZ3pIoNL-Q.mp4?_nc_cat=110&_nc_sid=5e9851&_nc_ht=video-sea5-1.xx.fbcdn.net&_nc_ohc=OsiV6L83H_MQ7kNvwF3vrpZ&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5GQUNFQk9PSy4uQzIuNzIwLmRhc2hfaDI2NC1iYXNpYy1nZW4yXzcyMHAiLCJ4cHZfYXNzZXRfaWQiOjIyMDQ4OTI2ODY5NjkyNTUsImFzc2V0X2FnZV9kYXlzIjo0OCwidmlfdXNlY2FzZV9pZCI6MTAxMjIsImR1cmF0aW9uX3MiOjIxLCJ1cmxnZW5fc291cmNlIjoid3d3In0%3D&ccb=17-1&vs=5b266d8a1b495a70&_nc_vs=HBksFQIYRWZiX2VwaGVtZXJhbC8xRDQ4QTFDQzBFNjRCMzUyMDdBREYyQzI5RTY4NkM5Nl9tdF8xX3ZpZGVvX2Rhc2hpbml0Lm1wNBUAAsgBEgAVAhhAZmJfcGVybWFuZW50L0Y4NDFGMUZGREFFMjNCQzNEQjYzQzgwQzE3NTA0QTk2X2F1ZGlvX2Rhc2hpbml0Lm1wNBUCAsgBEgAoABgAGwKIB3VzZV9vaWwBMRJwcm9ncmVzc2l2ZV9yZWNpcGUBMRUAACbOpv_V0tXqBxUCKAJDMiwXQDUZmZmZmZoYGWRhc2hfaDI2NC1iYXNpYy1nZW4yXzcyMHARAHUCZZSeAQA&_nc_gid=hQa6kzP-JAN3LV3xfRb0AQ&_nc_ss=702cf&_nc_zt=28&oh=00_AQL7eNRK0xdnFq52K3fq9SS9aDFvrioG00QlXUR-j1u0QA&oe=6AB2EEB6&bitrate=1087462&tag=dash_h264-basic-gen2_720p",
+        "archivo_video": "https://archive.org/details/31-de-julio-3070758723131921",
+        "confianza": "5 - Muy alto (verificado)",
+        "confianza_valor": 5,
+        "confianza_texto": "Verificado",
+        "publicacion_viral": "https://www.facebook.com/watch/?v=3070758723131921",
+        "archivo_publicacion": "https://www.facebook.com/watch/?v=3070758723131921",
+        "claim": "\"Fuerzas de intervención rápida intervienen frente al puerto de Beni Ansar para asegurar la salida de los viajeros\".",
+        "rating": "Verdadero",
+        "rating_categoria": "verdadero",
+        "comentarios": "Actuación de antidisturbios marroquíes en las cercanías del puerto de Beni Ensar (Nador, Marruecos) el 31 de julio de 2026.",
+        "newtral_url": "",
+        "newtral_titulo": "",
+        "newtral_descripcion": "",
+        "newtral_imagen": "",
+        "fecha_origen": "31/07/2026",
+        "marca_temporal": "18/09/2026 11:39:48"
       }
     }
   ]
