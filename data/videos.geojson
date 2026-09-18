@@ -508,8 +508,8 @@
       "properties": {
         "zona": "Bab Sebta (Castillejos/Fnideq, Marruecos)",
         "pais": "Marruecos",
-        "video": "https://pbs.twimg.com/card_img/2097533215112155136/mf87_Chr?format=jpg&name=small",
-        "tipo": "video",
+        "video": "data/videos/6d4020146450d199.jpg",
+        "tipo": "imagen",
         "video_original": "https://pbs.twimg.com/card_img/2097533215112155136/mf87_Chr?format=jpg&name=small",
         "archivo_video": "https://archive.li/HkoOE",
         "confianza": "5 - Muy alto (verificado)",

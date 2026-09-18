@@ -66,8 +66,8 @@ const CENTRO_INICIAL = { center: [-3.7, 40], zoom: 3.5 };
    propósito, para poder distinguir de un vistazo qué vídeos son falsos. */
 const RATING_COLORES = {
   falso:          '#CF023D',
-  falta_contexto: '#FF8A00',
-  enganoso:       '#EAEA40',
+  falta_contexto: '#EAEA40',
+  enganoso:       '#FF8A00',
   verdadero:      '#01F3B3',
   otro:           '#D8D8D8',
 };
@@ -216,15 +216,20 @@ function abrirPanelVideo(props) {
     enlace(archivo_publicacion, 'Versión archivada de la publicación'),
   ].filter(Boolean).join('');
   const newtralCard = renderNewtralCard(newtral_url, newtral_titulo, newtral_descripcion, newtral_imagen);
+  // El badge de rating va junto a la etiqueta "Afirmación" (a petición
+  // expresa), no junto al título — por eso vive dentro de vc-contexto-titulo
+  // en vez de al lado de vc-titulo. Se muestra si hay claim o rating para no
+  // perder el badge en la única fila que no tiene claim (ver `otro` en
+  // RATING_LABELS).
+  const badge = `<span class="vc-badge" style="background:${color};color:${colorTexto}">${escapeHtml(rating || RATING_LABELS.otro)}</span>`;
 
   const antetitulo = [pais, fecha_origen].filter(Boolean).map(escapeHtml).join(' - ');
 
   videoContenidoEl.innerHTML = `
     ${antetitulo ? `<span class="vc-antetitulo">${antetitulo}</span>` : ''}
     <h2 class="vc-titulo">${escapeHtml(zona || 'Ubicación sin especificar')}</h2>
-    <span class="vc-badge" style="background:${color};color:${colorTexto}">${escapeHtml(rating || RATING_LABELS.otro)}</span>
     ${player ? `<div class="vc-player">${player}</div>` : ''}
-    ${claim ? `<div class="vc-afirmacion"><p class="vc-contexto-titulo">Afirmación</p><p class="vc-claim">${escapeHtml(claim)}</p></div>` : ''}
+    ${(claim || rating) ? `<div class="vc-afirmacion"><p class="vc-contexto-titulo">Afirmación${badge}</p>${claim ? `<p class="vc-claim">${escapeHtml(claim)}</p>` : ''}</div>` : ''}
     ${comentarios ? `<p class="vc-contexto-titulo">Contexto</p><p class="vc-descripcion">${escapeHtml(comentarios)}</p>` : ''}
     ${confianza ? `<p class="cf-titulo">Confianza en la geolocalización</p>${renderConfianzaPill(confianza_valor, confianza_texto)}` : ''}
     ${newtralCard}

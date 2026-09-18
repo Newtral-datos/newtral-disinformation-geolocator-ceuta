@@ -202,7 +202,7 @@ html::-webkit-scrollbar, body::-webkit-scrollbar { display: none; }
   border-radius: 999px;
   margin: 2px 0 16px;
 }
-.vc-titulo { font-family: var(--font-display); font-size: 17px; font-weight: 600; margin: 16px 0 4px; }
+.vc-titulo { font-family: var(--font-display); font-size: 17px; font-weight: 600; margin: 16px 0; }
 .vc-afirmacion { margin: 24px 0; }
 .vc-claim {
   font-size: 14px;
@@ -239,6 +239,11 @@ html::-webkit-scrollbar, body::-webkit-scrollbar { display: none; }
   height: 1px;
   background: var(--rule);
 }
+/* Badge de rating junto a la etiqueta "Afirmación" (a petición expresa) en
+   vez de junto al título: vive dentro de la cabecera flex de
+   vc-contexto-titulo, así que pierde su margen propio y usa el `gap` del
+   flex para separarse del texto y de la línea divisoria. */
+.vc-contexto-titulo .vc-badge { margin: 0; }
 .vc-descripcion { font-size: 14px; line-height: 1.5; color: var(--ink); margin: 0 0 12px; }
 
 /* ── Pastilla de confianza (0-5) ──

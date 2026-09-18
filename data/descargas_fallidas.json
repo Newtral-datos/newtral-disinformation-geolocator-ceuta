@@ -1,13 +1,5 @@
 {
-  "generado": "2026-09-18T11:47:56",
-  "total_fallidas": 1,
-  "fallidas": [
-    {
-      "zona": "Bab Sebta (Castillejos/Fnideq, Marruecos)",
-      "pais": "Marruecos",
-      "url": "https://pbs.twimg.com/card_img/2097533215112155136/mf87_Chr?format=jpg&name=small",
-      "error": "curl: (56) The requested URL returned error: 404 | copia archivada sin fichero de vídeo descargable: https://archive.li/HkoOE",
-      "marca_temporal": "14/09/2026 14:05:34"
-    }
-  ]
+  "generado": "2026-09-18T12:27:56",
+  "total_fallidas": 0,
+  "fallidas": []
 }
